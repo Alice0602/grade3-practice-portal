@@ -342,44 +342,106 @@
       box-shadow: 0 10px 25px rgba(239, 68, 68, 0.4);
     }
 
-    /* Certificate Golden Styling */
-    .certificate-card {
-      background: linear-gradient(135deg, #fffbeb 0%, #ffffff 50%, #fef3c7 100%);
-      color: #1e1b4b;
-      border: 8px double #d97706;
+    /* Exam Result Report Styling */
+    .report-card {
+      background: #1e293b;
+      color: #f8fafc;
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 20px;
-      padding: 36px 30px;
-      max-width: 680px;
+      padding: 32px 28px;
+      max-width: 640px;
       margin: 0 auto;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-      position: relative;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
       text-align: center;
     }
 
-    .cert-crown { font-size: 56px; margin-bottom: 8px; }
-    .cert-title { font-size: 2.1rem; font-weight: 900; color: #b45309; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
-    .cert-subtitle { font-size: 1.05rem; font-weight: 700; color: #78350f; margin-bottom: 20px; }
-    .cert-student-name {
-      font-size: 2.3rem;
-      font-weight: 900;
-      color: #1e1b4b;
-      text-decoration: underline;
-      text-decoration-color: #f59e0b;
-      margin: 12px 0 16px;
-      display: inline-block;
+    .report-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid #0284c7;
+      color: #38bdf8;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
     }
 
-    .cert-desc { font-size: 1.05rem; color: #334155; line-height: 1.6; margin-bottom: 20px; }
-    .cert-score-box {
-      background: #fef3c7;
-      border: 2px dashed #d97706;
-      padding: 12px 24px;
-      border-radius: 16px;
-      display: inline-block;
-      margin-bottom: 20px;
+    .report-title {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 4px;
     }
-    .cert-score-num { font-size: 2.4rem; font-weight: 900; color: #b45309; }
-    .cert-footer-meta { font-size: 0.85rem; color: #64748b; margin-top: 16px; }
+
+    .report-student-name {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #38bdf8;
+      margin: 8px 0 14px;
+    }
+
+    .report-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin: 18px 0;
+      text-align: left;
+    }
+
+    @media (max-width: 500px) {
+      .report-stats-grid { grid-template-columns: 1fr; }
+    }
+
+    .stat-box {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #f1f5f9;
+    }
+
+    .report-score-box {
+      background: rgba(15, 23, 42, 0.7);
+      border: 2px solid #3b82f6;
+      border-radius: 16px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    .report-score-num {
+      font-size: 2.8rem;
+      font-weight: 900;
+      line-height: 1;
+      margin: 6px 0;
+    }
+
+    .mistakes-review-box {
+      background: rgba(127, 29, 29, 0.2);
+      border: 1px solid #ef4444;
+      border-radius: 12px;
+      padding: 14px;
+      margin-top: 16px;
+      text-align: left;
+      font-size: 0.9rem;
+    }
 
     .action-buttons-row {
       display: flex;
@@ -402,25 +464,8 @@
       transition: all 0.2s;
     }
 
-    .btn-print { background: #d97706; color: white; box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3); }
-    .btn-print:hover { background: #b45309; }
     .btn-home { background: #4f46e5; color: white; box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3); }
     .btn-home:hover { background: #4338ca; }
-
-    /* Print Styles */
-    @media print {
-      body { background: white !important; color: black !important; }
-      header, .warning-overlay, .action-buttons-row, .btn-action { display: none !important; }
-      main { padding: 0 !important; }
-      .practice-card { border: none !important; box-shadow: none !important; padding: 0 !important; background: transparent !important; }
-      .certificate-card {
-        border: 10px double #d97706 !important;
-        box-shadow: none !important;
-        margin: 20px auto !important;
-        max-width: 100% !important;
-        page-break-inside: avoid;
-      }
-    }
   </style>
 </head>
 <body>
@@ -952,60 +997,90 @@
 
       playSound('fanfare');
 
+      let scoreColor = '#10b981';
       let ratingTitle = 'XUẤT SẮC ⭐⭐⭐';
-      let ratingColor = '#b45309';
       if (score < 50) {
+        scoreColor = '#ef4444';
         ratingTitle = 'CẦN CỐ GẮNG ÔN THÊM ⭐';
-        ratingColor = '#ef4444';
       } else if (score < 80) {
+        scoreColor = '#f59e0b';
         ratingTitle = 'ĐẠT KẾT QUẢ TỐT ⭐⭐';
-        ratingColor = '#0284c7';
       }
 
       const weekNumber = currentWeek.replace('week', '');
 
+      let mistakesHtml = '';
+      if (mistakeList.length > 0) {
+        mistakesHtml = `
+          <div class="mistakes-review-box">
+            <div style="font-weight:800; color:#fca5a5; margin-bottom:8px;">⚠️ Danh sách câu cần ôn lại (${mistakeList.length} câu):</div>
+            <ul style="padding-left:18px; margin:0; color:#cbd5e1; font-size:0.88rem; line-height:1.5;">
+              ${mistakeList.map(m => `
+                <li style="margin-bottom:6px;">
+                  <strong>${m.item}</strong><br>
+                  <span style="color:#f87171;">Bạn chọn: ${m.user_answer}</span> &bull; 
+                  <span style="color:#34d399;">Đáp án đúng: ${m.correct_answer}</span>
+                </li>
+              `).join('')}
+            </ul>
+          </div>
+        `;
+      } else {
+        mistakesHtml = `
+          <div style="background:rgba(16,185,129,0.15); border:1px solid #10b981; border-radius:12px; padding:12px; margin-top:16px; color:#34d399; font-weight:700;">
+            🌟 Hoàn hảo! Em đã trả lời đúng toàn bộ 10/10 câu hỏi!
+          </div>
+        `;
+      }
+
       const container = document.getElementById('cardContainer');
       container.innerHTML = `
-        <div class="certificate-card" id="certificateContainer">
-          <div class="cert-crown">🏆</div>
-          <div class="cert-title">CERTIFICATE OF EXCELLENCE</div>
-          <div class="cert-subtitle">GIẤY KHEN HOÀN THÀNH XUẤT SẮC BÀI THI TỔNG HỢP</div>
-
-          <div style="font-size:1.05rem; color:#475569;">Vinh danh thành tích học tập của em:</div>
-          <div class="cert-student-name">${studentName}</div>
-
-          <p class="cert-desc">
-            Đã hoàn thành bài kiểm tra chuẩn đề cương <strong>Grade 3 Bilingual Recap • Tuần ${weekNumber}</strong><br>
-            bao quát 3 phân môn: <strong>English • Mathematics • Science</strong>
-          </p>
-
-          <div class="cert-score-box">
-            <div style="font-size:0.9rem; font-weight:700; color:#78350f;">KẾT QUẢ ĐẠT ĐƯỢC</div>
-            <div class="cert-score-num">${score} / 100</div>
-            <div style="font-weight:800; color:${ratingColor}; font-size:1.1rem; margin-top:4px;">${ratingTitle}</div>
+        <div class="report-card" id="reportContainer">
+          <div class="report-badge">📊 BÁO CÁO KẾT QUẢ BÀI THI</div>
+          <div class="report-title">KẾT QUẢ BÀI KIỂM TRA TỔNG HỢP</div>
+          <div style="font-size:0.95rem; color:#94a3b8; margin-top:4px;">
+            Cambridge Primary Grade 3 Recap • Tuần ${weekNumber} (English • Mathematics • Science)
           </div>
 
-          <div style="background:#f1f5f9; padding:10px 16px; border-radius:12px; margin:10px auto; max-width:440px; font-size:0.9rem; text-align:left;">
-            <div>⏱️ <strong>Thời gian làm bài:</strong> ${Math.floor(secondsElapsed/60)} phút ${secondsElapsed%60} giây</div>
-            <div>🛡️ <strong>Kỷ luật phòng thi:</strong> ${tabSwitches === 0 ? '<span style="color:#10b981; font-weight:700;">Tuyệt đối nghiêm túc (0 lần đổi tab) 🌟</span>' : '<span style="color:#ef4444; font-weight:700;">Ghi nhận ' + tabSwitches + ' lần rời tab ⚠️</span>'}</div>
-            <div>📅 <strong>Thời gian nộp bài:</strong> ${new Date().toLocaleString('vi-VN')}</div>
+          <div class="report-student-name">${studentName}</div>
+
+          <div class="report-score-box" style="border-color:${scoreColor};">
+            <div style="font-size:0.85rem; font-weight:700; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px;">ĐIỂM SỐ ĐẠT ĐƯỢC</div>
+            <div class="report-score-num" style="color:${scoreColor};">${score} <span style="font-size:1.4rem; color:#94a3b8; font-weight:600;">/ 100</span></div>
+            <div style="font-weight:800; color:${scoreColor}; font-size:1.05rem;">${ratingTitle}</div>
           </div>
 
-          <div class="cert-footer-meta">
-            Cambridge Primary Grade 3 Integrated Program • Hệ Thống Kiểm Tra Đánh Giá Tự Động
+          <div class="report-stats-grid">
+            <div class="stat-box">
+              <div class="stat-label">⏱️ Thời gian làm bài</div>
+              <div class="stat-value">${Math.floor(secondsElapsed/60)} phút ${secondsElapsed%60} giây</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">🛡️ Kỷ luật phòng thi</div>
+              <div class="stat-value" style="font-size:0.92rem;">
+                ${tabSwitches === 0 ? '<span style="color:#10b981;">Nghiêm túc (0 lần đổi tab) 🌟</span>' : '<span style="color:#ef4444;">' + tabSwitches + ' lần đổi tab ⚠️</span>'}
+              </div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">📅 Thời gian nộp bài</div>
+              <div class="stat-value" style="font-size:0.85rem; color:#cbd5e1;">${new Date().toLocaleString('vi-VN')}</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">💾 Trạng thái lưu trữ</div>
+              <div class="stat-value" style="font-size:0.85rem; color:#38bdf8;">Đã lưu lên Bảng Giáo viên ✓</div>
+            </div>
           </div>
-        </div>
 
-        <div class="action-buttons-row">
-          <button class="btn-action btn-print" onclick="window.print()">
-            <span>🖨️ In Giấy Khen / Lưu PDF</span>
-          </button>
-          <button class="btn-action btn-home" onclick="window.location.href='/'">
-            <span>🏠 Về Trang Chủ</span>
-          </button>
-          <button class="btn-action" style="background:#0284c7; color:white;" onclick="window.location.reload()">
-            <span>🔄 Làm Lại Bài Thi</span>
-          </button>
+          ${mistakesHtml}
+
+          <div class="action-buttons-row">
+            <button class="btn-action btn-home" onclick="window.location.href='/'">
+              <span>🏠 Về Trang Chủ</span>
+            </button>
+            <button class="btn-action" style="background:#0284c7; color:white;" onclick="window.location.reload()">
+              <span>🔄 Làm Lại Bài Thi</span>
+            </button>
+          </div>
         </div>
       `;
     }
