@@ -242,6 +242,24 @@
       </div>
     </div>
 
+    <div class="form-group">
+      <label>⚡ Chọn số lượng từ mỗi lượt luyện tập</label>
+      <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:8px;" id="limitGrid">
+        <div class="radio-card selected" data-val="10" onclick="selectLimit('10')">
+          <div style="font-weight:800; font-size:1.15rem; color:#4f46e5;">10 từ</div>
+          <span style="font-size:0.75rem; color:#64748b;">Nhanh 5 phút ⭐</span>
+        </div>
+        <div class="radio-card" data-val="15" onclick="selectLimit('15')">
+          <div style="font-weight:800; font-size:1.15rem; color:#0284c7;">15 từ</div>
+          <span style="font-size:0.75rem; color:#64748b;">Vừa sức 8 phút 🚀</span>
+        </div>
+        <div class="radio-card" data-val="0" onclick="selectLimit('0')">
+          <div style="font-weight:800; font-size:1.15rem; color:#d97706;">Tất cả</div>
+          <span style="font-size:0.75rem; color:#64748b;">Đại thử thách 🔥</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Strict Lock Notice -->
     <div class="strict-alert-box">
       <strong>🔒 Strict Lock Mode Active:</strong>
@@ -263,6 +281,14 @@
   <script>
     let selectedWeek = 'week3';
     let selectedMode = 'vocab';
+    let selectedLimit = '10';
+
+    function selectLimit(lim) {
+      selectedLimit = lim;
+      document.querySelectorAll('#limitGrid .radio-card').forEach(c => {
+        c.classList.toggle('selected', c.getAttribute('data-val') === lim);
+      });
+    }
 
     function selectWeek(w) {
       selectedWeek = w;
@@ -286,7 +312,7 @@
         return;
       }
       localStorage.setItem('last_student_name', name);
-      window.location.href = `/practice?student=${encodeURIComponent(name)}&week=${selectedWeek}&mode=${selectedMode}`;
+      window.location.href = `/practice?student=${encodeURIComponent(name)}&week=${selectedWeek}&mode=${selectedMode}&limit=${selectedLimit}`;
     }
 
     window.addEventListener('DOMContentLoaded', () => {

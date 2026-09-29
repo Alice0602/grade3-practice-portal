@@ -710,7 +710,8 @@
     // ==================== PRACTICE ENGINE ====================
     async function loadPracticeQueue() {
       try {
-        const resp = await fetch(`/api/vocab_bank?week=${currentWeek}`);
+        const limitParam = new URLSearchParams(window.location.search).get('limit') || '10';
+        const resp = await fetch(`/api/vocab_bank?week=${currentWeek}&limit=${limitParam}`);
         const words = await resp.json();
         practiceQueue = words.sort(() => Math.random() - 0.5);
         initialCount = practiceQueue.length;
