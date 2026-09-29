@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Analytics Dashboard • Grade 3 Learning Mastery</title>
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #06b6d4;
+      --accent: #f59e0b;
+      --danger: #ef4444;
+      --success: #10b981;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background: #f1f5f9;
+      color: var(--text);
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    header {
+      background: white;
+      border-bottom: 3px solid var(--primary);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      color: white;
+      font-size: 24px;
+      padding: 8px 12px;
+      border-radius: 12px;
+    }
+
+    .brand-title h1 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #1e1b4b;
+    }
+
+    .brand-title p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn-nav {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #334155;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .btn-nav:hover {
+      background: #e2e8f0;
+    }
+
+    .btn-export {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: white;
+      border: none;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    }
+
+    .btn-export:hover {
+      background: #047857;
+      color: white;
+    }
+
+    main {
+      max-width: 1240px;
+      margin: 24px auto 0;
+      padding: 0 20px;
+    }
+
+    /* Metric Cards Grid */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .metric-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .metric-icon {
+      font-size: 36px;
+      width: 60px;
+      height: 60px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .metric-val {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #1e1b4b;
+    }
+
+    .metric-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* Content Cards */
+    .panel-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 24px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+      margin-bottom: 24px;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px dashed #f1f5f9;
+    }
+
+    .panel-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #1e1b4b;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Tables */
+    .table-responsive {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+      text-align: left;
+    }
+
+    th {
+      background: #f8fafc;
+      color: #475569;
+      font-weight: 700;
+      padding: 12px 14px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    td {
+      padding: 12px 14px;
+      border-bottom: 1px solid #f1f5f9;
+      color: #1e293b;
+    }
+
+    tr:hover td {
+      background: #f8fafc;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .badge-success { background: #dcfce7; color: #15803d; }
+    .badge-danger { background: #fee2e2; color: #b91c1c; }
+    .badge-warning { background: #fef3c7; color: #b45309; }
+    .badge-info { background: #e0e7ff; color: #4338ca; }
+
+    /* Weak Vocabulary List */
+    .weak-words-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+    }
+
+    .weak-word-card {
+      background: #fff5f5;
+      border: 1px solid #fecaca;
+      border-left: 5px solid #ef4444;
+      border-radius: 12px;
+      padding: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .weak-word-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #991b1b;
+    }
+
+    .weak-word-stat {
+      font-size: 0.85rem;
+      color: #b91c1c;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-icon">📊</div>
+        <div class="brand-title">
+          <h1>Teacher Analytics & Database Portal</h1>
+          <p>Real-Time Tracking: Scores, Forgetful Vocabulary, and Strict Lock Violations</p>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <a href="/" class="btn-nav" target="_blank">Student Practice Portal 🚀</a>
+        <button class="btn-nav" onclick="loadDashboardData()">🔄 Refresh Data</button>
+        <a href="/teacher/export_csv" class="btn-nav btn-export">📥 Export to CSV / Excel</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Metrics Row -->
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-icon" style="background:#e0e7ff; color:#4f46e5;">📝</div>
+        <div>
+          <div class="metric-val" id="metricAttempts">0</div>
+          <div class="metric-label">Total Tests Taken</div>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-icon" style="background:#dcfce7; color:#10b981;">👨‍🎓</div>
+        <div>
+          <div class="metric-val" id="metricStudents">0</div>
+          <div class="metric-label">Enrolled Students</div>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-icon" style="background:#fef3c7; color:#f59e0b;">⭐</div>
+        <div>
+          <div class="metric-val" id="metricAvgScore">0%</div>
+          <div class="metric-label">Average Mastery Score</div>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-icon" style="background:#fee2e2; color:#ef4444;">🚨</div>
+        <div>
+          <div class="metric-val" id="metricWeakCount">0</div>
+          <div class="metric-label">High-Risk Forgetful Words</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Red Alert: Words Students Forget Most Often -->
+    <div class="panel-card" style="border-top: 4px solid #ef4444;">
+      <div class="panel-header">
+        <div>
+          <div class="panel-title" style="color:#b91c1c;">
+            <span>🚨</span> "Red Alert" Vocabulary Heatmap (Words Students Forget Most Often)
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;">
+            These words have the highest error rates. Prioritize reviewing them in the next session!
+          </p>
+        </div>
+      </div>
+
+      <div class="weak-words-grid" id="weakWordsGrid">
+        <p style="color:var(--text-muted);">No vocabulary mistakes recorded yet. All students are mastering their words!</p>
+      </div>
+    </div>
+
+    <!-- Student Performance Leaderboard -->
+    <div class="panel-card">
+      <div class="panel-header">
+        <div class="panel-title">
+          <span>🏅</span> Student Performance Leaderboard
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Student Name</th>
+              <th>Tests Completed</th>
+              <th>Average Score (%)</th>
+              <th>Best Score (%)</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="studentLeaderboardBody">
+            <tr><td colspan="5" style="text-align:center; color:var(--text-muted);">Loading students...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Recent Test Attempts Log -->
+    <div class="panel-card">
+      <div class="panel-header">
+        <div class="panel-title">
+          <span>📋</span> Practice History & Violation Log
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Student</th>
+              <th>Week</th>
+              <th>Subject</th>
+              <th>Score</th>
+              <th>Percentage</th>
+              <th>Tab Switches (Lock Violations)</th>
+              <th>Duration</th>
+              <th>Date & Time</th>
+            </tr>
+          </thead>
+          <tbody id="attemptsHistoryBody">
+            <tr><td colspan="9" style="text-align:center; color:var(--text-muted);">Loading attempts...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    async function loadDashboardData() {
+      try {
+        const resp = await fetch('/api/teacher_data');
+        const data = await resp.json();
+
+        // 1. Metrics
+        document.getElementById('metricAttempts').textContent = data.total_attempts;
+        document.getElementById('metricStudents').textContent = data.total_students;
+        document.getElementById('metricAvgScore').textContent = data.avg_score + '%';
+        document.getElementById('metricWeakCount').textContent = data.weak_words.length;
+
+        // 2. Weak Words
+        const weakGrid = document.getElementById('weakWordsGrid');
+        if (data.weak_words.length === 0) {
+          weakGrid.innerHTML = '<p style="color:var(--text-muted); padding:10px;">🌟 Excellent! No high-risk vocabulary words found. Students have 100% retention so far.</p>';
+        } else {
+          weakGrid.innerHTML = data.weak_words.map(w => `
+            <div class="weak-word-card">
+              <div>
+                <div class="weak-word-title">${w.word.toUpperCase()}</div>
+                <div style="font-size:0.8rem; color:#64748b;">Lesson: ${w.week.toUpperCase()}</div>
+              </div>
+              <div style="text-align:right;">
+                <div class="weak-word-stat">❌ Failed ${w.total_wrong} times</div>
+                <div style="font-size:0.75rem; color:#059669;">✓ Correct ${w.total_correct} times</div>
+              </div>
+            </div>
+          `).join('');
+        }
+
+        // 3. Student Leaderboard
+        const studentBody = document.getElementById('studentLeaderboardBody');
+        if (data.student_stats.length === 0) {
+          studentBody.innerHTML = '<tr><td colspan="5" style="text-align:center; color:var(--text-muted);">No students registered yet.</td></tr>';
+        } else {
+          studentBody.innerHTML = data.student_stats.map(s => `
+            <tr>
+              <td style="font-weight:700;">${s.student_name}</td>
+              <td>${s.tests_taken}</td>
+              <td style="font-weight:700; color:#4f46e5;">${Math.round(s.avg_pct)}%</td>
+              <td style="font-weight:700; color:#10b981;">${Math.round(s.max_pct)}%</td>
+              <td><span class="badge ${s.avg_pct >= 80 ? 'badge-success' : 'badge-warning'}">${s.avg_pct >= 80 ? 'High Retention' : 'Needs Practice'}</span></td>
+            </tr>
+          `).join('');
+        }
+
+        // 4. Attempts History
+        const histBody = document.getElementById('attemptsHistoryBody');
+        if (data.attempts.length === 0) {
+          histBody.innerHTML = '<tr><td colspan="9" style="text-align:center; color:var(--text-muted);">No attempts logged yet.</td></tr>';
+        } else {
+          histBody.innerHTML = data.attempts.map((att, idx) => `
+            <tr>
+              <td>${att.id}</td>
+              <td style="font-weight:700;">${att.student_name}</td>
+              <td><span class="badge badge-info">${att.week.toUpperCase()}</span></td>
+              <td>${att.subject}</td>
+              <td>${att.score} / ${att.max_score}</td>
+              <td style="font-weight:800; color:${att.percentage >= 80 ? '#10b981' : (att.percentage >= 50 ? '#f59e0b' : '#ef4444')};">
+                ${att.percentage}%
+              </td>
+              <td>
+                <span class="badge ${att.tab_switches === 0 ? 'badge-success' : 'badge-danger'}">
+                  ${att.tab_switches === 0 ? '✓ 0 (Clean)' : '⚠️ ' + att.tab_switches + ' switches'}
+                </span>
+              </td>
+              <td>${Math.floor(att.duration_seconds / 60)}m ${att.duration_seconds % 60}s</td>
+              <td style="color:var(--text-muted); font-size:0.85rem;">${att.created_at}</td>
+            </tr>
+          `).join('');
+        }
+
+      } catch (e) {
+        console.error('Error loading dashboard:', e);
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadDashboardData();
+      // Auto-refresh every 15 seconds
+      setInterval(loadDashboardData, 15000);
+    });
+  </script>
+</body>
+</html>

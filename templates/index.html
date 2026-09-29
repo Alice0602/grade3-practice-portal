@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade 3 Learning Mastery Portal • Student Practice</title>
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --secondary: #06b6d4;
+      --accent: #f59e0b;
+      --danger: #ef4444;
+      --success: #10b981;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #e0f2fe 0%, #ede9fe 50%, #fef3c7 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .main-container {
+      background: white;
+      border-radius: 24px;
+      padding: 36px 30px;
+      max-width: 580px;
+      width: 100%;
+      box-shadow: 0 20px 40px -10px rgba(79, 70, 229, 0.15), 0 10px 20px -5px rgba(0, 0, 0, 0.05);
+      border: 2px solid #e2e8f0;
+      text-align: center;
+    }
+
+    .portal-icon {
+      font-size: 54px;
+      margin-bottom: 12px;
+      display: inline-block;
+      animation: bounceSlow 3s infinite ease-in-out;
+    }
+
+    @keyframes bounceSlow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: #1e1b4b;
+      margin-bottom: 6px;
+    }
+
+    .portal-subtitle {
+      font-size: 0.95rem;
+      color: #64748b;
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #334155;
+      margin-bottom: 8px;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 2px solid #cbd5e1;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #1e293b;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .input-field:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+    }
+
+    .select-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .radio-card {
+      border: 2px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 14px 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      background: #f8fafc;
+    }
+
+    .radio-card:hover {
+      border-color: var(--primary);
+      background: #f0fdf4;
+    }
+
+    .radio-card.selected {
+      border-color: var(--primary);
+      background: #e0e7ff;
+      color: #4338ca;
+      font-weight: 800;
+      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+    }
+
+    .strict-alert-box {
+      background: #fef2f2;
+      border: 2px dashed #ef4444;
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 24px;
+      text-align: left;
+      font-size: 0.85rem;
+      color: #991b1b;
+      line-height: 1.5;
+    }
+
+    .strict-alert-box strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-start {
+      width: 100%;
+      background: linear-gradient(135deg, #4f46e5, #4338ca);
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 14px;
+      font-size: 1.15rem;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn-start:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 25px rgba(79, 70, 229, 0.4);
+    }
+
+    .teacher-link {
+      margin-top: 20px;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+
+    .teacher-link a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .teacher-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+    <div class="portal-icon">🎓</div>
+    <h1>Grade 3 Learning Mastery</h1>
+    <p class="portal-subtitle">Smart Vocabulary Retention & Practice Platform</p>
+
+    <div class="form-group">
+      <label for="studentName">👤 Student's Full Name</label>
+      <input type="text" id="studentName" class="input-field" placeholder="Enter student name (e.g. Bon, Alex, Sarah)" autofocus>
+    </div>
+
+    <div class="form-group">
+      <label>📚 Choose Lesson Week</label>
+      <div class="select-grid" id="weekGrid">
+        <div class="radio-card" data-val="week1" onclick="selectWeek('week1')">
+          <div style="font-size:24px;">🌱</div>
+          <div>Week 1</div>
+          <span style="font-size:0.75rem; color:#64748b;">Light & Rules</span>
+        </div>
+        <div class="radio-card" data-val="week2" onclick="selectWeek('week2')">
+          <div style="font-size:24px;">🐊</div>
+          <div>Week 2</div>
+          <span style="font-size:0.75rem; color:#64748b;">Past Verbs & Light</span>
+        </div>
+        <div class="radio-card selected" data-val="week3" onclick="selectWeek('week3')">
+          <div style="font-size:24px;">🔭</div>
+          <div>Week 3</div>
+          <span style="font-size:0.75rem; color:#64748b;">Telescope & Teeth</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>🎯 Choose Practice Mode</label>
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;" id="modeGrid">
+        <div class="radio-card selected" data-val="vocab" onclick="selectMode('vocab')">
+          <div style="font-size:26px;">🧠</div>
+          <div style="font-weight:700;">Vocab Mastery Arena</div>
+          <span style="font-size:0.75rem; color:#64748b;">Drill until 100% remembered!</span>
+        </div>
+        <div class="radio-card" data-val="challenge" onclick="selectMode('challenge')">
+          <div style="font-size:26px;">🏆</div>
+          <div style="font-weight:700;">Grand Challenge</div>
+          <span style="font-size:0.75rem; color:#64748b;">10-question graded exam</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Strict Lock Notice -->
+    <div class="strict-alert-box">
+      <strong>🔒 Strict Lock Mode Active:</strong>
+      • Fullscreen will be requested when practice begins.<br>
+      • You <strong>cannot quit halfway</strong> or switch tabs (violations are recorded and sent to the teacher's database!).<br>
+      • In Vocabulary Arena, any mistaken word is re-drilled until you master it 100%.
+    </div>
+
+    <button class="btn-start" onclick="startPractice()">
+      <span>Enter Practice Session</span>
+      <span>🚀</span>
+    </button>
+
+    <div class="teacher-link">
+      Teacher or Parent? <a href="/teacher" target="_blank">Open Teacher Analytics Dashboard &rarr;</a>
+    </div>
+  </div>
+
+  <script>
+    let selectedWeek = 'week3';
+    let selectedMode = 'vocab';
+
+    function selectWeek(w) {
+      selectedWeek = w;
+      document.querySelectorAll('#weekGrid .radio-card').forEach(c => {
+        c.classList.toggle('selected', c.getAttribute('data-val') === w);
+      });
+    }
+
+    function selectMode(m) {
+      selectedMode = m;
+      document.querySelectorAll('#modeGrid .radio-card').forEach(c => {
+        c.classList.toggle('selected', c.getAttribute('data-val') === m);
+      });
+    }
+
+    function startPractice() {
+      const name = document.getElementById('studentName').value.trim();
+      if (!name) {
+        alert('Please enter the student name before starting!');
+        document.getElementById('studentName').focus();
+        return;
+      }
+      localStorage.setItem('last_student_name', name);
+      window.location.href = `/practice?student=${encodeURIComponent(name)}&week=${selectedWeek}&mode=${selectedMode}`;
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedName = localStorage.getItem('last_student_name');
+      if (savedName) {
+        document.getElementById('studentName').value = savedName;
+      }
+    });
+  </script>
+</body>
+</html>
