@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Strict Practice Arena • Grade 3 Learning Mastery</title>
+  <title>Strict Practice & Exam Arena • Grade 3 Learning Mastery</title>
   <style>
     :root {
       --primary: #4f46e5;
@@ -123,7 +123,7 @@
       border: 2px solid #334155;
       border-radius: 24px;
       padding: 28px 32px;
-      max-width: 680px;
+      max-width: 720px;
       width: 100%;
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
       position: relative;
@@ -135,21 +135,21 @@
       background: #0f172a;
       border: 2px solid #334155;
       border-radius: 18px;
-      padding: 16px;
-      margin: 12px auto 18px;
-      max-width: 480px;
+      padding: 14px;
+      margin: 12px auto 16px;
+      max-width: 520px;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 120px;
+      min-height: 110px;
       box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
     }
 
     .target-word-title {
-      font-size: 2.2rem;
+      font-size: 2.1rem;
       font-weight: 900;
       color: #38bdf8;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -158,63 +158,89 @@
     }
 
     .speak-btn {
-      background: #4f46e5;
-      color: white;
+      background: #334155;
       border: none;
-      width: 42px;
-      height: 42px;
+      color: #38bdf8;
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
+      font-size: 1.15rem;
       cursor: pointer;
-      display: inline-flex;
+      display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 20px;
       transition: all 0.2s;
-      box-shadow: 0 4px 10px rgba(79, 70, 229, 0.4);
     }
 
     .speak-btn:hover {
-      background: #4338ca;
-      transform: scale(1.15);
+      background: #0284c7;
+      color: white;
+      transform: scale(1.1);
     }
 
-    /* Vietnamese Meaning Badge */
+    /* Subject Badge for Grand Challenge */
+    .subject-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .badge-english { background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid #0284c7; }
+    .badge-maths { background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid #9333ea; }
+    .badge-science { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #059669; }
+
+    .exam-question-text {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #f8fafc;
+      line-height: 1.45;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
     .vi-meaning-box {
-      background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.15));
-      border: 1px solid #f59e0b;
-      color: #fef08a;
-      padding: 10px 16px;
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid #475569;
       border-radius: 12px;
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin: 12px 0;
+      padding: 10px 14px;
+      margin-bottom: 10px;
+      color: #cbd5e1;
+      font-size: 1rem;
+      line-height: 1.4;
       text-align: left;
-      line-height: 1.5;
     }
 
-    /* Mnemonic Memory Hook */
     .mnemonic-box {
-      background: rgba(16, 185, 129, 0.12);
-      border: 1px dashed #10b981;
-      color: #a7f3d0;
-      padding: 8px 14px;
-      border-radius: 10px;
+      background: rgba(245, 158, 11, 0.15);
+      border-left: 4px solid #f59e0b;
+      border-radius: 8px;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+      color: #fde68a;
       font-size: 0.9rem;
-      margin-bottom: 14px;
       text-align: left;
       line-height: 1.4;
     }
 
     .collocation-text {
-      font-size: 1.05rem;
-      color: #cbd5e1;
+      font-size: 0.95rem;
+      color: #94a3b8;
       margin-bottom: 16px;
-      font-weight: 600;
-      background: #0f172a;
-      padding: 10px 16px;
-      border-radius: 12px;
-      border: 1px solid #334155;
+      font-style: italic;
       text-align: left;
+      background: rgba(15, 23, 42, 0.5);
+      padding: 8px 12px;
+      border-radius: 8px;
     }
 
     .options-grid {
@@ -224,21 +250,30 @@
       margin-top: 14px;
     }
 
+    @media (max-width: 600px) {
+      .options-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .option-btn {
       background: #0f172a;
       border: 2px solid #334155;
+      color: var(--text);
+      padding: 14px 16px;
       border-radius: 14px;
-      padding: 12px 14px;
-      color: #f1f5f9;
-      font-size: 0.95rem;
+      font-size: 1rem;
       font-weight: 700;
       cursor: pointer;
-      transition: all 0.2s;
       text-align: left;
-      line-height: 1.4;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      line-height: 1.35;
     }
 
-    .option-btn:hover {
+    .option-btn:hover:not(:disabled) {
       border-color: #38bdf8;
       background: #1e293b;
       transform: translateY(-2px);
@@ -246,7 +281,7 @@
 
     .option-btn.correct {
       background: #064e3b !important;
-      border-color: #22c55e !important;
+      border-color: #10b981 !important;
       color: #86efac !important;
     }
 
@@ -256,28 +291,34 @@
       color: #fca5a5 !important;
     }
 
+    .option-btn:disabled {
+      cursor: not-allowed;
+      opacity: 0.85;
+    }
+
     .explanation-box {
       margin-top: 16px;
-      padding: 12px;
+      padding: 12px 16px;
       border-radius: 12px;
       font-size: 0.95rem;
       font-weight: 600;
-      min-height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      line-height: 1.4;
+      text-align: left;
+      line-height: 1.45;
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     /* Warning Overlay */
     .warning-overlay {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(153, 27, 27, 0.96);
-      z-index: 999;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.98);
+      z-index: 1000;
       display: none;
       flex-direction: column;
       align-items: center;
@@ -286,72 +327,99 @@
       text-align: center;
     }
 
-    .warning-icon {
-      font-size: 80px;
-      animation: shake 0.5s infinite alternate;
-    }
-
-    @keyframes shake {
-      0% { transform: rotate(-8deg); }
-      100% { transform: rotate(8deg); }
-    }
-
-    .warning-title {
-      font-size: 2.2rem;
-      font-weight: 900;
-      color: #fee2e2;
-      margin: 16px 0 8px;
-    }
-
-    .warning-desc {
-      font-size: 1.15rem;
-      color: #fca5a5;
-      max-width: 500px;
-      margin-bottom: 24px;
-      line-height: 1.5;
-    }
-
+    .warning-icon { font-size: 72px; margin-bottom: 16px; }
+    .warning-title { font-size: 2rem; font-weight: 900; color: #ef4444; margin-bottom: 12px; }
+    .warning-desc { font-size: 1.15rem; color: #cbd5e1; max-width: 500px; line-height: 1.6; margin-bottom: 24px; }
     .btn-return {
-      background: white;
-      color: #991b1b;
-      border: none;
-      padding: 14px 32px;
-      border-radius: 14px;
-      font-size: 1.15rem;
-      font-weight: 900;
-      cursor: pointer;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-      transition: all 0.2s;
-    }
-
-    .btn-return:hover {
-      transform: scale(1.05);
-    }
-
-    /* Finish Modal */
-    .finish-card {
-      background: #1e293b;
-      border: 3px solid #10b981;
-      border-radius: 24px;
-      padding: 36px;
-      text-align: center;
-      max-width: 580px;
-      box-shadow: 0 25px 60px rgba(16, 185, 129, 0.25);
-    }
-
-    .btn-home {
-      background: linear-gradient(135deg, #10b981, #059669);
+      background: #ef4444;
       color: white;
       border: none;
       padding: 14px 28px;
-      border-radius: 14px;
       font-size: 1.1rem;
       font-weight: 800;
+      border-radius: 12px;
       cursor: pointer;
+      box-shadow: 0 10px 25px rgba(239, 68, 68, 0.4);
+    }
+
+    /* Certificate Golden Styling */
+    .certificate-card {
+      background: linear-gradient(135deg, #fffbeb 0%, #ffffff 50%, #fef3c7 100%);
+      color: #1e1b4b;
+      border: 8px double #d97706;
+      border-radius: 20px;
+      padding: 36px 30px;
+      max-width: 680px;
+      margin: 0 auto;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      position: relative;
+      text-align: center;
+    }
+
+    .cert-crown { font-size: 56px; margin-bottom: 8px; }
+    .cert-title { font-size: 2.1rem; font-weight: 900; color: #b45309; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+    .cert-subtitle { font-size: 1.05rem; font-weight: 700; color: #78350f; margin-bottom: 20px; }
+    .cert-student-name {
+      font-size: 2.3rem;
+      font-weight: 900;
+      color: #1e1b4b;
+      text-decoration: underline;
+      text-decoration-color: #f59e0b;
+      margin: 12px 0 16px;
+      display: inline-block;
+    }
+
+    .cert-desc { font-size: 1.05rem; color: #334155; line-height: 1.6; margin-bottom: 20px; }
+    .cert-score-box {
+      background: #fef3c7;
+      border: 2px dashed #d97706;
+      padding: 12px 24px;
+      border-radius: 16px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .cert-score-num { font-size: 2.4rem; font-weight: 900; color: #b45309; }
+    .cert-footer-meta { font-size: 0.85rem; color: #64748b; margin-top: 16px; }
+
+    .action-buttons-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
       margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .btn-action {
+      padding: 12px 22px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 800;
+      border: none;
+      cursor: pointer;
       display: inline-flex;
       align-items: center;
       gap: 8px;
+      transition: all 0.2s;
+    }
+
+    .btn-print { background: #d97706; color: white; box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3); }
+    .btn-print:hover { background: #b45309; }
+    .btn-home { background: #4f46e5; color: white; box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3); }
+    .btn-home:hover { background: #4338ca; }
+
+    /* Print Styles */
+    @media print {
+      body { background: white !important; color: black !important; }
+      header, .warning-overlay, .action-buttons-row, .btn-action { display: none !important; }
+      main { padding: 0 !important; }
+      .practice-card { border: none !important; box-shadow: none !important; padding: 0 !important; background: transparent !important; }
+      .certificate-card {
+        border: 10px double #d97706 !important;
+        box-shadow: none !important;
+        margin: 20px auto !important;
+        max-width: 100% !important;
+        page-break-inside: avoid;
+      }
     }
   </style>
 </head>
@@ -360,9 +428,9 @@
   <!-- Fullscreen Warning Overlay -->
   <div class="warning-overlay" id="warningOverlay">
     <div class="warning-icon">⚠️</div>
-    <div class="warning-title">VIOLATION DETECTED! (PHÁT HIỆN RỜI MÀN HÌNH!)</div>
+    <div class="warning-title">PHÁT HIỆN RỜI MÀN HÌNH (VIOLATION DETECTED!)</div>
     <div class="warning-desc">
-      Học sinh đã chuyển sang tab khác hoặc thu nhỏ trình duyệt!<br>
+      Học sinh đã chuyển sang tab khác hoặc thu nhỏ cửa sổ trình duyệt!<br>
       Vi phạm này đã được <strong>tự động ghi nhận vào cơ sở dữ liệu của thầy/cô</strong>.<br>
       <span style="font-weight: 800; color: white;">Số lần vi phạm: <span id="violationCountDisplay">1</span></span>
     </div>
@@ -372,13 +440,13 @@
   <!-- Header -->
   <header>
     <div class="status-left">
-      <div class="badge-lock">🔒 KHÓA BÀI LÀM (STRICT LOCK)</div>
+      <div class="badge-lock" id="badgeModeDisplay">🔒 KHÓA BÀI LÀM (STRICT LOCK)</div>
       <div style="font-weight:700;">Học sinh: <span id="studentNameSpan" style="color:#38bdf8;">{{ student }}</span></div>
     </div>
 
     <div class="status-center">
-      <div style="font-size:0.85rem; color:var(--text-muted);">
-        Tiến độ ghi nhớ: <span id="masteredCount">0</span> / <span id="totalWordCount">0</span> từ đã thuộc
+      <div style="font-size:0.85rem; color:var(--text-muted);" id="progressSubtext">
+        Tiến độ: <span id="masteredCount">0</span> / <span id="totalWordCount">0</span>
       </div>
       <div class="progress-bar-container">
         <div class="progress-bar-fill" id="progressBar"></div>
@@ -396,7 +464,7 @@
   <main id="mainContainer">
     <div class="practice-card" id="cardContainer">
       <div style="font-size:1.2rem; font-weight:700; margin-bottom:20px; color:#38bdf8;">
-        Đang tải câu hỏi và hình ảnh minh họa...
+        Đang tải câu hỏi bài học từ slide...
       </div>
     </div>
   </main>
@@ -406,6 +474,7 @@
     const currentWeek = {{ week|tojson }};
     const currentMode = {{ mode|tojson }};
 
+    // Mode state
     let practiceQueue = [];
     let initialCount = 0;
     let masteredCount = 0;
@@ -416,52 +485,56 @@
     let isFinished = false;
     let mistakeList = [];
 
+    // Grand Challenge state
+    let grandQuestions = [];
+    let grandCurrentIdx = 0;
+
     // ==================== VISUAL ILLUSTRATION ENGINE (SVG GRAPHICS) ====================
     function getIllustrationSvg(svgType, word) {
       switch (svgType) {
         // Science Teeth
         case 'incisors':
           return `
-            <svg width="220" height="90" viewBox="0 0 220 90">
-              <rect x="10" y="10" width="80" height="70" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
-              <text x="50" y="40" font-size="28" text-anchor="middle">🦷</text>
-              <text x="50" y="65" font-size="11" font-weight="bold" fill="#0369a1" text-anchor="middle">Incisor (Răng cửa)</text>
-              <path d="M100 45 L130 45" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
-              <text x="170" y="42" font-size="34" text-anchor="middle">🍎</text>
-              <text x="170" y="70" font-size="11" font-weight="bold" fill="#22c55e" text-anchor="middle">Cắn / Cắt lát (Slice)</text>
+            <svg width="240" height="90" viewBox="0 0 240 90">
+              <rect x="10" y="10" width="90" height="70" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+              <text x="55" y="42" font-size="28" text-anchor="middle">🦷</text>
+              <text x="55" y="65" font-size="11" font-weight="bold" fill="#0369a1" text-anchor="middle">Incisor (Răng cửa)</text>
+              <path d="M110 45 L145 45" stroke="#38bdf8" stroke-width="3"/>
+              <text x="190" y="42" font-size="34" text-anchor="middle">🍎</text>
+              <text x="190" y="70" font-size="11" font-weight="bold" fill="#22c55e" text-anchor="middle">Cắn / Cắt lát (Slice)</text>
             </svg>
           `;
         case 'canines':
           return `
-            <svg width="220" height="90" viewBox="0 0 220 90">
-              <rect x="10" y="10" width="80" height="70" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
-              <text x="50" y="40" font-size="28" text-anchor="middle">🧛</text>
-              <text x="50" y="65" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">Canine (Răng nanh)</text>
-              <path d="M100 45 L130 45" stroke="#f59e0b" stroke-width="3"/>
-              <text x="170" y="42" font-size="32" text-anchor="middle">🍗</text>
-              <text x="170" y="70" font-size="11" font-weight="bold" fill="#ef4444" text-anchor="middle">Xé thịt dai (Tear)</text>
+            <svg width="240" height="90" viewBox="0 0 240 90">
+              <rect x="10" y="10" width="90" height="70" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+              <text x="55" y="42" font-size="28" text-anchor="middle">🧛</text>
+              <text x="55" y="65" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">Canine (Răng nanh)</text>
+              <path d="M110 45 L145 45" stroke="#f59e0b" stroke-width="3"/>
+              <text x="190" y="42" font-size="32" text-anchor="middle">🍗</text>
+              <text x="190" y="70" font-size="11" font-weight="bold" fill="#ef4444" text-anchor="middle">Xé thịt dai (Tear)</text>
             </svg>
           `;
         case 'premolars':
           return `
-            <svg width="220" height="90" viewBox="0 0 220 90">
-              <rect x="10" y="10" width="80" height="70" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
-              <text x="50" y="40" font-size="28" text-anchor="middle">🔨</text>
-              <text x="50" y="65" font-size="10" font-weight="bold" fill="#6d28d9" text-anchor="middle">Premolar (Tiền hàm)</text>
-              <path d="M100 45 L130 45" stroke="#a78bfa" stroke-width="3"/>
-              <text x="170" y="42" font-size="32" text-anchor="middle">🍞</text>
-              <text x="170" y="70" font-size="11" font-weight="bold" fill="#8b5cf6" text-anchor="middle">Nhai & Đập vụn (Chew)</text>
+            <svg width="240" height="90" viewBox="0 0 240 90">
+              <rect x="10" y="10" width="90" height="70" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+              <text x="55" y="42" font-size="28" text-anchor="middle">🔨</text>
+              <text x="55" y="65" font-size="10" font-weight="bold" fill="#6d28d9" text-anchor="middle">Premolar (Tiền hàm)</text>
+              <path d="M110 45 L145 45" stroke="#a78bfa" stroke-width="3"/>
+              <text x="190" y="42" font-size="32" text-anchor="middle">🍞</text>
+              <text x="190" y="70" font-size="11" font-weight="bold" fill="#8b5cf6" text-anchor="middle">Nhai & Đập vụn (Chew)</text>
             </svg>
           `;
         case 'molars':
           return `
-            <svg width="220" height="90" viewBox="0 0 220 90">
-              <rect x="10" y="10" width="80" height="70" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
-              <text x="50" y="40" font-size="28" text-anchor="middle">🪨</text>
-              <text x="50" y="65" font-size="11" font-weight="bold" fill="#15803d" text-anchor="middle">Molar (Răng hàm to)</text>
-              <path d="M100 45 L130 45" stroke="#22c55e" stroke-width="3"/>
-              <text x="170" y="42" font-size="32" text-anchor="middle">🥜</text>
-              <text x="170" y="70" font-size="11" font-weight="bold" fill="#16a34a" text-anchor="middle">Nghiền mịn (Grind)</text>
+            <svg width="240" height="90" viewBox="0 0 240 90">
+              <rect x="10" y="10" width="90" height="70" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+              <text x="55" y="42" font-size="28" text-anchor="middle">🪨</text>
+              <text x="55" y="65" font-size="11" font-weight="bold" fill="#15803d" text-anchor="middle">Molar (Răng hàm to)</text>
+              <path d="M110 45 L145 45" stroke="#22c55e" stroke-width="3"/>
+              <text x="190" y="42" font-size="32" text-anchor="middle">🥜</text>
+              <text x="190" y="70" font-size="11" font-weight="bold" fill="#16a34a" text-anchor="middle">Nghiền mịn (Grind)</text>
             </svg>
           `;
         case 'milk_teeth':
@@ -469,10 +542,10 @@
           return `
             <svg width="260" height="85" viewBox="0 0 260 85">
               <rect x="10" y="8" width="110" height="68" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
-              <text x="65" y="32" font-size="20" text-anchor="middle">👶 Milk: 20</text>
+              <text x="65" y="32" font-size="18" text-anchor="middle">👶 Milk: 20</text>
               <text x="65" y="55" font-size="11" fill="#78350f" text-anchor="middle">Trẻ em &lt; 6 tuổi</text>
               <rect x="140" y="8" width="110" height="68" rx="8" fill="#dcfce7" stroke="#10b981" stroke-width="2"/>
-              <text x="195" y="32" font-size="20" text-anchor="middle">🧑 Adult: 32</text>
+              <text x="195" y="32" font-size="18" text-anchor="middle">🧑 Adult: 32</text>
               <text x="195" y="55" font-size="11" fill="#065f46" text-anchor="middle">Người lớn (vĩnh viễn)</text>
             </svg>
           `;
@@ -480,121 +553,145 @@
         // Machine Verbs
         case 'turn_dial':
           return `
-            <svg width="220" height="85" viewBox="0 0 220 85">
+            <svg width="240" height="85" viewBox="0 0 240 85">
               <circle cx="50" cy="42" r="28" fill="#334155" stroke="#38bdf8" stroke-width="3"/>
               <line x1="50" y1="42" x2="50" y2="20" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
-              <path d="M90 28 A 20 20 0 0 1 120 50" fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="3,3"/>
-              <text x="160" y="38" font-size="15" font-weight="bold" fill="#38bdf8">TURN A DIAL</text>
-              <text x="160" y="58" font-size="12" fill="#cbd5e1">Xoay núm vặn 🎛️</text>
+              <text x="140" y="38" font-size="15" font-weight="bold" fill="#38bdf8">TURN A DIAL</text>
+              <text x="140" y="58" font-size="12" fill="#cbd5e1">Xoay núm vặn 🎛️</text>
             </svg>
           `;
         case 'push_button':
           return `
-            <svg width="220" height="85" viewBox="0 0 220 85">
+            <svg width="240" height="85" viewBox="0 0 240 85">
               <circle cx="50" cy="42" r="26" fill="#ef4444" stroke="#fecaca" stroke-width="3"/>
               <circle cx="50" cy="42" r="18" fill="#991b1b"/>
               <text x="50" y="48" font-size="20" fill="white" text-anchor="middle">👇</text>
-              <text x="160" y="38" font-size="15" font-weight="bold" fill="#ef4444">PUSH A BUTTON</text>
-              <text x="160" y="58" font-size="12" fill="#cbd5e1">Bấm nút tròn 🔴</text>
+              <text x="140" y="38" font-size="15" font-weight="bold" fill="#ef4444">PUSH A BUTTON</text>
+              <text x="140" y="58" font-size="12" fill="#cbd5e1">Bấm nút tròn 🔴</text>
             </svg>
           `;
         case 'press_switch':
           return `
-            <svg width="220" height="85" viewBox="0 0 220 85">
+            <svg width="240" height="85" viewBox="0 0 240 85">
               <rect x="25" y="18" width="48" height="50" rx="6" fill="#064e3b" stroke="#22c55e" stroke-width="2"/>
               <circle cx="49" cy="30" r="5" fill="#22c55e"/>
               <text x="49" y="56" font-size="10" font-weight="bold" fill="#86efac" text-anchor="middle">ON</text>
-              <text x="160" y="38" font-size="15" font-weight="bold" fill="#22c55e">PRESS A SWITCH</text>
-              <text x="160" y="58" font-size="12" fill="#cbd5e1">Bật công tắc điện ⚡</text>
+              <text x="140" y="38" font-size="15" font-weight="bold" fill="#22c55e">PRESS A SWITCH</text>
+              <text x="140" y="58" font-size="12" fill="#cbd5e1">Bật công tắc điện ⚡</text>
             </svg>
           `;
         case 'pull_handle':
           return `
-            <svg width="220" height="85" viewBox="0 0 220 85">
+            <svg width="240" height="85" viewBox="0 0 240 85">
               <rect x="42" y="30" width="16" height="40" rx="6" fill="#64748b"/>
               <circle cx="50" cy="22" r="14" fill="#f59e0b" stroke="white" stroke-width="2"/>
-              <path d="M75 25 L75 55 M70 50 L75 58 L80 50" stroke="#f59e0b" stroke-width="3" fill="none"/>
-              <text x="160" y="38" font-size="15" font-weight="bold" fill="#fbbf24">PULL A HANDLE</text>
-              <text x="160" y="58" font-size="12" fill="#cbd5e1">Kéo cần gạt 🕹️</text>
+              <text x="140" y="38" font-size="15" font-weight="bold" fill="#fbbf24">PULL A HANDLE</text>
+              <text x="140" y="58" font-size="12" fill="#cbd5e1">Kéo cần gạt 🕹️</text>
             </svg>
           `;
 
         // Science Light & Opacity
         case 'transparent':
           return `
-            <svg width="240" height="85" viewBox="0 0 240 85">
+            <svg width="250" height="85" viewBox="0 0 250 85">
               <text x="25" y="48" font-size="28">🔦</text>
               <line x1="55" y1="42" x2="110" y2="42" stroke="#fde047" stroke-width="6"/>
               <rect x="110" y="15" width="20" height="55" fill="rgba(56, 189, 248, 0.3)" stroke="#38bdf8" stroke-width="2"/>
               <line x1="130" y1="42" x2="190" y2="42" stroke="#fde047" stroke-width="6"/>
               <text x="195" y="48" font-size="20">👁️</text>
-              <text x="120" y="80" font-size="11" fill="#38bdf8" font-weight="bold" text-anchor="middle">Xuyên qua 100% (Nhìn rõ)</text>
+              <text x="125" y="80" font-size="11" fill="#38bdf8" font-weight="bold" text-anchor="middle">Xuyên qua 100% (Nhìn rõ thấu)</text>
             </svg>
           `;
         case 'translucent':
           return `
-            <svg width="240" height="85" viewBox="0 0 240 85">
+            <svg width="250" height="85" viewBox="0 0 250 85">
               <text x="25" y="48" font-size="28">🔦</text>
               <line x1="55" y1="42" x2="110" y2="42" stroke="#fde047" stroke-width="6"/>
               <rect x="110" y="15" width="20" height="55" fill="#475569" stroke="#94a3b8" stroke-width="2"/>
               <line x1="130" y1="36" x2="175" y2="30" stroke="#fde047" stroke-width="2" stroke-dasharray="3,3"/>
               <line x1="130" y1="48" x2="175" y2="54" stroke="#fde047" stroke-width="2" stroke-dasharray="3,3"/>
               <text x="185" y="48" font-size="20">🕶️</text>
-              <text x="120" y="80" font-size="11" fill="#f59e0b" font-weight="bold" text-anchor="middle">Qua một phần (Nhìn mờ)</text>
+              <text x="125" y="80" font-size="11" fill="#f59e0b" font-weight="bold" text-anchor="middle">Qua một phần (Nhìn mờ mờ)</text>
             </svg>
           `;
         case 'opaque':
           return `
-            <svg width="240" height="85" viewBox="0 0 240 85">
+            <svg width="250" height="85" viewBox="0 0 250 85">
               <text x="25" y="48" font-size="28">🔦</text>
               <line x1="55" y1="42" x2="110" y2="42" stroke="#fde047" stroke-width="6"/>
-              <rect x="110" y="12" width="22" height="60" fill="#78350f" stroke="#b45309" stroke-width="2"/>
-              <rect x="140" y="20" width="55" height="45" fill="#020617" opacity="0.8" rx="4"/>
-              <text x="168" y="48" font-size="10" fill="#94a3b8" font-weight="bold" text-anchor="middle">SHADOW</text>
-              <text x="120" y="82" font-size="11" fill="#ef4444" font-weight="bold" text-anchor="middle">Chặn 100% &rarr; Tạo bóng đen</text>
-            </svg>
-          `;
-        case 'straight_line':
-          return `
-            <svg width="240" height="75" viewBox="0 0 240 75">
-              <circle cx="30" cy="38" r="14" fill="#f59e0b"/>
-              <line x1="50" y1="38" x2="200" y2="38" stroke="#fde047" stroke-width="5"/>
-              <polygon points="200,32 215,38 200,44" fill="#fde047"/>
-              <text x="130" y="62" font-size="12" fill="#cbd5e1" text-anchor="middle">Truyền thẳng (Không thể bẻ cong)</text>
+              <rect x="110" y="15" width="22" height="55" fill="#334155" stroke="#ef4444" stroke-width="2"/>
+              <line x1="110" y1="15" x2="132" y2="70" stroke="#ef4444" stroke-width="2"/>
+              <text x="185" y="48" font-size="22">👤</text>
+              <text x="125" y="80" font-size="11" fill="#ef4444" font-weight="bold" text-anchor="middle">Chặn tia sáng &rarr; Tạo bóng đen</text>
             </svg>
           `;
 
-        // Maths
+        // Maths Symbols
         case 'greater_than':
           return `
-            <svg width="220" height="80" viewBox="0 0 220 80">
-              <text x="40" y="48" font-size="28" font-weight="bold" fill="#38bdf8">400</text>
-              <text x="110" y="52" font-size="36" font-weight="900" fill="#22c55e">&gt;</text>
-              <text x="180" y="48" font-size="28" font-weight="bold" fill="#94a3b8">300</text>
-              <text x="110" y="74" font-size="11" fill="#86efac" font-weight="bold" text-anchor="middle">Cá sấu ngoạm số lớn 🐊</text>
+            <svg width="240" height="85" viewBox="0 0 240 85">
+              <text x="40" y="52" font-size="28" font-weight="bold" fill="#38bdf8">400</text>
+              <text x="110" y="54" font-size="38" font-weight="bold" fill="#ef4444">&gt;</text>
+              <text x="170" y="52" font-size="28" font-weight="bold" fill="#94a3b8">300</text>
+              <text x="120" y="78" font-size="11" fill="#38bdf8" text-anchor="middle">Cá sấu há miệng về số lớn hơn 🐊</text>
             </svg>
           `;
+        case 'less_than':
+          return `
+            <svg width="240" height="85" viewBox="0 0 240 85">
+              <text x="40" y="52" font-size="28" font-weight="bold" fill="#94a3b8">200</text>
+              <text x="110" y="54" font-size="38" font-weight="bold" fill="#ef4444">&lt;</text>
+              <text x="170" y="52" font-size="28" font-weight="bold" fill="#38bdf8">500</text>
+              <text x="120" y="78" font-size="11" fill="#38bdf8" text-anchor="middle">Mũi nhọn đâm số bé hơn 🐊</text>
+            </svg>
+          `;
+
+        // Maths Place Value
         case 'place_value':
         case 'expanded_form':
           return `
-            <svg width="240" height="85" viewBox="0 0 240 85">
-              <rect x="15" y="10" width="55" height="50" fill="#e0e7ff" stroke="#4f46e5" stroke-width="1.5"/>
-              <text x="42" y="40" font-size="11" font-weight="bold" fill="#4338ca" text-anchor="middle">100s</text>
-              <rect x="85" y="10" width="16" height="50" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
-              <text x="93" y="40" font-size="11" font-weight="bold" fill="#15803d" text-anchor="middle">10s</text>
-              <rect x="118" y="44" width="16" height="16" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-              <text x="126" y="56" font-size="10" font-weight="bold" fill="#b45309" text-anchor="middle">1s</text>
-              <text x="185" y="40" font-size="18" font-weight="bold" fill="#38bdf8">569</text>
-              <text x="185" y="60" font-size="9" fill="#94a3b8">500+60+9</text>
+            <svg width="260" height="85" viewBox="0 0 260 85">
+              <rect x="15" y="15" width="65" height="45" rx="6" fill="#1e3a8a"/>
+              <text x="47" y="42" font-size="18" font-weight="bold" fill="#60a5fa" text-anchor="middle">500</text>
+              <text x="47" y="55" font-size="9" fill="#93c5fd" text-anchor="middle">Hàng Trăm</text>
+              <text x="95" y="42" font-size="20" fill="#94a3b8">+</text>
+              <rect x="115" y="15" width="50" height="45" rx="6" fill="#065f46"/>
+              <text x="140" y="42" font-size="18" font-weight="bold" fill="#34d399" text-anchor="middle">60</text>
+              <text x="140" y="55" font-size="9" fill="#a7f3d0" text-anchor="middle">Hàng Chục</text>
+              <text x="180" y="42" font-size="20" fill="#94a3b8">+</text>
+              <rect x="200" y="15" width="40" height="45" rx="6" fill="#78350f"/>
+              <text x="220" y="42" font-size="18" font-weight="bold" fill="#fbbf24" text-anchor="middle">9</text>
+              <text x="220" y="55" font-size="9" fill="#fde68a" text-anchor="middle">Đơn vị</text>
+            </svg>
+          `;
+
+        // Light sources & Reflector
+        case 'light_source':
+        case 'light':
+          return `
+            <svg width="220" height="85" viewBox="0 0 220 85">
+              <text x="60" y="54" font-size="44" text-anchor="middle">☀️</text>
+              <text x="140" y="38" font-size="15" font-weight="bold" fill="#facc15">LIGHT SOURCE</text>
+              <text x="140" y="58" font-size="12" fill="#cbd5e1">Nguồn tự phát sáng 💡</text>
+            </svg>
+          `;
+        case 'reflector':
+          return `
+            <svg width="220" height="85" viewBox="0 0 220 85">
+              <text x="60" y="54" font-size="44" text-anchor="middle">🪞</text>
+              <text x="140" y="38" font-size="15" font-weight="bold" fill="#38bdf8">REFLECTOR</text>
+              <text x="140" y="58" font-size="12" fill="#cbd5e1">Chỉ phản chiếu ánh sáng</text>
             </svg>
           `;
 
         default:
-          return `<div style="font-size:52px; margin-bottom:8px;">${word.emoji || '🌟'}</div>`;
+          return `
+            <div style="font-size:48px; line-height:1;">${word.emoji || '📖'}</div>
+          `;
       }
     }
 
-    // Audio synthesizer
+    // ==================== AUDIO SYNTHESIZER ====================
     let audioCtx = null;
     function getAudioCtx() {
       if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -677,7 +774,7 @@
     function handleBeforeUnload(e) {
       if (!isFinished) {
         e.preventDefault();
-        e.returnValue = 'Strict Mode Active: You cannot quit without finishing your practice session!';
+        e.returnValue = 'Strict Mode Active: You cannot quit without finishing your session!';
         return e.returnValue;
       }
     }
@@ -707,8 +804,216 @@
       }, 1000);
     }
 
-    // ==================== PRACTICE ENGINE ====================
-    async function loadPracticeQueue() {
+    // ==================== DISPATCHER: MODE 1 (VOCAB) VS MODE 2 (CHALLENGE) ====================
+    async function initSession() {
+      if (currentMode === 'challenge') {
+        document.getElementById('badgeModeDisplay').textContent = '🏆 BÀI THI GRAND CHALLENGE (10 CÂU)';
+        document.getElementById('progressSubtext').innerHTML = `Tiến độ thi: <span id="currentQuestionNum">1</span> / 10 câu`;
+        loadGrandChallenge();
+      } else {
+        document.getElementById('badgeModeDisplay').textContent = '🧠 ĐẤU TRƯỜNG TỪ VỰNG (MASTERY)';
+        document.getElementById('progressSubtext').innerHTML = `Tiến độ ghi nhớ: <span id="masteredCount">0</span> / <span id="totalWordCount">0</span> từ đã thuộc`;
+        loadVocabArena();
+      }
+    }
+
+    // =================================================================================
+    // MODE 2: GRAND CHALLENGE EXAM ENGINE (10 GRADED QUESTIONS FROM SLIDES)
+    // =================================================================================
+    async function loadGrandChallenge() {
+      try {
+        const resp = await fetch(`/api/grand_challenge?week=${currentWeek}`);
+        grandQuestions = await resp.json();
+        initialCount = grandQuestions.length;
+        renderGrandQuestion();
+      } catch (e) {
+        console.error('Error loading grand challenge:', e);
+      }
+    }
+
+    function renderGrandQuestion() {
+      if (grandCurrentIdx >= grandQuestions.length) {
+        finishGrandChallenge();
+        return;
+      }
+
+      const qObj = grandQuestions[grandCurrentIdx];
+      document.getElementById('currentQuestionNum').textContent = grandCurrentIdx + 1;
+      const pct = Math.round((grandCurrentIdx / grandQuestions.length) * 100);
+      document.getElementById('progressBar').style.width = pct + '%';
+
+      let subjectClass = 'badge-english';
+      let subjectIcon = '📘';
+      if (qObj.subject === 'Mathematics') {
+        subjectClass = 'badge-maths';
+        subjectIcon = '📐';
+      } else if (qObj.subject === 'Science') {
+        subjectClass = 'badge-science';
+        subjectIcon = '🔬';
+      }
+
+      const container = document.getElementById('cardContainer');
+      container.innerHTML = `
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+          <span class="subject-badge ${subjectClass}">${subjectIcon} ${qObj.subject}</span>
+          <span style="font-weight:700; color:#94a3b8; font-size:0.9rem;">Câu ${grandCurrentIdx + 1} / 10 • (10 điểm)</span>
+        </div>
+
+        <div class="exam-question-text">
+          <span>${qObj.question}</span>
+          <button class="speak-btn" onclick="speakText('${qObj.audio || qObj.question}')" title="Nghe câu hỏi">🔊</button>
+        </div>
+
+        <div class="options-grid">
+          ${qObj.options.map((opt, idx) => `
+            <button class="option-btn" onclick="handleGrandChoice(this, '${opt.replace(/'/g, "\\'")}', '${qObj.answer.replace(/'/g, "\\'")}')">
+              <span style="color:#38bdf8; font-weight:800;">${String.fromCharCode(65 + idx)}.</span>
+              <span>${opt}</span>
+            </button>
+          `).join('')}
+        </div>
+
+        <div class="explanation-box" id="explanationBox"></div>
+      `;
+
+      speakText(qObj.audio || qObj.question);
+    }
+
+    function handleGrandChoice(btn, selectedOpt, correctOpt) {
+      const parent = btn.parentElement;
+      parent.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
+      const expBox = document.getElementById('explanationBox');
+      const qObj = grandQuestions[grandCurrentIdx];
+
+      const isCorrect = (selectedOpt.trim() === correctOpt.trim());
+
+      if (isCorrect) {
+        btn.classList.add('correct');
+        playSound('correct');
+        score += 10;
+        document.getElementById('scoreDisplay').textContent = score;
+
+        expBox.style.display = 'block';
+        expBox.style.background = 'rgba(6, 78, 59, 0.5)';
+        expBox.style.color = '#86efac';
+        expBox.style.border = '1px solid #10b981';
+        expBox.innerHTML = `✓ Chính xác! (+10 điểm)<br><span style="font-size:0.9rem; color:#cbd5e1;">💡 <strong>Slide bài học:</strong> ${qObj.explanation}</span>`;
+      } else {
+        btn.classList.add('wrong');
+        // Highlight correct button
+        parent.querySelectorAll('.option-btn').forEach(b => {
+          if (b.textContent.includes(correctOpt)) {
+            b.classList.add('correct');
+          }
+        });
+        playSound('wrong');
+
+        expBox.style.display = 'block';
+        expBox.style.background = 'rgba(127, 29, 29, 0.5)';
+        expBox.style.color = '#fca5a5';
+        expBox.style.border = '1px solid #ef4444';
+        expBox.innerHTML = `✗ Chưa chính xác! Đáp án đúng: <strong>${qObj.answer}</strong><br><span style="font-size:0.9rem; color:#cbd5e1;">💡 <strong>Slide bài học:</strong> ${qObj.explanation}</span>`;
+
+        mistakeList.push({
+          item: qObj.question,
+          user_answer: selectedOpt,
+          correct_answer: qObj.answer
+        });
+      }
+
+      grandCurrentIdx++;
+      setTimeout(() => {
+        renderGrandQuestion();
+      }, 2300);
+    }
+
+    async function finishGrandChallenge() {
+      isFinished = true;
+      clearInterval(timerInterval);
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+
+      document.getElementById('progressBar').style.width = '100%';
+
+      await fetch('/api/submit_attempt', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          student_name: studentName,
+          week: currentWeek,
+          subject: 'Grand Challenge Exam',
+          score: score,
+          max_score: 100,
+          tab_switches: tabSwitches,
+          duration_seconds: secondsElapsed,
+          status: 'COMPLETED',
+          mistakes: mistakeList
+        })
+      });
+
+      playSound('fanfare');
+
+      let ratingTitle = 'XUẤT SẮC ⭐⭐⭐';
+      let ratingColor = '#b45309';
+      if (score < 50) {
+        ratingTitle = 'CẦN CỐ GẮNG ÔN THÊM ⭐';
+        ratingColor = '#ef4444';
+      } else if (score < 80) {
+        ratingTitle = 'ĐẠT KẾT QUẢ TỐT ⭐⭐';
+        ratingColor = '#0284c7';
+      }
+
+      const weekNumber = currentWeek.replace('week', '');
+
+      const container = document.getElementById('cardContainer');
+      container.innerHTML = `
+        <div class="certificate-card" id="certificateContainer">
+          <div class="cert-crown">🏆</div>
+          <div class="cert-title">CERTIFICATE OF EXCELLENCE</div>
+          <div class="cert-subtitle">GIẤY KHEN HOÀN THÀNH XUẤT SẮC BÀI THI TỔNG HỢP</div>
+
+          <div style="font-size:1.05rem; color:#475569;">Vinh danh thành tích học tập của em:</div>
+          <div class="cert-student-name">${studentName}</div>
+
+          <p class="cert-desc">
+            Đã hoàn thành bài kiểm tra chuẩn đề cương <strong>Grade 3 Bilingual Recap • Tuần ${weekNumber}</strong><br>
+            bao quát 3 phân môn: <strong>English • Mathematics • Science</strong>
+          </p>
+
+          <div class="cert-score-box">
+            <div style="font-size:0.9rem; font-weight:700; color:#78350f;">KẾT QUẢ ĐẠT ĐƯỢC</div>
+            <div class="cert-score-num">${score} / 100</div>
+            <div style="font-weight:800; color:${ratingColor}; font-size:1.1rem; margin-top:4px;">${ratingTitle}</div>
+          </div>
+
+          <div style="background:#f1f5f9; padding:10px 16px; border-radius:12px; margin:10px auto; max-width:440px; font-size:0.9rem; text-align:left;">
+            <div>⏱️ <strong>Thời gian làm bài:</strong> ${Math.floor(secondsElapsed/60)} phút ${secondsElapsed%60} giây</div>
+            <div>🛡️ <strong>Kỷ luật phòng thi:</strong> ${tabSwitches === 0 ? '<span style="color:#10b981; font-weight:700;">Tuyệt đối nghiêm túc (0 lần đổi tab) 🌟</span>' : '<span style="color:#ef4444; font-weight:700;">Ghi nhận ' + tabSwitches + ' lần rời tab ⚠️</span>'}</div>
+            <div>📅 <strong>Thời gian nộp bài:</strong> ${new Date().toLocaleString('vi-VN')}</div>
+          </div>
+
+          <div class="cert-footer-meta">
+            Cambridge Primary Grade 3 Integrated Program • Hệ Thống Kiểm Tra Đánh Giá Tự Động
+          </div>
+        </div>
+
+        <div class="action-buttons-row">
+          <button class="btn-action btn-print" onclick="window.print()">
+            <span>🖨️ In Giấy Khen / Lưu PDF</span>
+          </button>
+          <button class="btn-action btn-home" onclick="window.location.href='/'">
+            <span>🏠 Về Trang Chủ</span>
+          </button>
+          <button class="btn-action" style="background:#0284c7; color:white;" onclick="window.location.reload()">
+            <span>🔄 Làm Lại Bài Thi</span>
+          </button>
+        </div>
+      `;
+    }
+
+    // =================================================================================
+    // MODE 1: VOCAB MASTERY ARENA (LEITNER SPACED REPETITION DRILL)
+    // =================================================================================
+    async function loadVocabArena() {
       try {
         const limitParam = new URLSearchParams(window.location.search).get('limit') || '10';
         const resp = await fetch(`/api/vocab_bank?week=${currentWeek}&limit=${limitParam}`);
@@ -716,29 +1021,29 @@
         practiceQueue = words.sort(() => Math.random() - 0.5);
         initialCount = practiceQueue.length;
         document.getElementById('totalWordCount').textContent = initialCount;
-        renderNextItem();
+        renderNextVocabItem();
       } catch (e) {
-        console.error('Error loading bank:', e);
+        console.error('Error loading vocab bank:', e);
       }
     }
 
     let currentItem = null;
 
-    function renderNextItem() {
+    function renderNextVocabItem() {
       if (practiceQueue.length === 0) {
-        finishPractice();
+        finishVocabArena();
         return;
       }
 
       currentItem = practiceQueue[0];
       const container = document.getElementById('cardContainer');
-      const options = generateOptions(currentItem);
+      const options = generateVocabOptions(currentItem);
       const visualSvg = getIllustrationSvg(currentItem.svg_type, currentItem);
 
       container.innerHTML = `
         <div class="target-word-title">
           <span>${currentItem.word.toUpperCase()}</span>
-          <button class="speak-btn" onclick="speakText('${currentItem.audio || currentItem.word}')" title="Bấm để nghe phát âm chuẩn">🔊</button>
+          <button class="speak-btn" onclick="speakText('${currentItem.audio || currentItem.word}')" title="Phát âm chuẩn">🔊</button>
         </div>
 
         <!-- Visual Illustration -->
@@ -758,7 +1063,7 @@
 
         <!-- Collocation in English & Vietnamese -->
         <div class="collocation-text">
-          <strong>Cụm từ mẫu:</strong> "${currentItem.colloc}"<br>
+          <strong>Cụm từ mẫu trong slide:</strong> "${currentItem.colloc}"<br>
           <span style="font-size:0.85rem; color:#94a3b8;">&rarr; ${currentItem.colloc_vi}</span>
         </div>
 
@@ -766,8 +1071,8 @@
           Chọn định nghĩa tiếng Anh chính xác:
         </p>
         <div class="options-grid">
-          ${options.map((opt, idx) => `
-            <button class="option-btn" onclick="handleChoice(this, ${opt.isCorrect})">
+          ${options.map((opt) => `
+            <button class="option-btn" onclick="handleVocabChoice(this, ${opt.isCorrect})">
               ${opt.text}
             </button>
           `).join('')}
@@ -778,7 +1083,7 @@
       speakText(currentItem.word);
     }
 
-    function generateOptions(target) {
+    function generateVocabOptions(target) {
       const correct = { text: target.meaning, isCorrect: true };
       const genericDistractors = [
         "blocks all light completely",
@@ -791,7 +1096,10 @@
         "twenty baby teeth in children",
         "energy we use to see the world",
         "marks used to count data in fives",
-        "all light passes through easily"
+        "all light passes through easily",
+        "an action word that we do",
+        "a person, place, animal, or thing",
+        "asks for a reason with because"
       ].filter(d => d.toLowerCase() !== target.meaning.toLowerCase());
 
       const shuffledDistractors = genericDistractors.sort(() => Math.random() - 0.5).slice(0, 3);
@@ -799,7 +1107,7 @@
       return opts.sort(() => Math.random() - 0.5);
     }
 
-    async function handleChoice(btn, isCorrect) {
+    async function handleVocabChoice(btn, isCorrect) {
       const parent = btn.parentElement;
       parent.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
       const expBox = document.getElementById('explanationBox');
@@ -815,8 +1123,10 @@
         const pct = Math.min(100, Math.round((masteredCount / initialCount) * 100));
         document.getElementById('progressBar').style.width = pct + '%';
 
+        expBox.style.display = 'block';
         expBox.style.background = 'rgba(6, 78, 59, 0.5)';
         expBox.style.color = '#86efac';
+        expBox.style.border = '1px solid #10b981';
         expBox.innerHTML = `✓ Xuất sắc! Bạn đã thuộc từ "${currentItem.word}" &rarr; ${currentItem.vietnamese}`;
 
         fetch('/api/record_vocab', {
@@ -834,9 +1144,11 @@
       } else {
         btn.classList.add('wrong');
         playSound('wrong');
+        expBox.style.display = 'block';
         expBox.style.background = 'rgba(127, 29, 29, 0.5)';
         expBox.style.color = '#fca5a5';
-        expBox.innerHTML = `✗ Chưa đúng! "${currentItem.word}" có nghĩa là: <strong>${currentItem.vietnamese}</strong>. Từ này sẽ quay lại để bạn làm lại nhé!`;
+        expBox.style.border = '1px solid #ef4444';
+        expBox.innerHTML = `✗ Chưa đúng! "${currentItem.word}" có nghĩa là: <strong>${currentItem.vietnamese}</strong>.<br>Từ này sẽ quay lại để bạn làm lại cho thuộc nhé!`;
 
         mistakeList.push({
           item: currentItem.word,
@@ -855,17 +1167,17 @@
           })
         });
 
-        // Re-queue for Spaced Repetition mastery
+        // Re-queue for Leitner Spaced Repetition mastery
         const failedItem = practiceQueue.shift();
         practiceQueue.push(failedItem);
       }
 
       setTimeout(() => {
-        renderNextItem();
-      }, 1600);
+        renderNextVocabItem();
+      }, 1800);
     }
 
-    async function finishPractice() {
+    async function finishVocabArena() {
       isFinished = true;
       clearInterval(timerInterval);
       window.removeEventListener('beforeunload', handleBeforeUnload);
@@ -890,29 +1202,34 @@
       playSound('fanfare');
       const container = document.getElementById('cardContainer');
       container.innerHTML = `
-        <div class="finish-card" style="margin:0 auto;">
+        <div style="margin:0 auto; padding:20px;">
           <div style="font-size:54px;">🎉🏆🥇</div>
-          <h2 style="font-size:2rem; color:#34d399; margin:12px 0 6px;">CHÚC MỪNG BẠN ĐÃ HOÀN THÀNH!</h2>
-          <p style="font-size:1.1rem; color:#cbd5e1;">Toàn bộ ${initialCount} từ vựng đã được bạn ghi nhớ và làm đúng 100%!</p>
+          <h2 style="font-size:2rem; color:#34d399; margin:12px 0 6px;">CHÚC MỪNG BẠN ĐÃ THUỘC 100%!</h2>
+          <p style="font-size:1.1rem; color:#cbd5e1;">Toàn bộ ${initialCount} từ vựng đã được bạn ghi nhớ vững vàng!</p>
           <div style="background:#0f172a; padding:16px; border-radius:14px; margin:20px 0; text-align:left; font-size:0.95rem;">
             <p><strong>Học sinh:</strong> ${studentName}</p>
-            <p><strong>Điểm số đạt được:</strong> ${score} / ${maxPossible} (${Math.round((score/maxPossible)*100)}%)</p>
-            <p><strong>Thời gian làm bài:</strong> ${Math.floor(secondsElapsed/60)} phút ${secondsElapsed%60} giây</p>
-            <p><strong>Số lần đổi tab (vi phạm):</strong> <span style="color:${tabSwitches > 0 ? '#ef4444' : '#10b981'}; font-weight:700;">${tabSwitches}</span></p>
-            <p style="color:#38bdf8; margin-top:8px;">✓ Kết quả đã được gửi thành công về Cơ sở dữ liệu của Thầy/Cô!</p>
+            <p><strong>Điểm tích lũy:</strong> ${score} điểm ⭐</p>
+            <p><strong>Thời gian luyện:</strong> ${Math.floor(secondsElapsed/60)} phút ${secondsElapsed%60} giây</p>
+            <p><strong>Số lần đổi tab:</strong> <span style="color:${tabSwitches > 0 ? '#ef4444' : '#10b981'}; font-weight:700;">${tabSwitches}</span></p>
+            <p style="color:#38bdf8; margin-top:8px;">✓ Kết quả luyện tập đã được cập nhật thành công lên Bảng Giáo viên!</p>
           </div>
-          <button class="btn-home" onclick="window.location.href='/'">
-            <span>Quay về trang chủ</span>
-            <span>🏠</span>
-          </button>
+          <div class="action-buttons-row">
+            <button class="btn-action btn-home" onclick="window.location.href='/'">
+              <span>🏠 Về Trang Chủ</span>
+            </button>
+            <button class="btn-action" style="background:#0284c7; color:white;" onclick="window.location.reload()">
+              <span>🔄 Luyện Tiếp Lượt Mới</span>
+            </button>
+          </div>
         </div>
       `;
     }
 
+    // Launch on DOM ready
     window.addEventListener('DOMContentLoaded', () => {
       activateStrictLock();
       startTimer();
-      loadPracticeQueue();
+      initSession();
     });
   </script>
 </body>

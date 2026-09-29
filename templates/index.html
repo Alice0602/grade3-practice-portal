@@ -40,7 +40,7 @@
       background: white;
       border-radius: 24px;
       padding: 36px 30px;
-      max-width: 580px;
+      max-width: 600px;
       width: 100%;
       box-shadow: 0 20px 40px -10px rgba(79, 70, 229, 0.15), 0 10px 20px -5px rgba(0, 0, 0, 0.05);
       border: 2px solid #e2e8f0;
@@ -48,8 +48,8 @@
     }
 
     .portal-icon {
-      font-size: 54px;
-      margin-bottom: 12px;
+      font-size: 52px;
+      margin-bottom: 10px;
       display: inline-block;
       animation: bounceSlow 3s infinite ease-in-out;
     }
@@ -74,7 +74,7 @@
 
     .form-group {
       text-align: left;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     label {
@@ -106,13 +106,13 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .radio-card {
       border: 2px solid #e2e8f0;
       border-radius: 14px;
-      padding: 14px 10px;
+      padding: 12px 10px;
       text-align: center;
       cursor: pointer;
       transition: all 0.2s;
@@ -132,12 +132,25 @@
       box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
     }
 
+    /* Mode description callout */
+    .mode-desc-box {
+      background: #f1f5f9;
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-top: 10px;
+      font-size: 0.85rem;
+      color: #334155;
+      line-height: 1.5;
+      text-align: left;
+      border-left: 4px solid var(--primary);
+    }
+
     .strict-alert-box {
       background: #fef2f2;
       border: 2px dashed #ef4444;
       border-radius: 14px;
       padding: 14px;
-      margin-bottom: 24px;
+      margin: 18px 0;
       text-align: left;
       font-size: 0.85rem;
       color: #991b1b;
@@ -198,25 +211,25 @@
   <div class="main-container">
     <div class="portal-icon">🎓</div>
     <h1>Grade 3 Learning Mastery</h1>
-    <p class="portal-subtitle">Smart Vocabulary Retention & Practice Platform</p>
+    <p class="portal-subtitle">Cổng Luyện Tập & Kiểm Tra Chuẩn Slide Bài Học</p>
 
     <div class="form-group">
-      <label for="studentName">👤 Student's Full Name</label>
-      <input type="text" id="studentName" class="input-field" placeholder="Enter student name (e.g. Bon, Alex, Sarah)" autofocus>
+      <label for="studentName">👤 Tên học sinh (Student's Full Name)</label>
+      <input type="text" id="studentName" class="input-field" placeholder="Nhập tên học sinh (ví dụ: Bon, Alex, Sarah...)" autofocus>
     </div>
 
     <div class="form-group">
-      <label>📚 Choose Lesson Week</label>
+      <label>📚 Chọn tuần học (Lesson Week)</label>
       <div class="select-grid" id="weekGrid">
         <div class="radio-card" data-val="week1" onclick="selectWeek('week1')">
           <div style="font-size:24px;">🌱</div>
           <div>Week 1</div>
-          <span style="font-size:0.75rem; color:#64748b;">Light & Rules</span>
+          <span style="font-size:0.75rem; color:#64748b;">Rules & Light</span>
         </div>
         <div class="radio-card" data-val="week2" onclick="selectWeek('week2')">
           <div style="font-size:24px;">🐊</div>
           <div>Week 2</div>
-          <span style="font-size:0.75rem; color:#64748b;">Past Verbs & Light</span>
+          <span style="font-size:0.75rem; color:#64748b;">Past Verbs & Opacity</span>
         </div>
         <div class="radio-card selected" data-val="week3" onclick="selectWeek('week3')">
           <div style="font-size:24px;">🔭</div>
@@ -227,51 +240,56 @@
     </div>
 
     <div class="form-group">
-      <label>🎯 Choose Practice Mode</label>
+      <label>🎯 Chọn hình thức: Luyện tập hay Kiểm tra?</label>
       <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;" id="modeGrid">
         <div class="radio-card selected" data-val="vocab" onclick="selectMode('vocab')">
           <div style="font-size:26px;">🧠</div>
-          <div style="font-weight:700;">Vocab Mastery Arena</div>
-          <span style="font-size:0.75rem; color:#64748b;">Drill until 100% remembered!</span>
+          <div style="font-weight:700;">Luyện Từ Vựng</div>
+          <span style="font-size:0.75rem; color:#64748b;">Vocab Mastery Arena</span>
         </div>
         <div class="radio-card" data-val="challenge" onclick="selectMode('challenge')">
           <div style="font-size:26px;">🏆</div>
-          <div style="font-weight:700;">Grand Challenge</div>
-          <span style="font-size:0.75rem; color:#64748b;">10-question graded exam</span>
+          <div style="font-weight:700;">Bài Kiểm Tra (10 câu)</div>
+          <span style="font-size:0.75rem; color:#64748b;">Grand Challenge Exam</span>
         </div>
+      </div>
+
+      <!-- Dynamic Mode Clarification -->
+      <div class="mode-desc-box" id="modeDescBox">
+        <strong>🧠 Chế độ Luyện Từ Vựng:</strong> Rèn luyện trí nhớ qua hình ảnh trực quan, mẹo nhớ tiếng Việt, ví dụ trích từ slide. <em>Làm sai từ nào hệ thống sẽ cho làm lại từ đó đến khi nhớ làu làu 100%!</em>
       </div>
     </div>
 
-    <div class="form-group">
+    <!-- Word Limit Group (Only active for vocab practice mode) -->
+    <div class="form-group" id="limitGroup">
       <label>⚡ Chọn số lượng từ mỗi lượt luyện tập</label>
       <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:8px;" id="limitGrid">
-        <div class="radio-card selected" data-val="10" onclick="selectLimit('10')" style="padding: 14px 6px;">
-          <div style="font-weight:800; font-size:1.2rem; color:#4f46e5;">10 từ</div>
+        <div class="radio-card selected" data-val="10" onclick="selectLimit('10')" style="padding: 12px 6px;">
+          <div style="font-weight:800; font-size:1.15rem; color:#4f46e5;">10 từ</div>
         </div>
-        <div class="radio-card" data-val="15" onclick="selectLimit('15')" style="padding: 14px 6px;">
-          <div style="font-weight:800; font-size:1.2rem; color:#0284c7;">15 từ</div>
+        <div class="radio-card" data-val="15" onclick="selectLimit('15')" style="padding: 12px 6px;">
+          <div style="font-weight:800; font-size:1.15rem; color:#0284c7;">15 từ</div>
         </div>
-        <div class="radio-card" data-val="0" onclick="selectLimit('0')" style="padding: 14px 6px;">
-          <div style="font-weight:800; font-size:1.2rem; color:#d97706;">Tất cả</div>
+        <div class="radio-card" data-val="0" onclick="selectLimit('0')" style="padding: 12px 6px;">
+          <div style="font-weight:800; font-size:1.15rem; color:#d97706;">Tất cả</div>
         </div>
       </div>
     </div>
 
     <!-- Strict Lock Notice -->
     <div class="strict-alert-box">
-      <strong>🔒 Strict Lock Mode Active:</strong>
-      • Fullscreen will be requested when practice begins.<br>
-      • You <strong>cannot quit halfway</strong> or switch tabs (violations are recorded and sent to the teacher's database!).<br>
-      • In Vocabulary Arena, any mistaken word is re-drilled until you master it 100%.
+      <strong>🔒 Chế độ khóa nghiêm ngặt (Strict Lock):</strong>
+      • Trình duyệt sẽ bật toàn màn hình khi bắt đầu.<br>
+      • Học sinh <strong>không được thoát giữa chừng hay đổi tab</strong> (hệ thống tự động ghi nhật ký vi phạm và gửi về cơ sở dữ liệu của thầy/cô!).
     </div>
 
     <button class="btn-start" onclick="startPractice()">
-      <span>Enter Practice Session</span>
+      <span id="btnStartText">Vào Bài Luyện Tập Ngay</span>
       <span>🚀</span>
     </button>
 
     <div class="teacher-link">
-      Teacher or Parent? <a href="/teacher" target="_blank">Open Teacher Analytics Dashboard &rarr;</a>
+      Thầy cô & Phụ huynh: <a href="/teacher" target="_blank">Xem Bảng Quản Trị & Thống Kê Điểm Số &rarr;</a>
     </div>
   </div>
 
@@ -299,12 +317,26 @@
       document.querySelectorAll('#modeGrid .radio-card').forEach(c => {
         c.classList.toggle('selected', c.getAttribute('data-val') === m);
       });
+
+      const descBox = document.getElementById('modeDescBox');
+      const limitGroup = document.getElementById('limitGroup');
+      const btnText = document.getElementById('btnStartText');
+
+      if (m === 'vocab') {
+        descBox.innerHTML = `<strong>🧠 Chế độ Luyện Từ Vựng:</strong> Rèn luyện trí nhớ qua hình ảnh trực quan, mẹo nhớ tiếng Việt, ví dụ trích từ slide. <em>Làm sai từ nào hệ thống sẽ cho làm lại từ đó đến khi nhớ làu làu 100%!</em>`;
+        limitGroup.style.display = 'block';
+        btnText.textContent = 'Vào Bài Luyện Tập Ngay';
+      } else {
+        descBox.innerHTML = `<strong>🏆 Chế độ Bài Kiểm Tra (10 câu - 100 điểm):</strong> Đề thi trắc nghiệm chuẩn hóa bao quát 3 môn (English, Maths, Science) lấy trực tiếp từ slide và đề cương. <em>Mỗi câu làm 1 lần tính điểm thật (không làm lại), hoàn thành được cấp Giấy Khen Vàng (Certificate)!</em>`;
+        limitGroup.style.display = 'none';
+        btnText.textContent = 'Bắt Đầu Bài Kiểm Tra 10 Câu (100 Điểm)';
+      }
     }
 
     function startPractice() {
       const name = document.getElementById('studentName').value.trim();
       if (!name) {
-        alert('Please enter the student name before starting!');
+        alert('Vui lòng nhập tên học sinh trước khi bắt đầu bài làm!');
         document.getElementById('studentName').focus();
         return;
       }

@@ -93,10 +93,12 @@ VOCABULARY_BANK = {
         {"word": "light source", "meaning": "something that makes its own light", "vietnamese": "Nguồn sáng: vật tự nó phát ra ánh sáng của chính mình", "mnemonic": "Mặt Trời ☀️, ngọn lửa, đèn pin tự phát sáng là nguồn sáng. Mặt Trăng chỉ phản chiếu, không phải nguồn sáng!", "colloc": "The Sun and torch are light sources", "colloc_vi": "Mặt Trời và đèn pin là các nguồn phát sáng", "audio": "light source. Something that makes its own light.", "type": "science", "svg_type": "light_source", "emoji": "☀️"},
         {"word": "torch", "meaning": "a small portable battery lamp (flashlight)", "vietnamese": "Đèn pin cầm tay (nguồn sáng nhân tạo)", "mnemonic": "Chiếc đèn pin nhỏ cầm tay 🔦 bấm nút là phát ra chùm sáng trong đêm.", "colloc": "He turned on the torch in the dark", "colloc_vi": "Cậu ấy đã bật đèn pin trong bóng tối", "audio": "torch. A small portable lamp.", "type": "science", "svg_type": "light_source", "emoji": "🔦"},
         {"word": "candle", "meaning": "a wax stick with a wick that burns for light", "vietnamese": "Ngọn nến bằng sáp thắp sáng (nguồn sáng)", "mnemonic": "Cây nến sinh nhật 🕯️ thắp lửa cháy bập bùng phát ra ánh sáng vàng ấm áp.", "colloc": "A burning candle makes light", "colloc_vi": "Một ngọn nến đang cháy phát ra ánh sáng", "audio": "candle. A stick that burns for light.", "type": "science", "svg_type": "light_source", "emoji": "🕯️"},
+        {"word": "reflector", "meaning": "an object that bounces light off instead of making it", "vietnamese": "Vật phản xạ: không tự phát sáng mà chỉ hắt tia sáng lại", "mnemonic": "Gương soi và Mặt Trăng 🪞 không tự phát sáng, chỉ phản chiếu ánh sáng từ nguồn khác.", "colloc": "A mirror is a reflector of light", "colloc_vi": "Gương là một vật phản xạ ánh sáng", "audio": "reflector. An object that bounces light off.", "type": "science", "svg_type": "reflector", "emoji": "🪞"},
 
-        # Maths: Tally
+        # Maths: Tally & Data
         {"word": "tally chart", "meaning": "marks used to count data in groups of 5", "vietnamese": "Bảng gạch đếm dữ liệu theo từng nhóm 5 gạch", "mnemonic": "Cứ 4 gạch đứng và 1 gạch chéo ngang |||| tạo thành 1 bó 5 gạch giúp đếm cực nhanh.", "colloc": "Count tallies in groups of five", "colloc_vi": "Đếm các dấu gạch theo từng nhóm 5", "audio": "tally chart. Marks used to count in groups of five.", "type": "maths", "svg_type": "tally", "emoji": "📊"},
-        {"word": "data", "meaning": "information collected by counting or measuring", "vietnamese": "Dữ liệu / Số liệu thu thập được", "mnemonic": "Các con số ghi chép lại sau khi điều tra sở thích của cả lớp 📈.", "colloc": "Collect data about favorite fruit", "colloc_vi": "Thu thập số liệu về loại trái cây yêu thích", "audio": "data. Information collected by counting.", "type": "maths", "svg_type": "data", "emoji": "📋"}
+        {"word": "data", "meaning": "information collected by counting or measuring", "vietnamese": "Dữ liệu / Số liệu thu thập được", "mnemonic": "Các con số ghi chép lại sau khi điều tra sở thích của cả lớp 📈.", "colloc": "Collect data about favorite fruit", "colloc_vi": "Thu thập số liệu về loại trái cây yêu thích", "audio": "data. Information collected by counting.", "type": "maths", "svg_type": "data", "emoji": "📋"},
+        {"word": "most popular", "meaning": "liked or chosen by the most people", "vietnamese": "Phổ biến nhất / Được nhiều người yêu thích nhất", "mnemonic": "Số học sinh chọn đông nhất (như Đà Lạt có 5 học sinh chọn trong bài).", "colloc": "Đà Lạt was the most popular destination", "colloc_vi": "Đà Lạt là điểm đến được yêu thích nhất", "audio": "most popular. Liked by the most people.", "type": "maths", "svg_type": "data", "emoji": "🌟"}
     ],
     "week2": [
         # Sentence Structure
@@ -140,6 +142,7 @@ VOCABULARY_BANK = {
         {"word": "telescope", "meaning": "instrument to look at stars and planets", "vietnamese": "Kính viễn vọng / Kính thiên văn để ngắm các vì sao và hành tinh", "mnemonic": "Ống kính nhìn xa tít tắp 🔭 vào vũ trụ bao la để ngắm nhìn Mặt Trăng và sao Thổ.", "colloc": "Look at the moon through a telescope", "colloc_vi": "Ngắm nhìn Mặt Trăng qua kính viễn vọng", "audio": "telescope. Instrument to look at space.", "type": "story", "svg_type": "telescope", "emoji": "🔭"},
         {"word": "professor", "meaning": "a smart teacher or scientist", "vietnamese": "Giáo sư / Nhà khoa học tài ba chế tạo máy móc", "mnemonic": "Giáo sư Inkspot 👨‍🔬 là nhà khoa học thông minh sống ngay cạnh nhà của Billy.", "colloc": "Professor Inkspot invented a machine", "colloc_vi": "Giáo sư Inkspot đã phát minh ra một cỗ máy", "audio": "professor. A scientist or teacher.", "type": "story", "svg_type": "professor", "emoji": "👨‍🔬"},
         {"word": "shed", "meaning": "a small wooden building in a garden", "vietnamese": "Nhà kho nhỏ bằng gỗ trong vườn để dụng cụ và máy móc", "mnemonic": "Gian nhà gỗ nhỏ 🛖 bên cạnh vườn nơi giáo sư cặm cụi nghiên cứu cỗ máy không gian.", "colloc": "Billy ran to the professor's shed", "colloc_vi": "Billy chạy sang gian nhà kho của giáo sư", "audio": "shed. A small building in a garden.", "type": "story", "svg_type": "shed", "emoji": "🛖"},
+        {"word": "half past six", "meaning": "6:30 in the morning when Billy woke up with a BANG", "vietnamese": "Sáu rưỡi sáng (6:30) lúc Billy giật mình tỉnh giấc bởi tiếng nổ lớn", "mnemonic": "Kim ngắn chỉ giữa số 6 và 7, kim dài chỉ số 6: đúng 6 giờ 30 phút sáng ⏰.", "colloc": "Billy woke up at half past six", "colloc_vi": "Billy đã thức giấc vào lúc 6 giờ 30 phút sáng", "audio": "half past six. Six thirty in the morning.", "type": "story", "svg_type": "when", "emoji": "⏰"},
         {"word": "turn a dial", "meaning": "rotate a round knob with numbers", "vietnamese": "Xoay núm vặn tròn chia vạch số", "mnemonic": "Dùng ngón tay xoay núm vặn tròn 🎛️ (như chỉnh góc kính viễn vọng hoặc vặn âm lượng).", "colloc": "We turn a dial on the machine", "colloc_vi": "Chúng ta xoay núm vặn trên cỗ máy", "audio": "turn a dial. We turn a dial.", "type": "colloc", "svg_type": "turn_dial", "emoji": "🎛️"},
         {"word": "push a button", "meaning": "press down a button with finger", "vietnamese": "Bấm / Nhấn nút tròn bằng ngón tay", "mnemonic": "Lấy ngón tay ấn mạnh vào chiếc nút đỏ 🔴 kêu 'Tít!' để phóng xung năng lượng.", "colloc": "We push a red button", "colloc_vi": "Chúng ta bấm một chiếc nút màu đỏ", "audio": "push a button. We push a button.", "type": "colloc", "svg_type": "push_button", "emoji": "🔴"},
         {"word": "press a switch", "meaning": "toggle a switch for power", "vietnamese": "Bật / Gạt công tắc nguồn điện", "mnemonic": "Gạt công tắc bập bênh ⚡ để đèn LED xanh sáng lên và khởi động cỗ máy.", "colloc": "We press a switch under the screen", "colloc_vi": "Chúng ta bật công tắc bên dưới màn hình", "audio": "press a switch. We press a switch.", "type": "colloc", "svg_type": "press_switch", "emoji": "⚡"},
@@ -173,6 +176,346 @@ VOCABULARY_BANK = {
         {"word": "hundreds flat", "meaning": "a large square block made of 100 small unit cubes", "vietnamese": "Tấm vuông hàng Trăm (gồm 100 khối lập phương nhỏ ghép lại)", "mnemonic": "Tấm lưới vuông 10 hàng x 10 cột = đúng 100 ô vuông nhỏ.", "colloc": "One flat represents one hundred", "colloc_vi": "Một tấm vuông đại diện cho một trăm", "audio": "hundreds flat. A block of one hundred units.", "type": "maths", "svg_type": "place_value", "emoji": "🟦"},
         {"word": "tens rod", "meaning": "a long stick made of 10 unit cubes", "vietnamese": "Thanh hàng Chục (gồm 10 khối lập phương nhỏ xếp thẳng hàng)", "mnemonic": "Một chiếc que dài dựng đứng chứa đúng 10 khối vuông nhỏ.", "colloc": "Six rods represent sixty", "colloc_vi": "Sáu thanh que đại diện cho sáu mươi", "audio": "tens rod. A stick of ten units.", "type": "maths", "svg_type": "place_value", "emoji": "🟩"},
         {"word": "ones cube", "meaning": "a single small unit cube representing 1", "vietnamese": "Khối lập phương đơn vị (đại diện cho số 1)", "mnemonic": "Một cục xúc xắc nhỏ xíu đại diện cho 1 đơn vị.", "colloc": "Nine cubes represent nine ones", "colloc_vi": "Chín khối nhỏ đại diện cho 9 đơn vị", "audio": "ones cube. A single small unit cube.", "type": "maths", "svg_type": "place_value", "emoji": "🟨"}
+    ]
+}
+
+# ==================== SLIDE-ALIGNED 10-QUESTION GRAND CHALLENGE EXAMS ====================
+GRAND_CHALLENGE_BANK = {
+    "week1": [
+        {
+            "id": 1,
+            "subject": "English",
+            "question": "Classroom rule: \"Raise your _______ before speaking.\"",
+            "audio": "Classroom rule: Raise your hand before speaking.",
+            "options": ["hand", "pencil", "book", "foot"],
+            "answer": "hand",
+            "explanation": "Nội quy bài học W1E1: \"Raise your hand before speaking\" (Hãy giơ tay xin phép trước khi phát biểu)."
+        },
+        {
+            "id": 2,
+            "subject": "English",
+            "question": "What is the definition of a NOUN in Grade 3 English?",
+            "audio": "What is the definition of a noun?",
+            "options": [
+                "A person, place, animal, or thing",
+                "An action word that we do",
+                "A word that describes colours only",
+                "A punctuation mark at the end of a sentence"
+            ],
+            "answer": "A person, place, animal, or thing",
+            "explanation": "Định nghĩa chuẩn W1E1: Danh từ (Noun) là từ chỉ Người (doctor), Nơi chốn (school), Con vật (cat), hoặc Đồ vật (banana)."
+        },
+        {
+            "id": 3,
+            "subject": "English",
+            "question": "Which word in the following list is a VERB (an action word)?",
+            "audio": "Which word in the following list is a verb?",
+            "options": ["jump", "pencil", "school", "banana"],
+            "answer": "jump",
+            "explanation": "Động từ (Verb) chỉ hành động chúng ta làm: \"jump\" (nhảy) là động từ, còn pencil, school, banana là danh từ."
+        },
+        {
+            "id": 4,
+            "subject": "English",
+            "question": "An ADJECTIVE is a word that _______ a noun.",
+            "audio": "An adjective is a word that describes a noun.",
+            "options": ["describes", "eats", "counts", "destroys"],
+            "answer": "describes",
+            "explanation": "Quy tắc ngữ pháp W1E2: \"An adjective is a word that describes a noun\" (Tính từ dùng để miêu tả đặc điểm danh từ)."
+        },
+        {
+            "id": 5,
+            "subject": "English",
+            "question": "In the sentence: \"A cat jumps over the house\", which word is the VERB?",
+            "audio": "In the sentence: A cat jumps over the house, which word is the verb?",
+            "options": ["jumps", "cat", "house", "over"],
+            "answer": "jumps",
+            "explanation": "Trong bài tập Thám tử ngữ pháp W1E2: \"cat\" và \"house\" là Danh từ (Nouns), \"jumps\" (nhảy) là Động từ (Verb)."
+        },
+        {
+            "id": 6,
+            "subject": "Mathematics",
+            "question": "In the Summer Vacation tally chart: Đà Lạt has 5 tallies (|||| crossed) and Hà Nội has 4 tallies (||||). Which destination is MORE popular?",
+            "audio": "Which destination is more popular: Da Lat or Ha Noi?",
+            "options": [
+                "Đà Lạt (5 > 4)",
+                "Hà Nội (4)",
+                "Both are equal",
+                "Vũng Tàu (1)"
+            ],
+            "answer": "Đà Lạt (5 > 4)",
+            "explanation": "Bảng số liệu W1M: Đà Lạt có 5 gạch kiểm đếm, Hà Nội có 4 gạch. Vì 5 > 4 nên Đà Lạt là điểm đến phổ biến hơn (Most popular)."
+        },
+        {
+            "id": 7,
+            "subject": "Mathematics",
+            "question": "In a pictogram, the key says: 1 🙂 = 2 students. How many students do 3 smileys (🙂 🙂 🙂) represent?",
+            "audio": "In a pictogram, if one smiley equals two students, how many students do three smileys represent?",
+            "options": ["6 students", "3 students", "5 students", "8 students"],
+            "answer": "6 students",
+            "explanation": "Toán biểu đồ tranh W1M: 3 biểu tượng 🙂 x 2 học sinh = 6 học sinh (3 x 2 = 6)."
+        },
+        {
+            "id": 8,
+            "subject": "Science",
+            "question": "What is LIGHT?",
+            "audio": "What is light?",
+            "options": [
+                "An energy we use to see the world around us",
+                "A solid obstacle that creates darkness",
+                "A buzzing sound made by machines",
+                "Something that only exists at midnight"
+            ],
+            "answer": "An energy we use to see the world around us",
+            "explanation": "Khái niệm cốt lõi W1S: \"Light is an energy we use to see the world around us. We need light to see\" (Ánh sáng là dạng năng lượng giúp ta nhìn thấy thế giới xung quanh)."
+        },
+        {
+            "id": 9,
+            "subject": "Science",
+            "question": "Which of the following is a REFLECTOR (does NOT make its own light, only bounces light)?",
+            "audio": "Which of the following is a reflector?",
+            "options": ["A mirror", "The Sun", "A torch", "A burning candle"],
+            "answer": "A mirror",
+            "explanation": "Phân loại W1S: Mặt Trời, đèn pin và nến là nguồn sáng (Light sources). Chiếc gương (A mirror) chỉ phản xạ lại ánh sáng (Reflector)."
+        },
+        {
+            "id": 10,
+            "subject": "Science",
+            "question": "The Sun, stars, and fire are all examples of:",
+            "audio": "The Sun, stars, and fire are all examples of natural light or man-made light?",
+            "options": [
+                "Natural light (Ánh sáng tự nhiên)",
+                "Man-made light (Ánh sáng nhân tạo)",
+                "Reflectors (Vật phản xạ)",
+                "Opaque objects (Vật cản sáng)"
+            ],
+            "answer": "Natural light (Ánh sáng tự nhiên)",
+            "explanation": "Phân loại W1S: Mặt Trời, ngôi sao và lửa là nguồn sáng tự nhiên (Natural light). Đèn pin, bóng đèn là nhân tạo (Man-made light)."
+        }
+    ],
+    "week2": [
+        {
+            "id": 1,
+            "subject": "English",
+            "question": "A STATEMENT tells something. It begins with a capital letter and ends with a _______.",
+            "audio": "A statement tells something and ends with a what?",
+            "options": ["full stop (.)", "question mark (?)", "comma (,)", "exclamation mark (!)"],
+            "answer": "full stop (.)",
+            "explanation": "Quy tắc câu trần thuật W2E1: Câu kể (Statement) kể lại một việc và kết thúc bằng dấu chấm (full stop .)."
+        },
+        {
+            "id": 2,
+            "subject": "English",
+            "question": "A QUESTION asks something. It begins with a capital letter and ends with a _______.",
+            "audio": "A question asks something and ends with a what?",
+            "options": ["question mark (?)", "full stop (.)", "comma (,)", "colon (:)"],
+            "answer": "question mark (?)",
+            "explanation": "Quy tắc câu hỏi W2E1: Câu hỏi (Question) bắt đầu bằng động từ/từ để hỏi và kết thúc bằng dấu hỏi (question mark ?)."
+        },
+        {
+            "id": 3,
+            "subject": "English",
+            "question": "Complete the question for ONE singular object: \"_______ a melon on the plate?\"",
+            "audio": "Complete the question: blank a melon on the plate?",
+            "options": ["Was there", "Were there", "Did there", "Are there"],
+            "answer": "Was there",
+            "explanation": "Quy tắc ngữ pháp W2E1: Dùng \"Was there a / an...\" cho 1 đồ vật số ít (a melon: singular)."
+        },
+        {
+            "id": 4,
+            "subject": "English",
+            "question": "Complete the question for PLURAL objects: \"_______ chocolates in the box?\"",
+            "audio": "Complete the question: blank chocolates in the box?",
+            "options": ["Were there some", "Was there a", "Is there a", "Did there some"],
+            "answer": "Were there some",
+            "explanation": "Quy tắc ngữ pháp W2E1: Dùng \"Were there some...\" cho danh từ số nhiều (chocolates: plural)."
+        },
+        {
+            "id": 5,
+            "subject": "English",
+            "question": "What is the past simple form of the irregular verb \"eat\"?",
+            "audio": "What is the past simple form of the irregular verb eat?",
+            "options": ["ate", "eated", "eating", "eaten"],
+            "answer": "ate",
+            "explanation": "Bảng động từ bất quy tắc W2E2: \"eat\" đổi thành \"ate\" (tuyệt đối không thêm -ed thành eated)."
+        },
+        {
+            "id": 6,
+            "subject": "English",
+            "question": "Transform the statement into a past question: \"She walked to school.\"",
+            "audio": "Transform the statement into a past question: She walked to school.",
+            "options": [
+                "Did she walk to school?",
+                "Did she walked to school?",
+                "Was she walked to school?",
+                "Does she walk to school?"
+            ],
+            "answer": "Did she walk to school?",
+            "explanation": "Công thức câu hỏi quá khứ W2E2: Did + S + V(nguyên mẫu)? Khi có trợ động từ \"Did\", động từ \"walked\" phải về nguyên mẫu \"walk\"."
+        },
+        {
+            "id": 7,
+            "subject": "Mathematics",
+            "question": "Compare using the Crocodile Rule: 450 _______ 540",
+            "audio": "Compare four hundred and fifty and five hundred and forty.",
+            "options": [
+                "< (450 is less than 540)",
+                "> (450 is greater than 540)",
+                "=",
+                "+"
+            ],
+            "answer": "< (450 is less than 540)",
+            "explanation": "Quy tắc cá sấu W2M: Miệng cá sấu luôn há to về phía số lớn hơn (540 > 450, tức 450 < 540)."
+        },
+        {
+            "id": 8,
+            "subject": "Mathematics",
+            "question": "In the recycling project: Class 3A collected 350 bottles. Class 3B collected 420 bottles. Which statement is TRUE?",
+            "audio": "Class 3A collected 350 bottles. Class 3B collected 420 bottles. Which statement is true?",
+            "options": [
+                "Class 3B collected more (420 > 350)",
+                "Class 3A collected more (350 > 420)",
+                "Both classes collected equal bottles",
+                "Class 3B collected fewer bottles"
+            ],
+            "answer": "Class 3B collected more (420 > 350)",
+            "explanation": "Bài toán thực tế tái chế rác W2M: 420 > 350, do đó lớp 3B thu gom được nhiều hơn lớp 3A."
+        },
+        {
+            "id": 9,
+            "subject": "Science",
+            "question": "Light always travels in a _______ and cannot bend around corners.",
+            "audio": "Light always travels in a what line?",
+            "options": ["straight line", "curved wave", "circle", "zigzag line"],
+            "answer": "straight line",
+            "explanation": "Định luật truyền sáng W2S: Ánh sáng luôn truyền theo đường thẳng (straight line) và không thể tự bẻ cong qua vật cản."
+        },
+        {
+            "id": 10,
+            "subject": "Science",
+            "question": "An object is _______ when it BLOCKS light completely and casts a dark shadow (like a wooden door or textbook).",
+            "audio": "An object is what when it blocks light completely?",
+            "options": ["opaque", "transparent", "translucent", "reflective"],
+            "answer": "opaque",
+            "explanation": "Phân loại vật liệu W2S: Vật đục cản sáng (Opaque) ngăn chặn 100% ánh sáng đi qua và tạo ra bóng đen (shadow)."
+        }
+    ],
+    "week3": [
+        {
+            "id": 1,
+            "subject": "English",
+            "question": "In the story \"Professor Inkspot's Telescope\", what time did Billy wake up to a loud BANG?",
+            "audio": "What time was it when Billy woke up in the story?",
+            "options": [
+                "Half past six (6:30)",
+                "Seven o'clock (7:00)",
+                "Eight o'clock (8:00)",
+                "Half past seven (7:30)"
+            ],
+            "answer": "Half past six (6:30)",
+            "explanation": "Chi tiết mở đầu câu chuyện trong slide W3E1: \"Bang! Billy woke up with a start at half past six in the morning.\""
+        },
+        {
+            "id": 2,
+            "subject": "English",
+            "question": "What did Billy see coming from Professor Inkspot's shed next door?",
+            "audio": "What did Billy see coming from Professor Inkspot's shed?",
+            "options": [
+                "A small cloud of blue smoke",
+                "A flock of birds",
+                "A shower of sparks",
+                "Rain and snow"
+            ],
+            "answer": "A small cloud of blue smoke",
+            "explanation": "Chi tiết câu chuyện slide W3E1: Billy nhìn ra ngoài và thấy \"a small cloud of blue smoke\" (làn khói nhỏ màu xanh lam) bốc lên từ gian nhà kho."
+        },
+        {
+            "id": 3,
+            "subject": "English",
+            "question": "What action verb do we use with a DIAL on the machine?",
+            "audio": "What action verb do we use with a dial on the machine?",
+            "options": ["turn a dial", "push a dial", "pull a dial", "press a dial"],
+            "answer": "turn a dial",
+            "explanation": "Cụm từ máy móc slide W3E1: \"turn a dial\" (xoay núm vặn tròn chia vạch)."
+        },
+        {
+            "id": 4,
+            "subject": "English",
+            "question": "What action verb do we use with a HANDLE beside the square screen?",
+            "audio": "What action verb do we use with a handle beside the screen?",
+            "options": ["pull a handle", "push a handle", "turn a handle", "type a handle"],
+            "answer": "pull a handle",
+            "explanation": "Cụm từ máy móc slide W3E1: \"pull a handle\" (kéo chiếc cần gạt xuống)."
+        },
+        {
+            "id": 5,
+            "subject": "English",
+            "question": "\"_______ did you eat the teacher's bánh mì?\" — \"Because I was hungry!\"",
+            "audio": "Blank did you eat the teacher's bánh mì? Because I was hungry.",
+            "options": ["Why", "Who", "Where", "When"],
+            "answer": "Why",
+            "explanation": "Quy tắc từ để hỏi W3E2: \"Why\" hỏi về lý do/nguyên nhân, câu trả lời bắt đầu bằng \"Because\" (Bởi vì...)."
+        },
+        {
+            "id": 6,
+            "subject": "Mathematics",
+            "question": "What number is represented by: 5 Hundreds + 6 Tens + 9 Ones?",
+            "audio": "What number is represented by 5 Hundreds, 6 Tens, and 9 Ones?",
+            "options": ["569", "659", "596", "965"],
+            "answer": "569",
+            "explanation": "Giá trị vị trí hàng số slide W3M: 5 Hàng Trăm + 6 Hàng Chục + 9 Hàng Đơn vị = 569."
+        },
+        {
+            "id": 7,
+            "subject": "Mathematics",
+            "question": "How do you write the number 835 in EXPANDED FORM?",
+            "audio": "How do you write 835 in expanded form?",
+            "options": [
+                "800 + 30 + 5",
+                "800 + 50 + 3",
+                "80 + 30 + 5",
+                "800 + 300 + 5"
+            ],
+            "answer": "800 + 30 + 5",
+            "explanation": "Dạng khai triển số W3M: $835 = 800 + 30 + 5$ (tách rõ giá trị từng hàng: 8 Trăm, 3 Chục, 5 Đơn vị)."
+        },
+        {
+            "id": 8,
+            "subject": "Science",
+            "question": "How many MILK TEETH (baby teeth) do young children under six years old have?",
+            "audio": "How many milk teeth do young children have?",
+            "options": ["20 teeth", "32 teeth", "28 teeth", "16 teeth"],
+            "answer": "20 teeth",
+            "explanation": "Kiến thức nha khoa slide W3S: Trẻ em dưới sáu tuổi có đúng 20 chiếc răng sữa (milk teeth). Người lớn có 32 răng vĩnh viễn (permanent teeth)."
+        },
+        {
+            "id": 9,
+            "subject": "Science",
+            "question": "Which type of teeth are flat and sharp like a CHISEL, used for SLICING and CUTTING food (like biting an apple)?",
+            "audio": "Which teeth are shaped like a chisel and used for slicing?",
+            "options": [
+                "Incisors (Răng cửa)",
+                "Canines (Răng nanh)",
+                "Premolars (Răng tiền hàm)",
+                "Molars (Răng hàm)"
+            ],
+            "answer": "Incisors (Răng cửa)",
+            "explanation": "Chức năng răng slide W3S: Răng cửa (Incisors - 8 chiếc) có rìa phẳng sắc như lưỡi đục, chuyên dùng để cắn và cắt lát thức ăn (slice and cut)."
+        },
+        {
+            "id": 10,
+            "subject": "Science",
+            "question": "Which teeth are the LARGEST teeth at the back with a flat bumpy surface, used for GRINDING food finely?",
+            "audio": "Which teeth are the largest teeth used for grinding food?",
+            "options": [
+                "Molars (Răng hàm)",
+                "Incisors (Răng cửa)",
+                "Canines (Răng nanh)",
+                "Premolars (Răng tiền hàm)"
+            ],
+            "answer": "Molars (Răng hàm)",
+            "explanation": "Chức năng răng slide W3S: Răng hàm (Molars - 12 chiếc) là những chiếc răng lớn nhất ở sâu trong cùng, mặt phẳng gồ ghề dùng để nghiền nát thức ăn (grind food)."
+        }
     ]
 }
 
@@ -213,6 +556,12 @@ def get_vocab_bank():
             random.shuffle(words)
             return jsonify(words[:limit])
         return jsonify(words)
+
+@app.route('/api/grand_challenge')
+def get_grand_challenge():
+    week = request.args.get('week', 'week3')
+    questions = GRAND_CHALLENGE_BANK.get(week, GRAND_CHALLENGE_BANK.get('week3', []))
+    return jsonify(questions)
 
 @app.route('/api/submit_attempt', methods=['POST'])
 def submit_attempt():
