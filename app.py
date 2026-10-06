@@ -10,12 +10,14 @@ app = Flask(__name__)
 DB_PATH = os.path.join(os.path.dirname(__file__), 'learning_mastery.db')
 
 def get_db():
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(DB_PATH, timeout=15.0)
     conn.row_factory = sqlite3.Row
+    conn.execute('PRAGMA busy_timeout = 5000;')
     return conn
 
 def init_db():
     with get_db() as conn:
+        conn.execute('PRAGMA journal_mode=WAL;')
         conn.execute('''
             CREATE TABLE IF NOT EXISTS students (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -721,11 +723,23 @@ def get_grand_challenge():
     questions = GRAND_CHALLENGE_BANK.get(week, GRAND_CHALLENGE_BANK.get('week3', []))
     return jsonify(questions)
 
-@app.route('/api/submit_attempt', methods=['POST'])
+@app.after_request
+def add_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization'
+    response.headers['Access-Control-Allow-Methods'] = 'GET,POST,OPTIONS'
+    return response
+
+@app.route('/api/submit_attempt', methods=['POST', 'OPTIONS'])
 def submit_attempt():
+    if request.method == 'OPTIONS':
+        return jsonify({"ok": True}), 200
+
     data = request.json or {}
-    student_name = data.get('student_name', 'Student').strip()
-    week = data.get('week', 'week3')
+    student_name = (data.get('student_name') or 'Student').strip()
+    if not student_name:
+        student_name = 'Student'
+    week = data.get('week', 'week4')
     subject = data.get('subject', 'Vocabulary & Exercises')
     score = int(data.get('score', 0))
     max_score = int(data.get('max_score', 100))
@@ -758,12 +772,17 @@ def submit_attempt():
 
     return jsonify({"success": True, "attempt_id": attempt_id, "percentage": percentage})
 
-@app.route('/api/record_vocab', methods=['POST'])
+@app.route('/api/record_vocab', methods=['POST', 'OPTIONS'])
 def record_vocab():
+    if request.method == 'OPTIONS':
+        return jsonify({"ok": True}), 200
+
     data = request.json or {}
-    student_name = data.get('student_name', 'Student').strip()
+    student_name = (data.get('student_name') or 'Student').strip()
+    if not student_name:
+        student_name = 'Student'
     word = data.get('word', '').strip().lower()
-    week = data.get('week', 'week3')
+    week = data.get('week', 'week4')
     is_correct = bool(data.get('is_correct', False))
 
     if not word:
@@ -819,12 +838,16 @@ def get_teacher_data():
         ''').fetchall()
         attempts = [dict(r) for r in attempts_rows]
 
-        # 3. High-risk Weak Words (Top words students fail repeatedly)
+        # 3. High-risk Weak Words & Mistake Questions combined
         weak_words_rows = conn.execute('''
             SELECT word, week, SUM(times_wrong) as total_wrong, SUM(times_correct) as total_correct
             FROM vocab_stats
             GROUP BY word
             HAVING total_wrong > 0
+            UNION ALL
+            SELECT question_or_word as word, week, COUNT(*) as total_wrong, 0 as total_correct
+            FROM mistakes_log
+            GROUP BY question_or_word
             ORDER BY total_wrong DESC
             LIMIT 15
         ''').fetchall()
