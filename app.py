@@ -176,6 +176,37 @@ VOCABULARY_BANK = {
         {"word": "hundreds flat", "meaning": "a large square block made of 100 small unit cubes", "vietnamese": "Tấm vuông hàng Trăm (gồm 100 khối lập phương nhỏ ghép lại)", "mnemonic": "Tấm lưới vuông 10 hàng x 10 cột = đúng 100 ô vuông nhỏ.", "colloc": "One flat represents one hundred", "colloc_vi": "Một tấm vuông đại diện cho một trăm", "audio": "hundreds flat. A block of one hundred units.", "type": "maths", "svg_type": "place_value", "emoji": "🟦"},
         {"word": "tens rod", "meaning": "a long stick made of 10 unit cubes", "vietnamese": "Thanh hàng Chục (gồm 10 khối lập phương nhỏ xếp thẳng hàng)", "mnemonic": "Một chiếc que dài dựng đứng chứa đúng 10 khối vuông nhỏ.", "colloc": "Six rods represent sixty", "colloc_vi": "Sáu thanh que đại diện cho sáu mươi", "audio": "tens rod. A stick of ten units.", "type": "maths", "svg_type": "place_value", "emoji": "🟩"},
         {"word": "ones cube", "meaning": "a single small unit cube representing 1", "vietnamese": "Khối lập phương đơn vị (đại diện cho số 1)", "mnemonic": "Một cục xúc xắc nhỏ xíu đại diện cho 1 đơn vị.", "colloc": "Nine cubes represent nine ones", "colloc_vi": "Chín khối nhỏ đại diện cho 9 đơn vị", "audio": "ones cube. A single small unit cube.", "type": "maths", "svg_type": "place_value", "emoji": "🟨"}
+    ],
+    "week4": [
+        # English: Story & Machine Action Verbs
+        {"word": "true", "meaning": "something that is correct or real (a fact)", "vietnamese": "Đúng / Sự thật: điều gì đó chính xác hoặc có thật (a fact)", "mnemonic": "Sự thật hiển nhiên không thể bàn cãi (như Mặt Trời mọc hướng Đông) là True ✅.", "colloc": "It is true that the Sun makes light", "colloc_vi": "Sự thật là Mặt Trời tự phát ra ánh sáng", "audio": "true. Something that is correct or real.", "type": "story", "svg_type": "true_false", "emoji": "✅"},
+        {"word": "false", "meaning": "something that is not correct or not real", "vietnamese": "Sai: điều gì đó không chính xác hoặc không có thật", "mnemonic": "Thông tin sai lệch hoặc bịa đặt không đúng sự thật là False ❌.", "colloc": "It is false to say dogs can fly", "colloc_vi": "Nói rằng chó biết bay là sai sự thật", "audio": "false. Something that is not correct.", "type": "story", "svg_type": "true_false", "emoji": "❌"},
+        {"word": "turn a dial", "meaning": "rotate a round knob with scale marks", "vietnamese": "Xoay núm vặn tròn chia vạch (để chỉnh số, âm lượng)", "mnemonic": "Xoay núm tròn vặn đài radio 🎛️ hoặc xoay góc kính thiên văn.", "colloc": "We turn a dial to focus the telescope", "colloc_vi": "Chúng ta xoay núm vặn để lấy nét kính thiên văn", "audio": "turn a dial. Rotate a round knob.", "type": "colloc", "svg_type": "turn_dial", "emoji": "🎛️"},
+        {"word": "press a switch", "meaning": "toggle a switch for electrical power", "vietnamese": "Bật / Gạt công tắc điện (bật đèn, quạt điện)", "mnemonic": "Gạt ngón tay bật công tắc ⚡ để bật đèn trần hoặc cấp nguồn cho máy móc.", "colloc": "Press a switch to turn on the lights", "colloc_vi": "Bật công tắc để thắp sáng đèn", "audio": "press a switch. Toggle a switch for power.", "type": "colloc", "svg_type": "press_switch", "emoji": "⚡"},
+        {"word": "pull a handle", "meaning": "move a lever handle down or towards you", "vietnamese": "Kéo cần gạt / tay nắm xuống", "mnemonic": "Cầm cần gạt 🕹️ kéo mạnh xuống để mở cửa hoặc khởi động chế độ quét.", "colloc": "Pull a handle to open the heavy door", "colloc_vi": "Kéo cần gạt để mở cánh cửa nặng", "audio": "pull a handle. Move a lever down.", "type": "colloc", "svg_type": "pull_handle", "emoji": "🕹️"},
+        {"word": "push a button", "meaning": "press down on a round button with finger", "vietnamese": "Bấm nút tròn bằng ngón tay (chuông cửa, thang máy)", "mnemonic": "Lấy ngón tay trỏ ấn nút tròn đỏ 🔴 kêu 'Tít!' gọi thang máy.", "colloc": "Push a button to call the elevator", "colloc_vi": "Bấm nút tròn để gọi thang máy", "audio": "push a button. Press down with finger.", "type": "colloc", "svg_type": "push_button", "emoji": "🔴"},
+
+        # English: Past Simple (-ed) & Punctuation
+        {"word": "pointed", "meaning": "past form of point (+ed): aimed finger at", "vietnamese": "Đã chỉ tay vào (quá khứ của point: point + ed)", "mnemonic": "Giáo sư chỉ tay 👉 về phía kính viễn vọng: Professor Inkspot pointed.", "colloc": "He pointed at the giant telescope", "colloc_vi": "Ông ấy đã chỉ tay về phía chiếc kính viễn vọng khổng lồ", "audio": "pointed. Past simple of point.", "type": "grammar", "svg_type": "pointed", "emoji": "👉"},
+        {"word": "moved", "meaning": "past form of move (+d): changed position", "vietnamese": "Đã di chuyển / nhúc nhích (quá khứ của move: move + d)", "mnemonic": "Cỗ máy bắt đầu nhúc nhích và chuyển động: The machine moved slowly.", "colloc": "The big machine moved slowly", "colloc_vi": "Cỗ máy to lớn đã di chuyển chậm rãi", "audio": "moved. Past simple of move.", "type": "grammar", "svg_type": "action", "emoji": "🚜"},
+        {"word": "waited", "meaning": "past form of wait (+ed): stayed patiently", "vietnamese": "Đã kiên nhẫn chờ đợi (quá khứ của wait: wait + ed)", "mnemonic": "Đứng chờ đợi ⏳ đèn đỏ chuyển sang xanh: They waited patiently.", "colloc": "They waited for the red lights to shine", "colloc_vi": "Họ đã chờ đợi những ánh đèn đỏ phát sáng", "audio": "waited. Past simple of wait.", "type": "grammar", "svg_type": "action", "emoji": "⏳"},
+        {"word": "gasped", "meaning": "past form of gasp (+ed): breathed in with surprise", "vietnamese": "Đã há hốc mồm ngạc nhiên / thở hắt ra vì kinh ngạc", "mnemonic": "Bất ngờ há hốc miệng 😲 khi cỗ máy bắn ra tia sáng lấp lánh.", "colloc": "Everyone gasped in surprise", "colloc_vi": "Mọi người đều há hốc mồm kinh ngạc", "audio": "gasped. Breathed in with surprise.", "type": "grammar", "svg_type": "action", "emoji": "😲"},
+        {"word": "speech marks", "meaning": "quotation marks (\" \") used when someone is talking", "vietnamese": "Dấu ngoặc kép / Dấu lời thoại (“ ”) bao quanh lời nói trực tiếp", "mnemonic": "Cặp dấu ngoặc kép 💬 ôm trọn câu nói của nhân vật. Nhớ dấu phẩy (,) nằm BÊN TRONG ngoặc kép: “I like reading,” Emma said.", "colloc": "“Look at my book,” Ben said.", "colloc_vi": "“Hãy nhìn cuốn sách của tớ này,” Ben nói.", "audio": "speech marks. Used when someone is talking.", "type": "grammar", "svg_type": "speech_marks", "emoji": "💬"},
+
+        # Mathematics: Estimation, Midpoint & Life Number Lines
+        {"word": "estimate", "meaning": "to guess roughly without exact counting", "vietnamese": "Ước lượng: đoán gần đúng khi số nằm ở giữa các vạch mốc", "mnemonic": "Không cần đếm từng số 🎯, ta dùng điểm chính giữa để ước đoán nhanh vị trí.", "colloc": "We need to estimate the number", "colloc_vi": "Chúng ta cần ước lượng con số này", "audio": "estimate. To guess roughly without exact counting.", "type": "maths", "svg_type": "estimate", "emoji": "🎯"},
+        {"word": "midpoint", "meaning": "the exact halfway point between two benchmark numbers", "vietnamese": "Điểm chính giữa (midpoint): số nằm ngay chính giữa 2 mốc", "mnemonic": "Giữa 0 và 100 là 50 ⚖️. Giữa 20 và 30 là 25. Giữa 40 và 50 là 45.", "colloc": "Fifty is the midpoint between 0 and 100", "colloc_vi": "Số 50 là điểm chính giữa của 0 và 100", "audio": "midpoint. The exact halfway point.", "type": "maths", "svg_type": "midpoint", "emoji": "⚖️"},
+        {"word": "ruler", "meaning": "a measuring tool with a number line in centimetres (cm)", "vietnamese": "Thước kẻ: có vạch trục số để đo chiều dài bằng xăng-ti-mét (cm)", "mnemonic": "Cây thước kẻ kẻ thẳng 📏 có các vạch số từ 0 đến 20 cm.", "colloc": "Measure length using a ruler", "colloc_vi": "Đo chiều dài bằng cây thước kẻ", "audio": "ruler. A tool with a number line in centimetres.", "type": "maths", "svg_type": "ruler", "emoji": "📏"},
+        {"word": "thermometer", "meaning": "a tool with a number line to measure temperature in degrees Celsius (°C)", "vietnamese": "Nhiệt kế: có vạch trục số để đo nhiệt độ nóng/lạnh (°C)", "mnemonic": "Cột thủy ngân màu đỏ 🌡️ dâng lên cao khi trời nóng, tụt xuống khi trời lạnh.", "colloc": "Check temperature on a thermometer", "colloc_vi": "Kiểm tra nhiệt độ trên nhiệt kế", "audio": "thermometer. Tool to measure temperature.", "type": "maths", "svg_type": "thermometer", "emoji": "🌡️"},
+        {"word": "scale", "meaning": "a weighing tool with a number line in kilograms (kg)", "vietnamese": "Chiếc cân: có vạch trục số để đo cân nặng bằng ki-lô-gam (kg)", "mnemonic": "Đặt túi táo lên đĩa cân ⚖️, kim đồng hồ quay chỉ số kg.", "colloc": "Weigh heavy fruit on a scale", "colloc_vi": "Cân hoa quả nặng trên chiếc cân", "audio": "scale. A tool to measure weight in kilograms.", "type": "maths", "svg_type": "scale", "emoji": "⚖️"},
+
+        # Science: Light Travelling & Shadows
+        {"word": "straight line", "meaning": "light always travels straight and cannot bend", "vietnamese": "Đường thẳng: ánh sáng luôn truyền thẳng, không thể tự bẻ cong quanh góc", "mnemonic": "Tia sáng thẳng tắp như mũi tên 📏, không thể tự uốn lượn quanh góc tường.", "colloc": "Light always travels in a straight line", "colloc_vi": "Ánh sáng luôn truyền theo một đường thẳng", "audio": "straight line. Light travels in a straight line.", "type": "science", "svg_type": "straight_line", "emoji": "📏"},
+        {"word": "shadow", "meaning": "dark shape made when an opaque object blocks light", "vietnamese": "Chiếc bóng / Bóng tối: hình đen tạo ra khi vật cản sáng chặn tia sáng", "mnemonic": "Đứng dưới nắng, cơ thể con cản ánh sáng 👤 tạo ra bóng đen trên mặt đất.", "colloc": "Opaque objects block light to cast shadows", "colloc_vi": "Vật cản sáng chặn tia sáng để tạo nên bóng", "audio": "shadow. Dark shape made when light is blocked.", "type": "science", "svg_type": "shadow", "emoji": "👤"},
+        {"word": "bigger shadow", "meaning": "shadow becomes bigger when object is nearer to light", "vietnamese": "Bóng to hơn: xảy ra khi đưa vật lại GẦN nguồn sáng", "mnemonic": "Đưa tay lại gần đèn pin 🔦 &rarr; bóng bàn tay trên tường phóng to khổng lồ!", "colloc": "Nearer to light makes a bigger shadow", "colloc_vi": "Lại gần nguồn sáng tạo ra chiếc bóng to hơn", "audio": "nearer to light makes a bigger shadow.", "type": "science", "svg_type": "shadow", "emoji": "🔍"},
+        {"word": "smaller shadow", "meaning": "shadow becomes smaller when object is further away from light", "vietnamese": "Bóng nhỏ hơn: xảy ra khi đưa vật ra XA nguồn sáng", "mnemonic": "Kéo vật ra xa đèn pin &rarr; bóng thu nhỏ lại gọn gàng.", "colloc": "Further from light makes a smaller shadow", "colloc_vi": "Càng xa nguồn sáng thì bóng càng nhỏ lại", "audio": "further away makes a smaller shadow.", "type": "science", "svg_type": "shadow", "emoji": "🔎"},
+        {"word": "shortest shadow", "meaning": "at 12 p.m. (midday) when Sun is highest overhead", "vietnamese": "Bóng ngắn nhất: vào lúc 12 giờ trưa khi Mặt Trời lên cao nhất trên đỉnh đầu", "mnemonic": "12 giờ trưa ☀️ Mặt Trời chiếu thẳng đứng từ trên đầu xuống &rarr; bóng thu tròn sát dưới chân.", "colloc": "At midday the shadow is shortest", "colloc_vi": "Vào giữa trưa chiếc bóng là ngắn nhất", "audio": "at midday the shadow is shortest.", "type": "science", "svg_type": "shadow", "emoji": "🕛"},
+        {"word": "longest shadow", "meaning": "at 8 a.m. and 5 p.m. when Sun is low in the sky", "vietnamese": "Bóng dài nhất: vào sáng sớm (8 a.m.) và chiều muộn (5 p.m.) khi Mặt Trời ở vị trí thấp", "mnemonic": "Mặt Trời chiếu xiên từ chân trời 🌅 &rarr; bóng cây đổ dài ngoằng trên mặt đất.", "colloc": "Early morning casts the longest shadow", "colloc_vi": "Sáng sớm tạo ra bóng đổ dài nhất", "audio": "early morning casts the longest shadow.", "type": "science", "svg_type": "shadow", "emoji": "🌅"}
     ]
 }
 
@@ -515,6 +546,133 @@ GRAND_CHALLENGE_BANK = {
             ],
             "answer": "Molars (Răng hàm)",
             "explanation": "Chức năng răng slide W3S: Răng hàm (Molars - 12 chiếc) là những chiếc răng lớn nhất ở sâu trong cùng, mặt phẳng gồ ghề dùng để nghiền nát thức ăn (grind food)."
+        }
+    ],
+    "week4": [
+        {
+            "id": 1,
+            "subject": "English",
+            "question": "In the story \"Professor Inkspot's Telescope\", what time did Billy jump out of bed when he heard the loud BANG?",
+            "audio": "What time did Billy jump out of bed when he heard the loud BANG?",
+            "options": [
+                "Half past six (6:30)",
+                "Seven o'clock (7:00)",
+                "Eight o'clock (8:00)",
+                "Nine o'clock (9:00)"
+            ],
+            "answer": "Half past six (6:30)",
+            "explanation": "Chi tiết cốt truyện trong Language Book p. 14: \"Bang! Billy woke up with a start at half past six in the morning.\" (Billy nhảy ra khỏi giường lúc 6:30 sáng)."
+        },
+        {
+            "id": 2,
+            "subject": "English",
+            "question": "Which verb correctly completes the phrase: \"We _______ a switch to turn on the machine's power\"?",
+            "audio": "Which verb correctly completes: We blank a switch to turn on the machine's power?",
+            "options": ["press a switch", "turn a switch", "pull a switch", "push a switch"],
+            "answer": "press a switch",
+            "explanation": "Cụm động từ máy móc chuẩn slide: \"press a switch\" (bật/gạt công tắc điện), \"turn a dial\" (xoay núm vặn), \"pull a handle\" (kéo cần gạt), \"push a button\" (bấm nút tròn)."
+        },
+        {
+            "id": 3,
+            "subject": "English",
+            "question": "What does the word TRUE mean in Grade 3 English?",
+            "audio": "What does the word true mean in English?",
+            "options": [
+                "Something that is correct or real (a fact)",
+                "Something that is not correct or not real",
+                "A fictional make-up story",
+                "A question without an answer"
+            ],
+            "answer": "Something that is correct or real (a fact)",
+            "explanation": "Định nghĩa chuẩn trong slide: \"True means something that is correct or real. It is a fact.\" (True nghĩa là điều gì đó chính xác hoặc có thật - là một sự thật)."
+        },
+        {
+            "id": 4,
+            "subject": "English",
+            "question": "What is the past simple tense of the regular verb \"look\"?",
+            "audio": "What is the past simple tense of the regular verb look?",
+            "options": ["looked", "looking", "looks", "lookt"],
+            "answer": "looked",
+            "explanation": "Quy tắc quá khứ đơn có quy tắc: Động từ regular thêm đuôi -ed: look &rarr; looked (Billy looked inside the shed)."
+        },
+        {
+            "id": 5,
+            "subject": "English",
+            "question": "According to Cambridge rules (Practice Book p. 5), where must the comma (,) go in direct speech?",
+            "audio": "According to Cambridge rules, where must the comma go in direct speech?",
+            "options": [
+                "INSIDE the speech marks: “I like reading,” Emma said.",
+                "OUTSIDE the speech marks: “I like reading”, Emma said.",
+                "At the start of the sentence before speech marks",
+                "After the reporting verb: “I like reading” Emma, said."
+            ],
+            "answer": "INSIDE the speech marks: “I like reading,” Emma said.",
+            "explanation": "Quy tắc dấu lời thoại chuẩn Cambridge (Practice Book p. 5): Dấu phẩy (,) BẮT BUỘC phải nằm BÊN TRONG dấu ngoặc kép: “Look at my book,” Ben said."
+        },
+        {
+            "id": 6,
+            "subject": "Mathematics",
+            "question": "In the number 475, what is the PLACE VALUE of digit 7?",
+            "audio": "In the number 475, what is the place value of digit 7?",
+            "options": [
+                "70 (7 tens)",
+                "7 (7 ones)",
+                "700 (7 hundreds)",
+                "475"
+            ],
+            "answer": "70 (7 tens)",
+            "explanation": "Giá trị hàng số slide W4M: Chữ số 7 nằm ở hàng Chục (Tens) nên có giá trị là 70 (Place value = 70)."
+        },
+        {
+            "id": 7,
+            "subject": "Mathematics",
+            "question": "What is the correct EXPANDED FORM of the number 569?",
+            "audio": "What is the correct expanded form of the number 569?",
+            "options": [
+                "500 + 60 + 9",
+                "50 + 60 + 9",
+                "500 + 6 + 9",
+                "500 + 69"
+            ],
+            "answer": "500 + 60 + 9",
+            "explanation": "Dạng khai triển số: 569 gồm 5 Hàng Trăm (500), 6 Hàng Chục (60) và 9 Hàng Đơn vị (9) &rarr; 569 = 500 + 60 + 9."
+        },
+        {
+            "id": 8,
+            "subject": "Mathematics",
+            "question": "On a number line, what is the exact HALFWAY POINT (midpoint) between 20 and 30?",
+            "audio": "On a number line, what is the exact halfway point between 20 and 30?",
+            "options": ["25", "22", "28", "20"],
+            "answer": "25",
+            "explanation": "Điểm chính giữa (midpoint) slide W4M: Điểm chính giữa giữa 20 và 30 là 25 (20 + 5 = 25). Tương tự: giữa 0 và 100 là 50, giữa 40 và 50 là 45."
+        },
+        {
+            "id": 9,
+            "subject": "Science",
+            "question": "Which statement about LIGHT is scientifically correct?",
+            "audio": "Which statement about light is scientifically correct?",
+            "options": [
+                "Light always travels in a straight line and cannot bend",
+                "Light always bends around corners easily",
+                "Light travels in a zigzag circle",
+                "Transparent materials block light completely"
+            ],
+            "answer": "Light always travels in a straight line and cannot bend",
+            "explanation": "Đặc tính truyền sáng slide W4S: \"Light travels in straight lines; cannot bend or move around corners.\" (Ánh sáng luôn truyền theo đường thẳng, không thể tự bẻ cong quanh góc tường)."
+        },
+        {
+            "id": 10,
+            "subject": "Science",
+            "question": "At 12 p.m. (midday) when the Sun is directly overhead, what happens to tree shadows?",
+            "audio": "At 12 p.m. midday when the Sun is directly overhead, what happens to tree shadows?",
+            "options": [
+                "The shadow is the SHORTEST, gathered right under the tree",
+                "The shadow is the LONGEST, stretching far to the West",
+                "The shadow disappears and turns into rainbow colours",
+                "The shadow is identical to the shadow at 8 a.m."
+            ],
+            "answer": "The shadow is the SHORTEST, gathered right under the tree",
+            "explanation": "Quy luật bóng Mặt Trời slide W4S (p. 23-26): Lúc 12 giờ trưa (midday) khi Mặt Trời lên cao nhất trên đỉnh đầu, bóng cây ngắn nhất (shortest) thu tròn dưới gốc cây. Sáng sớm (8 a.m.) và chiều muộn (5 p.m.) bóng đổ dài nhất (longest)."
         }
     ]
 }

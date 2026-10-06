@@ -104,9 +104,15 @@
 
     .select-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 10px;
       margin-bottom: 10px;
+    }
+
+    @media (max-width: 540px) {
+      .select-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     .radio-card {
@@ -231,10 +237,15 @@
           <div>Week 2</div>
           <span style="font-size:0.75rem; color:#64748b;">Past Verbs & Opacity</span>
         </div>
-        <div class="radio-card selected" data-val="week3" onclick="selectWeek('week3')">
+        <div class="radio-card" data-val="week3" onclick="selectWeek('week3')">
           <div style="font-size:24px;">🔭</div>
           <div>Week 3</div>
           <span style="font-size:0.75rem; color:#64748b;">Telescope & Teeth</span>
+        </div>
+        <div class="radio-card selected" data-val="week4" onclick="selectWeek('week4')">
+          <div style="font-size:24px;">☀️</div>
+          <div>Week 4</div>
+          <span style="font-size:0.75rem; color:#64748b;">Speech, Numbers & Light</span>
         </div>
       </div>
     </div>
@@ -294,7 +305,7 @@
   </div>
 
   <script>
-    let selectedWeek = 'week3';
+    let selectedWeek = 'week4';
     let selectedMode = 'vocab';
     let selectedLimit = '10';
 
