@@ -122,12 +122,40 @@
       background: #1e293b;
       border: 2px solid #334155;
       border-radius: 24px;
-      padding: 28px 32px;
-      max-width: 720px;
+      padding: 26px 30px;
+      max-width: 760px;
       width: 100%;
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
       position: relative;
       text-align: center;
+    }
+
+    /* Sub-mode toggle pill bar */
+    .vocab-toggle-bar {
+      display: inline-flex;
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 9999px;
+      padding: 4px;
+      gap: 4px;
+    }
+
+    .toggle-submode-btn {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .toggle-submode-btn.active {
+      background: #4f46e5;
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(79, 70, 229, 0.4);
     }
 
     /* Visual Illustration Box */
@@ -135,26 +163,14 @@
       background: #0f172a;
       border: 2px solid #334155;
       border-radius: 18px;
-      padding: 14px;
-      margin: 12px auto 16px;
+      padding: 12px;
+      margin: 10px auto 14px;
       max-width: 520px;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 110px;
+      min-height: 100px;
       box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
-    }
-
-    .target-word-title {
-      font-size: 2.1rem;
-      font-weight: 900;
-      color: #38bdf8;
-      letter-spacing: 0.5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      margin-bottom: 6px;
     }
 
     .speak-btn {
@@ -166,16 +182,261 @@
       border-radius: 50%;
       font-size: 1.15rem;
       cursor: pointer;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
       transition: all 0.2s;
+      flex-shrink: 0;
     }
 
     .speak-btn:hover {
       background: #0284c7;
       color: white;
       transform: scale(1.1);
+    }
+
+    /* Clues & Boxes */
+    .vi-meaning-box {
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid #475569;
+      border-radius: 12px;
+      padding: 10px 14px;
+      margin-bottom: 10px;
+      color: #cbd5e1;
+      font-size: 1rem;
+      line-height: 1.4;
+      text-align: left;
+    }
+
+    .mnemonic-box {
+      background: rgba(245, 158, 11, 0.15);
+      border-left: 4px solid #f59e0b;
+      border-radius: 8px;
+      padding: 8px 12px;
+      margin-bottom: 12px;
+      color: #fde68a;
+      font-size: 0.9rem;
+      text-align: left;
+      line-height: 1.4;
+    }
+
+    .cloze-sentence-box {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid #3b82f6;
+      border-radius: 12px;
+      padding: 12px 16px;
+      margin-bottom: 14px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .cloze-blank {
+      color: #f59e0b;
+      background: rgba(245, 158, 11, 0.15);
+      border-bottom: 2px dashed #f59e0b;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    /* Active Spelling Slots */
+    .letter-slots-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin: 14px 0 16px;
+      min-height: 52px;
+    }
+
+    .letter-slot {
+      width: 42px;
+      height: 48px;
+      background: #0f172a;
+      border: 2px solid #334155;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #38bdf8;
+      transition: all 0.15s ease;
+      user-select: none;
+    }
+
+    .letter-slot.filled {
+      border-color: #38bdf8;
+      background: rgba(56, 189, 248, 0.15);
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+    }
+
+    .letter-slot.current {
+      border-color: #f59e0b;
+      box-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
+      animation: pulseSlot 1.2s infinite;
+    }
+
+    @keyframes pulseSlot {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .letter-slot.space-slot {
+      width: 18px;
+      height: 48px;
+      border: none;
+      background: transparent;
+    }
+
+    /* Direct Keyboard Input Row */
+    .spelling-input-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px 0 14px;
+      flex-wrap: wrap;
+    }
+
+    .vocab-text-input {
+      background: #0f172a;
+      border: 2px solid #475569;
+      border-radius: 12px;
+      padding: 12px 18px;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #f8fafc;
+      text-align: center;
+      letter-spacing: 2px;
+      outline: none;
+      width: 330px;
+      max-width: 100%;
+      transition: all 0.2s;
+      text-transform: uppercase;
+    }
+
+    .vocab-text-input:focus {
+      border-color: #38bdf8;
+      box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.2);
+    }
+
+    .btn-submit-spelling {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 22px;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+      transition: all 0.2s;
+    }
+
+    .btn-submit-spelling:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
+    }
+
+    .btn-submit-spelling:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .btn-hint {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid #f59e0b;
+      color: #fbbf24;
+      border-radius: 12px;
+      padding: 12px 16px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .btn-hint:hover {
+      background: rgba(245, 158, 11, 0.25);
+      color: #fef3c7;
+    }
+
+    /* Scrambled Letter Tiles Bank */
+    .letter-tiles-bank {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin: 10px auto 6px;
+      max-width: 580px;
+    }
+
+    .letter-tile {
+      background: #0f172a;
+      border: 2px solid #475569;
+      color: #f8fafc;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      font-size: 1.25rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s;
+      user-select: none;
+    }
+
+    .letter-tile:hover:not(:disabled) {
+      border-color: #38bdf8;
+      background: #1e293b;
+      transform: translateY(-2px);
+      color: #38bdf8;
+    }
+
+    .letter-tile.used {
+      opacity: 0.25;
+      pointer-events: none;
+      border-color: #334155;
+      background: #090d16;
+    }
+
+    .tile-actions-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .btn-tile-action {
+      background: #0f172a;
+      border: 1px solid #475569;
+      color: #cbd5e1;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-tile-action:hover {
+      background: #334155;
+      color: white;
     }
 
     /* Subject Badge for Grand Challenge */
@@ -208,41 +469,7 @@
       gap: 10px;
     }
 
-    .vi-meaning-box {
-      background: rgba(30, 41, 59, 0.8);
-      border: 1px solid #475569;
-      border-radius: 12px;
-      padding: 10px 14px;
-      margin-bottom: 10px;
-      color: #cbd5e1;
-      font-size: 1rem;
-      line-height: 1.4;
-      text-align: left;
-    }
-
-    .mnemonic-box {
-      background: rgba(245, 158, 11, 0.15);
-      border-left: 4px solid #f59e0b;
-      border-radius: 8px;
-      padding: 8px 12px;
-      margin-bottom: 10px;
-      color: #fde68a;
-      font-size: 0.9rem;
-      text-align: left;
-      line-height: 1.4;
-    }
-
-    .collocation-text {
-      font-size: 0.95rem;
-      color: #94a3b8;
-      margin-bottom: 16px;
-      font-style: italic;
-      text-align: left;
-      background: rgba(15, 23, 42, 0.5);
-      padding: 8px 12px;
-      border-radius: 8px;
-    }
-
+    /* Options Grid (Balanced length options) */
     .options-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -262,7 +489,7 @@
       color: var(--text);
       padding: 14px 16px;
       border-radius: 14px;
-      font-size: 1rem;
+      font-size: 1.05rem;
       font-weight: 700;
       cursor: pointer;
       text-align: left;
@@ -298,8 +525,8 @@
 
     .explanation-box {
       margin-top: 16px;
-      padding: 12px 16px;
-      border-radius: 12px;
+      padding: 14px 18px;
+      border-radius: 14px;
       font-size: 0.95rem;
       font-weight: 600;
       text-align: left;
@@ -342,7 +569,7 @@
       box-shadow: 0 10px 25px rgba(239, 68, 68, 0.4);
     }
 
-    /* Exam Result Report Styling */
+    /* Result Report Styling */
     .report-card {
       background: #1e293b;
       color: #f8fafc;
@@ -530,6 +757,13 @@
     let isFinished = false;
     let mistakeList = [];
 
+    // Vocab Arena active state
+    let fullWeekWords = [];
+    let currentItem = null;
+    let currentInput = '';
+    let currentTiles = [];
+    let vocabSubMode = 'spelling'; // 'spelling' (Active Recall) | 'choice' (Balanced 4-Word)
+
     // Grand Challenge state
     let grandQuestions = [];
     let grandCurrentIdx = 0;
@@ -537,7 +771,6 @@
     // ==================== VISUAL ILLUSTRATION ENGINE (SVG GRAPHICS) ====================
     function getIllustrationSvg(svgType, word) {
       switch (svgType) {
-        // Science Teeth
         case 'incisors':
           return `
             <svg width="240" height="90" viewBox="0 0 240 90">
@@ -594,8 +827,6 @@
               <text x="195" y="55" font-size="11" fill="#065f46" text-anchor="middle">Người lớn (vĩnh viễn)</text>
             </svg>
           `;
-
-        // Machine Verbs
         case 'turn_dial':
           return `
             <svg width="240" height="85" viewBox="0 0 240 85">
@@ -634,8 +865,6 @@
               <text x="140" y="58" font-size="12" fill="#cbd5e1">Kéo cần gạt 🕹️</text>
             </svg>
           `;
-
-        // Science Light & Opacity
         case 'transparent':
           return `
             <svg width="250" height="85" viewBox="0 0 250 85">
@@ -670,8 +899,6 @@
               <text x="125" y="80" font-size="11" fill="#ef4444" font-weight="bold" text-anchor="middle">Chặn tia sáng &rarr; Tạo bóng đen</text>
             </svg>
           `;
-
-        // Maths Symbols
         case 'greater_than':
           return `
             <svg width="240" height="85" viewBox="0 0 240 85">
@@ -690,8 +917,6 @@
               <text x="120" y="78" font-size="11" fill="#38bdf8" text-anchor="middle">Mũi nhọn đâm số bé hơn 🐊</text>
             </svg>
           `;
-
-        // Maths Place Value
         case 'place_value':
         case 'expanded_form':
           return `
@@ -709,8 +934,6 @@
               <text x="220" y="55" font-size="9" fill="#fde68a" text-anchor="middle">Đơn vị</text>
             </svg>
           `;
-
-        // Light sources & Reflector
         case 'light_source':
         case 'light':
           return `
@@ -728,8 +951,6 @@
               <text x="140" y="58" font-size="12" fill="#cbd5e1">Chỉ phản chiếu ánh sáng</text>
             </svg>
           `;
-
-        // Week 4 SVGs
         case 'true_false':
           return `
             <svg width="240" height="85" viewBox="0 0 240 85">
@@ -804,10 +1025,9 @@
               <text x="150" y="58" font-size="12" fill="#cbd5e1">Đo cân nặng (kg) ⚖️</text>
             </svg>
           `;
-
         default:
           return `
-            <div style="font-size:48px; line-height:1;">${word.emoji || '📖'}</div>
+            <div style="font-size:48px; line-height:1;">${word && word.emoji ? word.emoji : '📖'}</div>
           `;
       }
     }
@@ -844,6 +1064,21 @@
           gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
           osc.start(now);
           osc.stop(now + 0.3);
+        } else if (type === 'hint') {
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(880, now);
+          osc.frequency.exponentialRampToValueAtTime(1174.66, now + 0.15);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.01, now + 0.25);
+          osc.start(now);
+          osc.stop(now + 0.25);
+        } else if (type === 'tile') {
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(440, now);
+          gain.gain.setValueAtTime(0.08, now);
+          gain.gain.exponentialRampToValueAtTime(0.005, now + 0.08);
+          osc.start(now);
+          osc.stop(now + 0.08);
         } else if (type === 'fanfare') {
           [523.25, 659.25, 783.99, 1046.50].forEach((freq, idx) => {
             const o = ctx.createOscillator();
@@ -1024,13 +1259,12 @@
         document.getElementById('scoreDisplay').textContent = score;
 
         expBox.style.display = 'block';
-        expBox.style.background = 'rgba(6, 78, 59, 0.5)';
+        expBox.style.background = 'rgba(6, 78, 59, 0.7)';
         expBox.style.color = '#86efac';
-        expBox.style.border = '1px solid #10b981';
+        expBox.style.border = '2px solid #10b981';
         expBox.innerHTML = `✓ Chính xác! (+10 điểm)<br><span style="font-size:0.9rem; color:#cbd5e1;">💡 <strong>Slide bài học:</strong> ${qObj.explanation}</span>`;
       } else {
         btn.classList.add('wrong');
-        // Highlight correct button
         parent.querySelectorAll('.option-btn').forEach((b, idx) => {
           if (qObj.options[idx].trim().toLowerCase() === correctOpt.trim().toLowerCase()) {
             b.classList.add('correct');
@@ -1039,9 +1273,9 @@
         playSound('wrong');
 
         expBox.style.display = 'block';
-        expBox.style.background = 'rgba(127, 29, 29, 0.5)';
+        expBox.style.background = 'rgba(127, 29, 29, 0.7)';
         expBox.style.color = '#fca5a5';
-        expBox.style.border = '1px solid #ef4444';
+        expBox.style.border = '2px solid #ef4444';
         expBox.innerHTML = `✗ Chưa chính xác! Đáp án đúng: <strong>${qObj.answer}</strong><br><span style="font-size:0.9rem; color:#cbd5e1;">💡 <strong>Slide bài học:</strong> ${qObj.explanation}</span>`;
 
         mistakeList.push({
@@ -1182,13 +1416,14 @@
     }
 
     // =================================================================================
-    // MODE 1: VOCAB MASTERY ARENA (LEITNER SPACED REPETITION DRILL)
+    // MODE 1: VOCAB MASTERY ARENA (ACTIVE RECALL & RETRIEVAL DRILL)
     // =================================================================================
     async function loadVocabArena() {
       try {
         const limitParam = new URLSearchParams(window.location.search).get('limit') || '10';
         const resp = await fetch(`/api/vocab_bank?week=${currentWeek}&limit=${limitParam}`);
         const words = await resp.json();
+        fullWeekWords = [...words];
         practiceQueue = words.sort(() => Math.random() - 0.5);
         initialCount = practiceQueue.length;
         document.getElementById('totalWordCount').textContent = initialCount;
@@ -1198,7 +1433,55 @@
       }
     }
 
-    let currentItem = null;
+    function setVocabSubMode(m) {
+      vocabSubMode = m;
+      renderNextVocabItem();
+    }
+
+    function getClozeSentence(item) {
+      const word = item.word.trim();
+      const colloc = item.colloc ? item.colloc.trim() : '';
+      const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`\\b${escaped}\\b`, 'i');
+
+      if (colloc && regex.test(colloc)) {
+        const html = colloc.replace(regex, `<span class="cloze-blank">_ _ _ _ _</span>`);
+        return { html, spoken: colloc };
+      }
+
+      const broadRegex = new RegExp(escaped, 'i');
+      if (colloc && broadRegex.test(colloc)) {
+        const html = colloc.replace(broadRegex, `<span class="cloze-blank">_ _ _ _ _</span>`);
+        return { html, spoken: colloc };
+      }
+
+      const fallback = item.meaning || 'Look at the Vietnamese meaning and recall the English word';
+      return {
+        html: `${fallback}: <span class="cloze-blank">_ _ _ _ _</span>`,
+        spoken: fallback
+      };
+    }
+
+    function generateLetterTiles(targetWord) {
+      const letters = targetWord.toUpperCase().split('').filter(c => /[A-Z0-9]/.test(c));
+      const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      const decoys = [];
+      const existingSet = new Set(letters);
+      const candidateDecoys = alphabet.split('').filter(c => !existingSet.has(c));
+      candidateDecoys.sort(() => Math.random() - 0.5);
+
+      const decoyCount = letters.length < 8 ? 2 : 3;
+      for (let i = 0; i < Math.min(decoyCount, candidateDecoys.length); i++) {
+        decoys.push(candidateDecoys[i]);
+      }
+
+      const allTiles = [...letters, ...decoys].sort(() => Math.random() - 0.5);
+      return allTiles.map((char, id) => ({
+        id: id,
+        char: char,
+        used: false
+      }));
+    }
 
     function renderNextVocabItem() {
       if (practiceQueue.length === 0) {
@@ -1207,14 +1490,84 @@
       }
 
       currentItem = practiceQueue[0];
+      currentInput = '';
       const container = document.getElementById('cardContainer');
-      const options = generateVocabOptions(currentItem);
       const visualSvg = getIllustrationSvg(currentItem.svg_type, currentItem);
+      const cloze = getClozeSentence(currentItem);
+
+      currentTiles = generateLetterTiles(currentItem.word);
+
+      let subModeContent = '';
+      if (vocabSubMode === 'spelling') {
+        const cleanLen = currentItem.word.replace(/\s+/g, '').length;
+        subModeContent = `
+          <div style="margin: 10px 0 6px;">
+            <div style="font-size:0.95rem; font-weight:700; color:#cbd5e1; margin-bottom:8px;">
+              🔤 Hãy nhớ và viết từ tiếng Anh gồm <span style="color:#38bdf8; font-weight:800;">${cleanLen} chữ cái</span>:
+            </div>
+
+            <!-- Letter Slots Display -->
+            <div class="letter-slots-wrapper" id="letterSlotsContainer"></div>
+
+            <!-- Direct Keyboard Input -->
+            <div class="spelling-input-row">
+              <input type="text" id="vocabInput" class="vocab-text-input" placeholder="Gõ chữ cái hoặc bấm phím..." autocomplete="off" spellcheck="false" autofocus>
+              <button class="btn-submit-spelling" id="btnSubmitSpelling" onclick="submitVocabSpelling()">
+                <span>Kiểm tra</span> ↵
+              </button>
+              <button class="btn-hint" onclick="provideLetterHint()" title="Gợi ý chữ cái tiếp theo">
+                <span>💡 Gợi ý</span>
+              </button>
+            </div>
+
+            <!-- Scrambled Letter Tiles Bank -->
+            <div class="letter-tiles-bank" id="letterTilesBank">
+              ${currentTiles.map(t => `
+                <button class="letter-tile ${t.used ? 'used' : ''}" data-id="${t.id}" onclick="handleTileClick(${t.id})">
+                  ${t.char}
+                </button>
+              `).join('')}
+            </div>
+
+            <div class="tile-actions-row">
+              <button class="btn-tile-action" onclick="deleteLastLetter()">⌫ Xóa 1 chữ (Backspace)</button>
+              <button class="btn-tile-action" onclick="clearAllInput()">🔄 Xóa hết</button>
+            </div>
+          </div>
+        `;
+      } else {
+        const options = generateBalanced4WordOptions(currentItem, fullWeekWords);
+        subModeContent = `
+          <div style="margin: 14px 0;">
+            <p style="color:#cbd5e1; font-size:1rem; margin-bottom:12px; font-weight:700;">
+              🎯 Chọn từ tiếng Anh chính xác điền vào câu trên:
+            </p>
+            <div class="options-grid">
+              ${options.map((opt, idx) => `
+                <button class="option-btn" onclick="handleVocabChoice(this, ${opt.isCorrect})">
+                  <span style="color:#38bdf8; font-weight:800;">${String.fromCharCode(65 + idx)}.</span>
+                  <span style="font-size:1.15rem; font-weight:800;">${opt.text}</span>
+                </button>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
 
       container.innerHTML = `
-        <div class="target-word-title">
-          <span>${currentItem.word.toUpperCase()}</span>
-          <button class="speak-btn" onclick="speakCurrentVocab()" title="Phát âm chuẩn">🔊</button>
+        <!-- Top Sub-mode Switcher -->
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+          <div class="vocab-toggle-bar">
+            <button class="toggle-submode-btn ${vocabSubMode === 'spelling' ? 'active' : ''}" onclick="setVocabSubMode('spelling')">
+              🔤 Gõ / Ghép chính tả
+            </button>
+            <button class="toggle-submode-btn ${vocabSubMode === 'choice' ? 'active' : ''}" onclick="setVocabSubMode('choice')">
+              🎯 Trắc nghiệm 4 từ cùng bài
+            </button>
+          </div>
+          <div style="font-size:0.85rem; color:#94a3b8; font-weight:700;">
+            Còn lại trong lượt: <span style="color:#38bdf8; font-weight:800;">${practiceQueue.length}</span> từ
+          </div>
         </div>
 
         <!-- Visual Illustration -->
@@ -1229,63 +1582,214 @@
 
         <!-- Mnemonic Hook -->
         <div class="mnemonic-box">
-          💡 <strong>Mẹo nhớ siêu tốc:</strong> ${currentItem.mnemonic}
+          💡 <strong>Mẹo nhớ:</strong> ${currentItem.mnemonic || 'Hãy ghi nhớ cách phát âm và các chữ cái tạo nên từ này!'}
         </div>
 
-        <!-- Collocation in English & Vietnamese -->
-        <div class="collocation-text">
-          <strong>Cụm từ mẫu trong slide:</strong> "${currentItem.colloc}"<br>
-          <span style="font-size:0.85rem; color:#94a3b8;">&rarr; ${currentItem.colloc_vi}</span>
+        <!-- Context Sentence / Cloze -->
+        <div class="cloze-sentence-box">
+          <div>
+            <span style="font-size:0.75rem; color:#94a3b8; display:block; text-transform:uppercase; font-weight:800; margin-bottom:2px;">📖 Câu ngữ cảnh trích từ slide bài học:</span>
+            <span style="font-size:1.12rem; color:#f8fafc; font-weight:700;">${cloze.html}</span>
+            ${currentItem.colloc_vi ? `<div style="font-size:0.85rem; color:#94a3b8; margin-top:4px; font-style:italic;">&rarr; ${currentItem.colloc_vi}</div>` : ''}
+          </div>
+          <button class="speak-btn" onclick="speakClozeSentence()" title="Nghe câu ví dụ">🔊</button>
         </div>
 
-        <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:10px; font-weight:700;">
-          Chọn định nghĩa tiếng Anh chính xác:
-        </p>
-        <div class="options-grid">
-          ${options.map((opt) => `
-            <button class="option-btn" onclick="handleVocabChoice(this, ${opt.isCorrect})">
-              ${opt.text}
-            </button>
-          `).join('')}
-        </div>
+        ${subModeContent}
+
         <div class="explanation-box" id="explanationBox"></div>
       `;
 
-      speakText(currentItem.word);
+      if (vocabSubMode === 'spelling') {
+        updateLetterSlots();
+        setupSpellingInputEvents();
+      }
     }
 
-    function generateVocabOptions(target) {
-      const correct = { text: target.meaning, isCorrect: true };
-      const genericDistractors = [
-        "blocks all light completely",
-        "instrument to look at space",
-        "8 front teeth used for slicing",
-        "largest teeth used for grinding",
-        "turn a round knob with numbers",
-        "push down with your finger",
-        "pull handle down beside screen",
-        "twenty baby teeth in children",
-        "energy we use to see the world",
-        "marks used to count data in fives",
-        "all light passes through easily",
-        "an action word that we do",
-        "a person, place, animal, or thing",
-        "asks for a reason with because"
-      ].filter(d => d.toLowerCase() !== target.meaning.toLowerCase());
-
-      const shuffledDistractors = genericDistractors.sort(() => Math.random() - 0.5).slice(0, 3);
-      const opts = [correct, ...shuffledDistractors.map(d => ({ text: d, isCorrect: false }))];
-      return opts.sort(() => Math.random() - 0.5);
+    function speakClozeSentence() {
+      if (currentItem) {
+        const textToSpeak = currentItem.colloc || currentItem.meaning || currentItem.word;
+        speakText(textToSpeak);
+      }
     }
 
-    async function handleVocabChoice(btn, isCorrect) {
-      const parent = btn.parentElement;
-      parent.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
+    function generateBalanced4WordOptions(target, pool) {
+      let otherWords = pool.filter(w => w.word.trim().toLowerCase() !== target.word.trim().toLowerCase());
+      if (otherWords.length < 3) {
+        otherWords = otherWords.concat([
+          { word: 'observe' }, { word: 'investigate' }, { word: 'measure' }, { word: 'compare' }
+        ]);
+      }
+      const shuffledOthers = [...otherWords].sort(() => Math.random() - 0.5);
+      const pickedDistractors = shuffledOthers.slice(0, 3).map(w => ({
+        text: w.word,
+        isCorrect: false
+      }));
+
+      const correct = {
+        text: target.word,
+        isCorrect: true
+      };
+
+      return [correct, ...pickedDistractors].sort(() => Math.random() - 0.5);
+    }
+
+    function updateLetterSlots() {
+      const container = document.getElementById('letterSlotsContainer');
+      if (!container || !currentItem) return;
+
+      const targetChars = currentItem.word.toUpperCase().split('');
+      const inputChars = currentInput.toUpperCase().split('');
+
+      let html = '';
+      let inputIdx = 0;
+
+      for (let i = 0; i < targetChars.length; i++) {
+        const tChar = targetChars[i];
+        if (tChar === ' ') {
+          html += `<div class="letter-slot space-slot"></div>`;
+        } else {
+          const typedChar = inputChars[inputIdx] || '';
+          const isFilled = typedChar !== '';
+          const isCurrent = !isFilled && (inputIdx === inputChars.length);
+          html += `
+            <div class="letter-slot ${isFilled ? 'filled' : ''} ${isCurrent ? 'current' : ''}">
+              ${typedChar || ''}
+            </div>
+          `;
+          inputIdx++;
+        }
+      }
+
+      container.innerHTML = html;
+
+      const inputEl = document.getElementById('vocabInput');
+      if (inputEl && inputEl.value !== currentInput) {
+        inputEl.value = currentInput;
+      }
+
+      syncTilesWithInput();
+    }
+
+    function syncTilesWithInput() {
+      const inputUpper = currentInput.toUpperCase();
+      const charCounts = {};
+      for (const c of inputUpper) {
+        if (/[A-Z0-9]/.test(c)) {
+          charCounts[c] = (charCounts[c] || 0) + 1;
+        }
+      }
+
+      currentTiles.forEach(tile => {
+        if (charCounts[tile.char] && charCounts[tile.char] > 0) {
+          tile.used = true;
+          charCounts[tile.char]--;
+        } else {
+          tile.used = false;
+        }
+      });
+
+      currentTiles.forEach(tile => {
+        const btn = document.querySelector(`.letter-tile[data-id="${tile.id}"]`);
+        if (btn) {
+          if (tile.used) {
+            btn.classList.add('used');
+          } else {
+            btn.classList.remove('used');
+          }
+        }
+      });
+    }
+
+    function setupSpellingInputEvents() {
+      const inputEl = document.getElementById('vocabInput');
+      if (!inputEl) return;
+
+      inputEl.focus();
+
+      inputEl.oninput = (e) => {
+        currentInput = e.target.value.toUpperCase();
+        updateLetterSlots();
+      };
+
+      inputEl.onkeydown = (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          submitVocabSpelling();
+        }
+      };
+    }
+
+    function handleTileClick(tileId) {
+      const tile = currentTiles.find(t => t.id === tileId);
+      if (!tile || tile.used) return;
+
+      playSound('tile');
+      currentInput += tile.char;
+      updateLetterSlots();
+
+      const inputEl = document.getElementById('vocabInput');
+      if (inputEl) inputEl.focus();
+    }
+
+    function deleteLastLetter() {
+      if (currentInput.length > 0) {
+        playSound('tile');
+        currentInput = currentInput.slice(0, -1);
+        updateLetterSlots();
+        const inputEl = document.getElementById('vocabInput');
+        if (inputEl) inputEl.focus();
+      }
+    }
+
+    function clearAllInput() {
+      playSound('tile');
+      currentInput = '';
+      updateLetterSlots();
+      const inputEl = document.getElementById('vocabInput');
+      if (inputEl) inputEl.focus();
+    }
+
+    function provideLetterHint() {
+      if (!currentItem) return;
+      playSound('hint');
+
+      const targetLetters = currentItem.word.toUpperCase();
+      let nextChar = '';
+      for (let i = 0; i < targetLetters.length; i++) {
+        if (i >= currentInput.length || currentInput[i].toUpperCase() !== targetLetters[i]) {
+          nextChar = targetLetters[i];
+          currentInput = targetLetters.slice(0, i + 1);
+          break;
+        }
+      }
+
+      updateLetterSlots();
+      const inputEl = document.getElementById('vocabInput');
+      if (inputEl) inputEl.focus();
+
+      if (nextChar && nextChar !== ' ') {
+        speakText(`Letter ${nextChar}`);
+      }
+    }
+
+    function submitVocabSpelling() {
+      if (!currentItem) return;
+
+      const userText = currentInput.trim().toLowerCase().replace(/\s+/g, ' ');
+      const targetText = currentItem.word.trim().toLowerCase().replace(/\s+/g, ' ');
+
+      const inputEl = document.getElementById('vocabInput');
+      if (inputEl) inputEl.disabled = true;
+      const submitBtn = document.getElementById('btnSubmitSpelling');
+      if (submitBtn) submitBtn.disabled = true;
+
+      const isCorrect = (userText === targetText);
       const expBox = document.getElementById('explanationBox');
 
       if (isCorrect) {
-        btn.classList.add('correct');
         playSound('correct');
+        speakText(currentItem.word);
         score += 10;
         masteredCount++;
         document.getElementById('scoreDisplay').textContent = score;
@@ -1295,10 +1799,21 @@
         document.getElementById('progressBar').style.width = pct + '%';
 
         expBox.style.display = 'block';
-        expBox.style.background = 'rgba(6, 78, 59, 0.5)';
+        expBox.style.background = 'rgba(6, 78, 59, 0.8)';
         expBox.style.color = '#86efac';
-        expBox.style.border = '1px solid #10b981';
-        expBox.innerHTML = `✓ Xuất sắc! Bạn đã thuộc từ "${currentItem.word}" &rarr; ${currentItem.vietnamese}`;
+        expBox.style.border = '2px solid #10b981';
+        expBox.innerHTML = `
+          <div style="font-size:1.25rem; font-weight:800; margin-bottom:4px;">
+            ✓ XUẤT SẮC! BẠN ĐÃ NHỚ VÀ VIẾT ĐÚNG! (+10 điểm)
+          </div>
+          <div style="font-size:1.6rem; font-weight:900; color:#ffffff; letter-spacing:1px; margin:4px 0;">
+            ${currentItem.word.toUpperCase()}
+          </div>
+          <div style="color:#cbd5e1; font-size:0.95rem;">
+            🇻🇳 ${currentItem.vietnamese}<br>
+            <em>"${currentItem.colloc}"</em>
+          </div>
+        `;
 
         fetch('/api/record_vocab', {
           method: 'POST',
@@ -1312,19 +1827,43 @@
         });
 
         practiceQueue.shift();
+
+        setTimeout(() => {
+          renderNextVocabItem();
+        }, 1800);
+
       } else {
-        btn.classList.add('wrong');
         playSound('wrong');
+        speakText(currentItem.word);
+
         expBox.style.display = 'block';
-        expBox.style.background = 'rgba(127, 29, 29, 0.5)';
+        expBox.style.background = 'rgba(127, 29, 29, 0.85)';
         expBox.style.color = '#fca5a5';
-        expBox.style.border = '1px solid #ef4444';
-        expBox.innerHTML = `✗ Chưa đúng! "${currentItem.word}" có nghĩa là: <strong>${currentItem.vietnamese}</strong>.<br>Từ này sẽ quay lại để bạn làm lại cho thuộc nhé!`;
+        expBox.style.border = '2px solid #ef4444';
+        expBox.innerHTML = `
+          <div style="font-size:1.2rem; font-weight:800; margin-bottom:6px;">
+            ✗ CHƯA CHÍNH XÁC! HÃY GHI NHỚ TỪ NÀY:
+          </div>
+          <div style="margin-bottom:6px; font-size:0.95rem; color:#cbd5e1;">
+            Bạn đã nhập: <span style="text-decoration:line-through; color:#f87171; font-weight:700;">${currentInput || '(bỏ trống)'}</span>
+          </div>
+          <div style="font-size:1.6rem; font-weight:900; color:#34d399; letter-spacing:1px; margin-bottom:8px;">
+            👉 ${currentItem.word.toUpperCase()}
+          </div>
+          <div style="color:#fde68a; font-size:0.92rem; line-height:1.45; margin-bottom:12px; background:rgba(0,0,0,0.3); padding:8px 12px; border-radius:8px;">
+            🇻🇳 <strong>Nghĩa:</strong> ${currentItem.vietnamese}<br>
+            💡 <strong>Mẹo nhớ:</strong> ${currentItem.mnemonic || 'Ghi nhớ cách phát âm và các chữ cái!'}<br>
+            📖 <strong>Câu mẫu:</strong> "${currentItem.colloc}"
+          </div>
+          <button class="btn-action" style="background:#ef4444; color:white; width:100%; justify-content:center;" onclick="proceedAfterMistake()">
+            🔄 Tôi đã nhớ! Luyện tiếp & Lặp lại từ này sau
+          </button>
+        `;
 
         mistakeList.push({
           item: currentItem.word,
-          user_answer: btn.textContent.trim(),
-          correct_answer: currentItem.meaning
+          user_answer: currentInput || '(bỏ trống)',
+          correct_answer: currentItem.word
         });
 
         fetch('/api/record_vocab', {
@@ -1338,19 +1877,113 @@
           })
         });
 
-        // Re-queue for Leitner Spaced Repetition mastery
+        // Leitner: push to back of queue
         const failedItem = practiceQueue.shift();
         practiceQueue.push(failedItem);
       }
-
-      setTimeout(() => {
-        renderNextVocabItem();
-      }, 1800);
     }
 
-    function speakCurrentVocab() {
-      if (currentItem) {
-        speakText(currentItem.audio || currentItem.word);
+    function proceedAfterMistake() {
+      renderNextVocabItem();
+    }
+
+    function handleVocabChoice(btn, isCorrect) {
+      const parent = btn.parentElement;
+      parent.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
+      const expBox = document.getElementById('explanationBox');
+
+      if (isCorrect) {
+        btn.classList.add('correct');
+        playSound('correct');
+        speakText(currentItem.word);
+        score += 10;
+        masteredCount++;
+        document.getElementById('scoreDisplay').textContent = score;
+        document.getElementById('masteredCount').textContent = masteredCount;
+
+        const pct = Math.min(100, Math.round((masteredCount / initialCount) * 100));
+        document.getElementById('progressBar').style.width = pct + '%';
+
+        expBox.style.display = 'block';
+        expBox.style.background = 'rgba(6, 78, 59, 0.8)';
+        expBox.style.color = '#86efac';
+        expBox.style.border = '2px solid #10b981';
+        expBox.innerHTML = `
+          <div style="font-size:1.25rem; font-weight:800; margin-bottom:4px;">
+            ✓ CHÍNH XÁC! (+10 điểm)
+          </div>
+          <div style="font-size:1.5rem; font-weight:900; color:#ffffff; margin:4px 0;">
+            ${currentItem.word.toUpperCase()} &rarr; ${currentItem.vietnamese}
+          </div>
+        `;
+
+        fetch('/api/record_vocab', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            student_name: studentName,
+            word: currentItem.word,
+            week: currentWeek,
+            is_correct: true
+          })
+        });
+
+        practiceQueue.shift();
+
+        setTimeout(() => {
+          renderNextVocabItem();
+        }, 1800);
+      } else {
+        btn.classList.add('wrong');
+        parent.querySelectorAll('.option-btn').forEach(b => {
+          if (b.textContent.toLowerCase().includes(currentItem.word.toLowerCase())) {
+            b.classList.add('correct');
+          }
+        });
+
+        playSound('wrong');
+        speakText(currentItem.word);
+
+        expBox.style.display = 'block';
+        expBox.style.background = 'rgba(127, 29, 29, 0.85)';
+        expBox.style.color = '#fca5a5';
+        expBox.style.border = '2px solid #ef4444';
+        expBox.innerHTML = `
+          <div style="font-size:1.2rem; font-weight:800; margin-bottom:6px;">
+            ✗ CHƯA CHÍNH XÁC! TỪ ĐÚNG LÀ:
+          </div>
+          <div style="font-size:1.6rem; font-weight:900; color:#34d399; letter-spacing:1px; margin-bottom:8px;">
+            👉 ${currentItem.word.toUpperCase()}
+          </div>
+          <div style="color:#fde68a; font-size:0.92rem; line-height:1.45; margin-bottom:12px; background:rgba(0,0,0,0.3); padding:8px 12px; border-radius:8px;">
+            🇻🇳 <strong>Nghĩa:</strong> ${currentItem.vietnamese}<br>
+            💡 <strong>Mẹo nhớ:</strong> ${currentItem.mnemonic || 'Hãy ghi nhớ từ này!'}<br>
+            📖 <strong>Câu mẫu:</strong> "${currentItem.colloc}"
+          </div>
+          <button class="btn-action" style="background:#ef4444; color:white; width:100%; justify-content:center;" onclick="proceedAfterMistake()">
+            🔄 Tôi đã nhớ! Luyện tiếp & Lặp lại từ này sau
+          </button>
+        `;
+
+        mistakeList.push({
+          item: currentItem.word,
+          user_answer: btn.textContent.trim(),
+          correct_answer: currentItem.word
+        });
+
+        fetch('/api/record_vocab', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            student_name: studentName,
+            word: currentItem.word,
+            week: currentWeek,
+            is_correct: false
+          })
+        });
+
+        const failedItem = practiceQueue.shift();
+        practiceQueue.push(failedItem);
       }
     }
 

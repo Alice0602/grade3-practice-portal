@@ -40,7 +40,7 @@
       background: white;
       border-radius: 24px;
       padding: 36px 30px;
-      max-width: 600px;
+      max-width: 650px;
       width: 100%;
       box-shadow: 0 20px 40px -10px rgba(79, 70, 229, 0.15), 0 10px 20px -5px rgba(0, 0, 0, 0.05);
       border: 2px solid #e2e8f0;
@@ -242,10 +242,25 @@
           <div>Week 3</div>
           <span style="font-size:0.75rem; color:#64748b;">Telescope & Teeth</span>
         </div>
-        <div class="radio-card selected" data-val="week4" onclick="selectWeek('week4')">
+        <div class="radio-card" data-val="week4" onclick="selectWeek('week4')">
           <div style="font-size:24px;">☀️</div>
           <div>Week 4</div>
           <span style="font-size:0.75rem; color:#64748b;">Speech, Numbers & Light</span>
+        </div>
+        <div class="radio-card" data-val="week5" onclick="selectWeek('week5')">
+          <div style="font-size:24px;">🥪</div>
+          <div>Week 5</div>
+          <span style="font-size:0.75rem; color:#64748b;">Stories, Digest & Column +/-</span>
+        </div>
+        <div class="radio-card" data-val="week6" onclick="selectWeek('week6')">
+          <div style="font-size:24px;">💊</div>
+          <div>Week 6</div>
+          <span style="font-size:0.75rem; color:#64748b;">Medicine, 2D Shapes & Diets</span>
+        </div>
+        <div class="radio-card selected" data-val="week7" onclick="selectWeek('week7')">
+          <div style="font-size:24px;">🌿</div>
+          <div>Week 7</div>
+          <span style="font-size:0.75rem; color:#64748b;">Plant Parts, Fair Test & Patterns</span>
         </div>
       </div>
     </div>
@@ -267,7 +282,7 @@
 
       <!-- Dynamic Mode Clarification -->
       <div class="mode-desc-box" id="modeDescBox">
-        <strong>🧠 Chế độ Luyện Từ Vựng:</strong> Rèn luyện trí nhớ qua hình ảnh trực quan, mẹo nhớ tiếng Việt, ví dụ trích từ slide. <em>Làm sai từ nào hệ thống sẽ cho làm lại từ đó đến khi nhớ làu làu 100%!</em>
+        <strong>🧠 Chế độ Luyện Ghi Nhớ & Chính Tả Từ Vựng:</strong> Rèn trí nhớ chủ động qua câu ngữ cảnh, nghĩa tiếng Việt và mẹo liên tưởng. <em>Học sinh tự gõ chữ cái hoặc ghép từ &bull; Không còn mẹo chọn câu dài nhất &bull; Sai từ nào lặp lại từ đó đến khi thuộc 100%!</em>
       </div>
     </div>
 
@@ -305,7 +320,7 @@
   </div>
 
   <script>
-    let selectedWeek = 'week4';
+    let selectedWeek = 'week7';
     let selectedMode = 'vocab';
     let selectedLimit = '10';
 
@@ -334,11 +349,11 @@
       const btnText = document.getElementById('btnStartText');
 
       if (m === 'vocab') {
-        descBox.innerHTML = `<strong>🧠 Chế độ Luyện Từ Vựng:</strong> Rèn luyện trí nhớ qua hình ảnh trực quan, mẹo nhớ tiếng Việt, ví dụ trích từ slide. <em>Làm sai từ nào hệ thống sẽ cho làm lại từ đó đến khi nhớ làu làu 100%!</em>`;
+        descBox.innerHTML = `<strong>🧠 Chế độ Luyện Ghi Nhớ & Chính Tả Từ Vựng:</strong> Rèn trí nhớ chủ động qua câu ngữ cảnh, nghĩa tiếng Việt và mẹo liên tưởng. <em>Học sinh tự gõ chữ cái hoặc ghép từ &bull; Không còn mẹo chọn câu dài nhất &bull; Sai từ nào lặp lại từ đó đến khi thuộc 100%!</em>`;
         limitGroup.style.display = 'block';
         btnText.textContent = 'Vào Bài Luyện Tập Ngay';
       } else {
-        descBox.innerHTML = `<strong>🏆 Chế độ Bài Kiểm Tra (10 câu - 100 điểm):</strong> Đề thi trắc nghiệm chuẩn hóa bao quát 3 môn (English, Maths, Science) lấy trực tiếp từ slide và đề cương. <em>Mỗi câu làm 1 lần tính điểm thật (không làm lại), chấm điểm tự động và xuất báo cáo kết quả chi tiết!</em>`;
+        descBox.innerHTML = `<strong>🏆 Chế độ Bài Kiểm Tra (10 câu - 100 điểm):</strong> Đề thi trắc nghiệm chuẩn hóa 3 môn (English, Maths, Science) với <strong>4 đáp án cân bằng độ dài tuyệt đối</strong>, loại bỏ hoàn toàn việc đoán mò. <em>Chấm điểm tự động và xuất báo cáo kết quả chi tiết!</em>`;
         limitGroup.style.display = 'none';
         btnText.textContent = 'Bắt Đầu Bài Kiểm Tra 10 Câu (100 Điểm)';
       }

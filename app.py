@@ -209,7 +209,649 @@ VOCABULARY_BANK = {
         {"word": "smaller shadow", "meaning": "shadow becomes smaller when object is further away from light", "vietnamese": "Bóng nhỏ hơn: xảy ra khi đưa vật ra XA nguồn sáng", "mnemonic": "Kéo vật ra xa đèn pin &rarr; bóng thu nhỏ lại gọn gàng.", "colloc": "Further from light makes a smaller shadow", "colloc_vi": "Càng xa nguồn sáng thì bóng càng nhỏ lại", "audio": "further away makes a smaller shadow.", "type": "science", "svg_type": "shadow", "emoji": "🔎"},
         {"word": "shortest shadow", "meaning": "at 12 p.m. (midday) when Sun is highest overhead", "vietnamese": "Bóng ngắn nhất: vào lúc 12 giờ trưa khi Mặt Trời lên cao nhất trên đỉnh đầu", "mnemonic": "12 giờ trưa ☀️ Mặt Trời chiếu thẳng đứng từ trên đầu xuống &rarr; bóng thu tròn sát dưới chân.", "colloc": "At midday the shadow is shortest", "colloc_vi": "Vào giữa trưa chiếc bóng là ngắn nhất", "audio": "at midday the shadow is shortest.", "type": "science", "svg_type": "shadow", "emoji": "🕛"},
         {"word": "longest shadow", "meaning": "at 8 a.m. and 5 p.m. when Sun is low in the sky", "vietnamese": "Bóng dài nhất: vào sáng sớm (8 a.m.) và chiều muộn (5 p.m.) khi Mặt Trời ở vị trí thấp", "mnemonic": "Mặt Trời chiếu xiên từ chân trời 🌅 &rarr; bóng cây đổ dài ngoằng trên mặt đất.", "colloc": "Early morning casts the longest shadow", "colloc_vi": "Sáng sớm tạo ra bóng đổ dài nhất", "audio": "early morning casts the longest shadow.", "type": "science", "svg_type": "shadow", "emoji": "🌅"}
-    ]
+    ],
+    "week5": [
+        {
+                "word": "beginning",
+                "meaning": "the start of a story introducing characters and setting",
+                "vietnamese": "Mở đầu câu chuyện: giới thiệu nhân vật (Characters) và bối cảnh (Setting)",
+                "mnemonic": "Bắt đầu câu chuyện luôn cho ta biết: Ai ở đâu và khi nào? 🌅",
+                "colloc": "The beginning introduces characters and setting",
+                "colloc_vi": "Phần mở đầu giới thiệu các nhân vật và bối cảnh",
+                "audio": "beginning. The start of a story.",
+                "type": "story",
+                "svg_type": "default",
+                "emoji": "🌅"
+        },
+        {
+                "word": "middle",
+                "meaning": "the main part where a problem or event happens",
+                "vietnamese": "Thân truyện: diễn biến sự kiện hoặc một vấn đề rắc rối xảy ra",
+                "mnemonic": "Phần giữa truyện luôn có kịch tính, sự cố xảy ra cần giải quyết 🌪️.",
+                "colloc": "A big problem happens in the middle",
+                "colloc_vi": "Một vấn đề lớn xảy ra ở phần thân truyện",
+                "audio": "middle. The main part where a problem happens.",
+                "type": "story",
+                "svg_type": "default",
+                "emoji": "🌪️"
+        },
+        {
+                "word": "end",
+                "meaning": "the conclusion where the problem is solved",
+                "vietnamese": "Kết truyện: cách vấn đề được tháo gỡ và giải quyết ổn thỏa",
+                "mnemonic": "Kết thúc có hậu, cỗ máy hoạt động hoặc bài học được rút ra 🏁.",
+                "colloc": "The problem is solved at the end",
+                "colloc_vi": "Vấn đề được giải quyết ở phần kết truyện",
+                "audio": "end. The conclusion where the problem is solved.",
+                "type": "story",
+                "svg_type": "default",
+                "emoji": "🏁"
+        },
+        {
+                "word": "character",
+                "meaning": "a person, animal or creature in a story",
+                "vietnamese": "Nhân vật: người, động vật hoặc sinh vật trong truyện",
+                "mnemonic": "Nhân vật trả lời cho câu hỏi: Who is in the story? (Ai trong truyện?) 🧙",
+                "colloc": "Professor Inkspot and Billy are main characters",
+                "colloc_vi": "Giáo sư Inkspot và Billy là các nhân vật chính",
+                "audio": "character. A person or creature in a story.",
+                "type": "story",
+                "svg_type": "default",
+                "emoji": "🧙"
+        },
+        {
+                "word": "setting",
+                "meaning": "where and when a story takes place",
+                "vietnamese": "Bối cảnh: địa điểm (Where) và thời gian (When) diễn ra câu chuyện",
+                "mnemonic": "Bối cảnh trả lời câu hỏi: Where and When? (Ở đâu và vào lúc nào?) 🏡",
+                "colloc": "The setting was a wooden shed one morning",
+                "colloc_vi": "Bối cảnh là một gian nhà kho bằng gỗ vào một buổi sáng",
+                "audio": "setting. Where and when a story takes place.",
+                "type": "story",
+                "svg_type": "default",
+                "emoji": "🏡"
+        },
+        {
+                "word": "problem",
+                "meaning": "something that goes wrong and needs to be fixed",
+                "vietnamese": "Vấn đề rắc rối: sự việc trục trặc xảy ra cần được giải quyết",
+                "mnemonic": "Cỗ máy xì khói xanh hoặc phát ra tiếng nổ lạ ⚠️.",
+                "colloc": "The loud noise was a sudden problem",
+                "colloc_vi": "Tiếng ồn lớn là một vấn đề bất ngờ xảy ra",
+                "audio": "problem. Something that goes wrong.",
+                "type": "story",
+                "svg_type": "default",
+                "emoji": "⚠️"
+        },
+        {
+                "word": "solution",
+                "meaning": "the way a problem is fixed or resolved",
+                "vietnamese": "Giải pháp: cách thức tháo gỡ hoặc khắc phục vấn đề",
+                "mnemonic": "Ý tưởng thông minh để sửa chữa cỗ máy và kết thúc câu chuyện 💡.",
+                "colloc": "Billy found a clever solution",
+                "colloc_vi": "Billy đã tìm ra một giải pháp thông minh",
+                "audio": "solution. The way a problem is fixed.",
+                "type": "story",
+                "svg_type": "default",
+                "emoji": "💡"
+        },
+        {
+                "word": "woke up",
+                "meaning": "past form of wake up: stopped sleeping",
+                "vietnamese": "Đã tỉnh giấc: dạng quá khứ bất quy tắc của wake up",
+                "mnemonic": "Chữ a biến thành o (wake up &rarr; woke up) ⏰ lúc 6:30 sáng.",
+                "colloc": "Billy woke up at half past six",
+                "colloc_vi": "Billy đã thức giấc vào lúc 6 giờ 30 phút sáng",
+                "audio": "woke up. Past simple of wake up.",
+                "type": "grammar",
+                "svg_type": "default",
+                "emoji": "⏰"
+        },
+        {
+                "word": "found",
+                "meaning": "past form of find: discovered something",
+                "vietnamese": "Đã tìm thấy / phát hiện ra: dạng quá khứ của find",
+                "mnemonic": "Tìm thấy cỗ máy bí ẩn trong nhà kho: find đổi thành found 🔍.",
+                "colloc": "They found a mysterious machine in the shed",
+                "colloc_vi": "Họ đã tìm thấy một cỗ máy bí ẩn trong gian nhà kho",
+                "audio": "found. Past simple of find.",
+                "type": "grammar",
+                "svg_type": "default",
+                "emoji": "🔍"
+        },
+        {
+                "word": "heard",
+                "meaning": "past form of hear: perceived a sound",
+                "vietnamese": "Đã nghe thấy: dạng quá khứ của hear (thêm d)",
+                "mnemonic": "Đôi tai nghe thấy tiếng nổ lớn: hear thêm d thành heard 👂.",
+                "colloc": "He heard a loud BANG outside",
+                "colloc_vi": "Cậu ấy đã nghe thấy một tiếng nổ lớn bên ngoài",
+                "audio": "heard. Past simple of hear.",
+                "type": "grammar",
+                "svg_type": "default",
+                "emoji": "👂"
+        },
+        {
+                "word": "said",
+                "meaning": "past form of say: spoke words",
+                "vietnamese": "Đã nói: dạng quá khứ bất quy tắc của say",
+                "mnemonic": "Giáo sư nói lời chào: say đổi thành said 💬.",
+                "colloc": "Professor Inkspot said hello to Billy",
+                "colloc_vi": "Giáo sư Inkspot đã nói lời chào với Billy",
+                "audio": "said. Past simple of say.",
+                "type": "grammar",
+                "svg_type": "default",
+                "emoji": "💬"
+        },
+        {
+                "word": "partitioning",
+                "meaning": "breaking numbers into hundreds, tens, and ones to add or subtract",
+                "vietnamese": "Tách số theo hàng: phân tách số thành Trăm, Chục, Đơn vị để tính nhanh",
+                "mnemonic": "Tách $341 = 300 + 40 + 1$ ghép thành từng mảnh ghép dễ tính 🧩.",
+                "colloc": "Use partitioning to add 341 and 526",
+                "colloc_vi": "Dùng cách tách số để cộng 341 và 526",
+                "audio": "partitioning. Breaking numbers into parts.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "🧩"
+        },
+        {
+                "word": "column addition",
+                "meaning": "adding numbers written vertically in columns",
+                "vietnamese": "Đặt tính rồi tính cộng: đặt các hàng đơn vị, chục, trăm thẳng cột",
+                "mnemonic": "Xếp các con số thẳng hàng dọc rồi cộng từ phải sang trái ➕.",
+                "colloc": "Align the digits for column addition",
+                "colloc_vi": "Xếp thẳng hàng các chữ số khi đặt tính cộng",
+                "audio": "column addition. Adding numbers vertically.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "➕"
+        },
+        {
+                "word": "regrouping",
+                "meaning": "carrying ten to the next column when adding or borrowing when subtracting",
+                "vietnamese": "Nhớ sang hàng kế tiếp khi cộng hoặc mượn khi trừ",
+                "mnemonic": "Hàng chục cộng lại ra 12 thì viết 2 nhớ 1 sang hàng trăm 🔄.",
+                "colloc": "Regroup 12 tens into 1 hundred and 2 tens",
+                "colloc_vi": "Chuyển 12 chục thành 1 trăm và 2 chục",
+                "audio": "regrouping. Carrying or borrowing numbers.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "🔄"
+        },
+        {
+                "word": "digestive system",
+                "meaning": "the body organs that break down food into energy and nutrients",
+                "vietnamese": "Hệ tiêu hóa: chuỗi các cơ quan phân hủy thức ăn để nuôi sống cơ thể",
+                "mnemonic": "Thức ăn bắt đầu từ miệng và đi qua cả một hệ thống tiêu hóa kỳ diệu 🥪.",
+                "colloc": "Food travels through the digestive system",
+                "colloc_vi": "Thức ăn di chuyển qua toàn bộ hệ tiêu hóa",
+                "audio": "digestive system. Organs that break down food.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🥪"
+        },
+        {
+                "word": "saliva",
+                "meaning": "liquid in the mouth that softens food and starts digestion",
+                "vietnamese": "Nước bọt: chất lỏng trong khoang miệng làm mềm và bước đầu tiêu hóa thức ăn",
+                "mnemonic": "Nước bọt tiết ra làm ướt thức ăn giúp răng nhai và họng nuốt dễ dàng 💧.",
+                "colloc": "Saliva softens food in the mouth",
+                "colloc_vi": "Nước bọt làm mềm thức ăn trong khoang miệng",
+                "audio": "saliva. Liquid in the mouth that softens food.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "💧"
+        },
+        {
+                "word": "oesophagus",
+                "meaning": "the muscular tube connecting the mouth to the stomach (gullet)",
+                "vietnamese": "Thực quản: ống cơ co bóp nhịp nhàng đẩy thức ăn từ miệng xuống dạ dày",
+                "mnemonic": "Chiếc ống dẫn dài nối thẳng từ cuống họng xuống dạ dày 🥖.",
+                "colloc": "Muscles push food down the oesophagus",
+                "colloc_vi": "Cơ bắp co bóp đẩy thức ăn trôi xuống thực quản",
+                "audio": "oesophagus. The muscular tube connecting mouth to stomach.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🥖"
+        },
+        {
+                "word": "stomach",
+                "meaning": "a muscular sac that mixes food with acids to break it down",
+                "vietnamese": "Dạ dày: túi cơ co bóp nhào trộn thức ăn với dịch axit thành chất lỏng",
+                "mnemonic": "Chiếc túi cơ bắp nhào lộn thức ăn như máy xay sinh tố 🥣.",
+                "colloc": "Acids in the stomach break down food into liquid",
+                "colloc_vi": "Axit trong dạ dày phân hủy thức ăn thành dạng lỏng",
+                "audio": "stomach. A muscular sac that mixes food with acids.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🥣"
+        },
+        {
+                "word": "small intestine",
+                "meaning": "a long folded tube that absorbs essential nutrients into the blood",
+                "vietnamese": "Ruột non: ống dài gấp khúc hấp thụ chất dinh dưỡng quý giá vào dòng máu",
+                "mnemonic": "Ống ruột dài ngoằn ngoèo lọc lấy toàn bộ vitamin và dưỡng chất nuôi cơ thể 🩸.",
+                "colloc": "The small intestine absorbs nutrients into blood",
+                "colloc_vi": "Ruột non hấp thụ các chất dinh dưỡng vào máu",
+                "audio": "small intestine. Absorbs nutrients into the blood.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🩸"
+        }
+],
+    "week6": [
+        {
+                "word": "marvellous",
+                "meaning": "wonderful, amazing, really really good",
+                "vietnamese": "Tuyệt vời, kỳ diệu, phi thường (rất rất tốt)",
+                "mnemonic": "Phương thuốc kỳ diệu thần kỳ của cậu bé George ✨.",
+                "colloc": "George made a marvellous medicine",
+                "colloc_vi": "George đã tạo nên một phương thuốc kỳ diệu",
+                "audio": "marvellous. Wonderful and really good.",
+                "type": "story",
+                "svg_type": "default",
+                "emoji": "✨"
+        },
+        {
+                "word": "medicine",
+                "meaning": "substance taken to treat illness or feel better",
+                "vietnamese": "Thuốc chữa bệnh: dung dịch hoặc viên uống giúp hồi phục sức khỏe",
+                "mnemonic": "Uống thuốc đúng giờ để mau khỏi bệnh 💊.",
+                "colloc": "Grandma takes four spoons of medicine",
+                "colloc_vi": "Bà uống 4 thìa thuốc chữa bệnh",
+                "audio": "medicine. Substance taken to treat illness.",
+                "type": "story",
+                "svg_type": "default",
+                "emoji": "💊"
+        },
+        {
+                "word": "grumpy",
+                "meaning": "bad-tempered, easily annoyed, always complaining",
+                "vietnamese": "Cáu kỉnh, gắt gỏng, khó tính hay càu nhàu",
+                "mnemonic": "Khuôn mặt nhăn nhó lúc nào cũng bực mình và cáu gắt 😠.",
+                "colloc": "Grandma was very grumpy and cross",
+                "colloc_vi": "Bà ngoại rất cáu kỉnh và bực dọc",
+                "audio": "grumpy. Bad-tempered and easily annoyed.",
+                "type": "story",
+                "svg_type": "default",
+                "emoji": "😠"
+        },
+        {
+                "word": "mixture",
+                "meaning": "different ingredients mixed together to form a new substance",
+                "vietnamese": "Hỗn hợp: nhiều chất và nguyên liệu được trộn lẫn vào nhau",
+                "mnemonic": "Trộn kem đánh răng, dầu gội và gia vị tạo thành một hỗn hợp kỳ lạ 🧪.",
+                "colloc": "He stirred the bubbling mixture",
+                "colloc_vi": "Cậu ấy khuấy đều hỗn hợp đang sủi bọt",
+                "audio": "mixture. Different ingredients mixed together.",
+                "type": "story",
+                "svg_type": "default",
+                "emoji": "🧪"
+        },
+        {
+                "word": "saucepan",
+                "meaning": "a deep metal cooking pot with a long handle",
+                "vietnamese": "Chiếc chảo/nồi sâu lòng có cán cầm dài để nấu trên bếp",
+                "mnemonic": "Chiếc nồi kim loại sâu lòng có cán dài 🍳 đặt trên bếp lửa.",
+                "colloc": "He cooked the medicine in a giant saucepan",
+                "colloc_vi": "Cậu ấy đun sôi thuốc trong chiếc nồi cán dài khổng lồ",
+                "audio": "saucepan. A cooking pot with a long handle.",
+                "type": "story",
+                "svg_type": "default",
+                "emoji": "🍳"
+        },
+        {
+                "word": "past continuous",
+                "meaning": "action that was in progress in the past (was/were + V-ing)",
+                "vietnamese": "Thì quá khứ tiếp diễn: hành động đang diễn ra tại thời điểm quá khứ",
+                "mnemonic": "Công thức: was/were + V-ing (đang diễn ra trong quá khứ) ⏳.",
+                "colloc": "George was mixing the medicine",
+                "colloc_vi": "George đang pha chế nồi thuốc",
+                "audio": "past continuous. Was or were plus V-ing.",
+                "type": "grammar",
+                "svg_type": "default",
+                "emoji": "⏳"
+        },
+        {
+                "word": "was",
+                "meaning": "used with singular subjects (I, he, she, it) in past continuous",
+                "vietnamese": "Dùng cho chủ ngữ số ít (I, he, she, it, George, Grandma)",
+                "mnemonic": "1 người/vật dùng WAS: George was mixing 👤.",
+                "colloc": "Grandma was sleeping in her armchair",
+                "colloc_vi": "Bà đang ngủ trong chiếc ghế bành",
+                "audio": "was. Used with singular subjects.",
+                "type": "grammar",
+                "svg_type": "default",
+                "emoji": "👤"
+        },
+        {
+                "word": "were",
+                "meaning": "used with plural subjects (you, we, they, chickens) in past continuous",
+                "vietnamese": "Dùng cho chủ ngữ số nhiều (you, we, they, danh từ số nhiều)",
+                "mnemonic": "2 người/vật trở lên dùng WERE: Chickens were running 👥.",
+                "colloc": "The brown chickens were running frantically",
+                "colloc_vi": "Đàn gà màu nâu đang chạy nhốn nháo",
+                "audio": "were. Used with plural subjects.",
+                "type": "grammar",
+                "svg_type": "default",
+                "emoji": "👥"
+        },
+        {
+                "word": "2D shape",
+                "meaning": "a flat shape with two dimensions: height and width",
+                "vietnamese": "Hình 2 chiều: hình phẳng có 2 kích thước là chiều cao và chiều rộng",
+                "mnemonic": "Hình phẳng nằm gọn trên trang giấy: có chiều dài và chiều rộng 📐.",
+                "colloc": "A 2D shape has height and width",
+                "colloc_vi": "Hình 2 chiều có chiều cao và chiều rộng",
+                "audio": "2D shape. A flat shape with height and width.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "📐"
+        },
+        {
+                "word": "quadrilateral",
+                "meaning": "any flat 2D shape with exactly four straight sides",
+                "vietnamese": "Tứ giác: bất kỳ hình phẳng nào có đúng 4 cạnh thẳng",
+                "mnemonic": "Chữ 'quad' nghĩa là 4: hình 4 cạnh (hình vuông, chữ nhật, hình thoi) 🔲.",
+                "colloc": "A square is a quadrilateral with 4 equal sides",
+                "colloc_vi": "Hình vuông là một tứ giác có 4 cạnh bằng nhau",
+                "audio": "quadrilateral. A shape with four straight sides.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "🔲"
+        },
+        {
+                "word": "polygon",
+                "meaning": "a closed flat shape with three or more straight sides",
+                "vietnamese": "Đa giác: hình phẳng khép kín có từ 3 cạnh thẳng trở lên",
+                "mnemonic": "Hình khép kín bằng các đoạn thẳng: tam giác, tứ giác, ngũ giác... 🔷",
+                "colloc": "A polygon has straight sides and vertices",
+                "colloc_vi": "Đa giác có các cạnh thẳng và các đỉnh góc",
+                "audio": "polygon. A closed shape with straight sides.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "🔷"
+        },
+        {
+                "word": "regular shape",
+                "meaning": "a shape where all sides are equal and all angles are equal",
+                "vietnamese": "Hình đều: hình có tất cả các cạnh bằng nhau và các góc bằng nhau",
+                "mnemonic": "Hình vuông là hình đều vì 4 cạnh bằng nhau và 4 góc vuông ⭐.",
+                "colloc": "An equilateral triangle is a regular polygon",
+                "colloc_vi": "Tam giác đều là một đa giác đều",
+                "audio": "regular shape. All sides and angles are equal.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "⭐"
+        },
+        {
+                "word": "symmetry",
+                "meaning": "when two halves of a shape match identically across a line",
+                "vietnamese": "Tính đối xứng: hai nửa của hình trùng khít nhau qua trục đối xứng",
+                "mnemonic": "Gấp đôi hình lại theo đường thẳng mà 2 bên trùng khít như cánh bướm 🦋.",
+                "colloc": "The shape has a vertical line of symmetry",
+                "colloc_vi": "Hình này có một trục đối xứng thẳng đứng",
+                "audio": "symmetry. Two halves match identically.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "🦋"
+        },
+        {
+                "word": "carnivore",
+                "meaning": "an animal that eats ONLY meat and hunts prey",
+                "vietnamese": "Động vật ăn thịt: loài động vật chỉ ăn thịt của con mồi",
+                "mnemonic": "Hổ, sư tử, cá mập 🐅: chỉ săn và ăn thịt tươi sống.",
+                "colloc": "A tiger is a carnivore with sharp teeth",
+                "colloc_vi": "Hổ là loài ăn thịt có hàm răng sắc bén",
+                "audio": "carnivore. An animal that eats only meat.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🐅"
+        },
+        {
+                "word": "herbivore",
+                "meaning": "an animal that eats ONLY plants, leaves, and grass",
+                "vietnamese": "Động vật ăn cỏ / thực vật: loài chỉ ăn cỏ, cành lá, hoa quả",
+                "mnemonic": "Bò, hươu, voi 🐘: ăn cỏ xanh và nghiền nát cành lá.",
+                "colloc": "A cow is a herbivore that grazes on grass",
+                "colloc_vi": "Bò là loài ăn thực vật gặm cỏ trên đồng",
+                "audio": "herbivore. An animal that eats only plants.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🐘"
+        },
+        {
+                "word": "omnivore",
+                "meaning": "an animal that eats BOTH meat and plants",
+                "vietnamese": "Động vật ăn tạp: loài ăn cả thịt và thực vật (rau củ quả)",
+                "mnemonic": "Con người và gấu 🐻: ăn cả cá, thịt và rau củ quả.",
+                "colloc": "Humans and bears are omnivores",
+                "colloc_vi": "Con người và gấu là những loài ăn tạp",
+                "audio": "omnivore. An animal that eats meat and plants.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🐻"
+        },
+        {
+                "word": "sharp canines",
+                "meaning": "long pointed teeth used by carnivores to grip and tear meat",
+                "vietnamese": "Răng nanh nhọn sắc: vũ khí của động vật ăn thịt để ngoạm và xé thịt",
+                "mnemonic": "Răng nanh nhọn như dao găm 🦷 giúp hổ và cá mập xé thịt con mồi.",
+                "colloc": "Carnivores need sharp canines to tear meat",
+                "colloc_vi": "Động vật ăn thịt cần răng nanh nhọn để xé thịt",
+                "audio": "sharp canines. Long pointed teeth to tear meat.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🦷"
+        },
+        {
+                "word": "flat molars",
+                "meaning": "broad flat teeth used by herbivores to grind tough plant fibers",
+                "vietnamese": "Răng hàm to phẳng: răng của động vật ăn cỏ để nghiền nát chất xơ thực vật",
+                "mnemonic": "Mặt răng phẳng rộng như cối xay 🪨 giúp bò và ngựa nhai nghiền cỏ khô.",
+                "colloc": "Herbivores have flat molars for chewing grass",
+                "colloc_vi": "Động vật ăn cỏ có răng hàm phẳng để nhai cỏ",
+                "audio": "flat molars. Broad teeth used to grind plants.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🪨"
+        }
+],
+    "week7": [
+        {
+                "word": "plus",
+                "meaning": "the addition symbol (+), means to add or put together",
+                "vietnamese": "Dấu cộng (+): biểu thị phép tính cộng gộp các số lại với nhau",
+                "mnemonic": "Thấy dấu thập đỏ ➕ là ta làm phép cộng (add).",
+                "colloc": "When we see a plus symbol, we need to add",
+                "colloc_vi": "Khi thấy dấu cộng, ta cần thực hiện phép tính cộng",
+                "audio": "plus. The addition symbol, means to add.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "➕"
+        },
+        {
+                "word": "minus",
+                "meaning": "the subtraction symbol (-), means to take away or subtract",
+                "vietnamese": "Dấu trừ (-): biểu thị phép tính trừ bớt đi từ một số",
+                "mnemonic": "Thấy dấu gạch ngang ➖ là ta làm phép trừ bớt đi (subtract).",
+                "colloc": "When we see a minus symbol, we need to subtract",
+                "colloc_vi": "Khi thấy dấu trừ, ta cần thực hiện phép tính trừ",
+                "audio": "minus. The subtraction symbol, means to subtract.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "➖"
+        },
+        {
+                "word": "number pattern",
+                "meaning": "a repeated or predictable sequence of numbers",
+                "vietnamese": "Quy luật số: chuỗi số lặp lại theo một trật tự dễ nhận biết",
+                "mnemonic": "Quy luật chữ số hàng đơn vị giúp tính nhẩm siêu tốc 🔢.",
+                "colloc": "Identify the addition number pattern",
+                "colloc_vi": "Nhận biết quy luật của phép tính cộng",
+                "audio": "number pattern. A repeated sequence of numbers.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "🔢"
+        },
+        {
+                "word": "ones place",
+                "meaning": "the last digit on the right representing individual units",
+                "vietnamese": "Hàng đơn vị: vị trí chữ số ngoài cùng bên phải của một số",
+                "mnemonic": "Cộng 2 vào số có đuôi 2 luôn cho chữ số 4 ở hàng đơn vị 1️⃣.",
+                "colloc": "Adding 2 to 42 gives 4 in the ones place",
+                "colloc_vi": "Cộng 2 vào 42 cho chữ số 4 ở hàng đơn vị",
+                "audio": "ones place. The last digit on the right.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "1️⃣"
+        },
+        {
+                "word": "roots",
+                "meaning": "the underground plant part that absorbs water and anchors the plant",
+                "vietnamese": "Rễ cây: bộ phận nằm trong lòng đất hút nước và giữ chặt cây",
+                "mnemonic": "Rễ cây cắm sâu vào đất hút nước 🥕 như hàng triệu ống hút nhỏ.",
+                "colloc": "Roots absorb water from the soil",
+                "colloc_vi": "Rễ cây hút nước từ trong lòng đất",
+                "audio": "roots. Absorbs water and anchors the plant.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🥕"
+        },
+        {
+                "word": "stem",
+                "meaning": "the main plant stalk that supports leaves and transports water",
+                "vietnamese": "Thân cây: nâng đỡ cành lá vươn lên và vận chuyển nước từ rễ lên lá",
+                "mnemonic": "Thân cây như xa lộ giao thông 🌱 đưa dòng nước lên tận các cành lá.",
+                "colloc": "The stem supports the plant and transports water",
+                "colloc_vi": "Thân cây nâng đỡ cây và vận chuyển nước",
+                "audio": "stem. Supports the plant and transports water.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🌱"
+        },
+        {
+                "word": "leaves",
+                "meaning": "plural of leaf; green parts that use sunlight to make food/energy",
+                "vietnamese": "Lá cây (số nhiều của leaf): dùng ánh sáng mặt trời để tạo thức ăn (quang hợp)",
+                "mnemonic": "1 chiếc lá là leaf, nhiều chiếc lá là leaves 🍃 hứng ánh nắng mặt trời.",
+                "colloc": "Leaves use sunlight to make energy",
+                "colloc_vi": "Lá cây dùng ánh sáng mặt trời để tạo năng lượng",
+                "audio": "leaves. Plural of leaf; use sunlight to make food.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🍃"
+        },
+        {
+                "word": "flower",
+                "meaning": "the colorful plant part that creates seeds for reproduction",
+                "vietnamese": "Hoa: bộ phận rực rỡ sắc màu tạo hạt giống để sinh sản cây mới",
+                "mnemonic": "Bông hoa xinh đẹp 🌸 thu hút ong bướm và tạo hạt giống duy trì nòi giống.",
+                "colloc": "The flower creates seeds for new plants",
+                "colloc_vi": "Hoa tạo ra các hạt giống để mọc cây mới",
+                "audio": "flower. Creates seeds for reproduction.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🌸"
+        },
+        {
+                "word": "absorb",
+                "meaning": "to soak up or take in water from the surrounding soil",
+                "vietnamese": "Hút / Hấp thụ: hút nước và dưỡng chất từ đất",
+                "mnemonic": "Rễ cây ngấm và hút nước 🧽 như miếng bọt biển hút nước.",
+                "colloc": "Roots absorb water and nutrients",
+                "colloc_vi": "Rễ cây hút nước và các chất dinh dưỡng",
+                "audio": "absorb. To soak up or take in water.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🧽"
+        },
+        {
+                "word": "transport",
+                "meaning": "to carry or move something from one place to another",
+                "vietnamese": "Vận chuyển: dẫn truyền nước và chất dinh dưỡng đi khắp cây",
+                "mnemonic": "Các ống dẫn vận chuyển dòng nước 🚚 từ dưới gốc lên đến ngọn.",
+                "colloc": "The stem transports water to the leaves",
+                "colloc_vi": "Thân cây vận chuyển nước lên các lá cây",
+                "audio": "transport. To carry or move from one place to another.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🚚"
+        },
+        {
+                "word": "aim",
+                "meaning": "a sentence about what we want to find out in an experiment",
+                "vietnamese": "Mục tiêu thí nghiệm: câu văn nêu rõ ta muốn tìm hiểu điều gì",
+                "mnemonic": "Bước đầu tiên trong khoa học: Xác định mục tiêu muốn khám phá 🎯.",
+                "colloc": "The aim tells what we want to find out",
+                "colloc_vi": "Mục tiêu nêu rõ điều chúng ta muốn tìm hiểu",
+                "audio": "aim. What we want to find out in an experiment.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🎯"
+        },
+        {
+                "word": "materials",
+                "meaning": "the equipment and things we use to do an experiment",
+                "vietnamese": "Dụng cụ & vật liệu: những đồ vật dùng để làm thí nghiệm",
+                "mnemonic": "Cốc thủy tinh, nước màu, cọng cần tây 🧪 là các materials.",
+                "colloc": "List down the materials for the experiment",
+                "colloc_vi": "Liệt kê các dụng cụ và vật liệu cho thí nghiệm",
+                "audio": "materials. The things we use to do an experiment.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🧪"
+        },
+        {
+                "word": "method",
+                "meaning": "a list of instructions that tells us what to do step by step",
+                "vietnamese": "Phương pháp / Các bước tiến hành: hướng dẫn từng bước cần làm",
+                "mnemonic": "Bản hướng dẫn chi tiết từng bước 📋 để thực hiện thí nghiệm chính xác.",
+                "colloc": "Follow the method step by step",
+                "colloc_vi": "Làm theo các bước tiến hành từng bước một",
+                "audio": "method. Instructions that tell us what to do.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "📋"
+        },
+        {
+                "word": "prediction",
+                "meaning": "what you think will happen in the experiment before doing it",
+                "vietnamese": "Dự đoán: suy nghĩ của con về kết quả trước khi bắt tay vào làm",
+                "mnemonic": "Đoán trước điều gì sẽ xảy ra 🔮 (không có đúng hay sai khi dự đoán).",
+                "colloc": "Make a prediction before testing",
+                "colloc_vi": "Đưa ra dự đoán trước khi tiến hành thử nghiệm",
+                "audio": "prediction. What you think will happen.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🔮"
+        },
+        {
+                "word": "fair test",
+                "meaning": "an experiment where we change ONLY ONE thing",
+                "vietnamese": "Thí nghiệm công bằng: thí nghiệm mà ta chỉ thay đổi duy nhất 1 yếu tố",
+                "mnemonic": "Chỉ thay đổi 1 thứ duy nhất ⚖️, giữ nguyên tất cả những yếu tố còn lại.",
+                "colloc": "Change only one thing to make it a fair test",
+                "colloc_vi": "Chỉ thay đổi một yếu tố để thí nghiệm được công bằng",
+                "audio": "fair test. Change only one thing in an experiment.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "⚖️"
+        },
+        {
+                "word": "conclusion",
+                "meaning": "what we learned at the end of the experiment",
+                "vietnamese": "Kết luận: bài học khoa học rút ra ở cuối thí nghiệm",
+                "mnemonic": "Viết lại điều em học được 📜 sau khi quan sát kết quả thí nghiệm.",
+                "colloc": "Write a conclusion about water transport",
+                "colloc_vi": "Viết kết luận về sự vận chuyển nước của cây",
+                "audio": "conclusion. What we learned at the end.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "📜"
+        }
+]
 }
 
 # ==================== SLIDE-ALIGNED 10-QUESTION GRAND CHALLENGE EXAMS ====================
@@ -220,7 +862,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "English",
             "question": "Classroom rule: \"Raise your _______ before speaking.\"",
             "audio": "Classroom rule: Raise your hand before speaking.",
-            "options": ["hand", "pencil", "book", "foot"],
+            "options": [
+                "hand",
+                "book",
+                "foot",
+                "desk"
+            ],
             "answer": "hand",
             "explanation": "Nội quy bài học W1E1: \"Raise your hand before speaking\" (Hãy giơ tay xin phép trước khi phát biểu)."
         },
@@ -231,9 +878,9 @@ GRAND_CHALLENGE_BANK = {
             "audio": "What is the definition of a noun?",
             "options": [
                 "A person, place, animal, or thing",
-                "An action word that we do",
-                "A word that describes colours only",
-                "A punctuation mark at the end of a sentence"
+                "An action word of what people do",
+                "A word that describes noun color",
+                "A mark put at end of a sentence"
             ],
             "answer": "A person, place, animal, or thing",
             "explanation": "Định nghĩa chuẩn W1E1: Danh từ (Noun) là từ chỉ Người (doctor), Nơi chốn (school), Con vật (cat), hoặc Đồ vật (banana)."
@@ -243,16 +890,26 @@ GRAND_CHALLENGE_BANK = {
             "subject": "English",
             "question": "Which word in the following list is a VERB (an action word)?",
             "audio": "Which word in the following list is a verb?",
-            "options": ["jump", "pencil", "school", "banana"],
+            "options": [
+                "jump",
+                "desk",
+                "tree",
+                "lion"
+            ],
             "answer": "jump",
-            "explanation": "Động từ (Verb) chỉ hành động chúng ta làm: \"jump\" (nhảy) là động từ, còn pencil, school, banana là danh từ."
+            "explanation": "Động từ (Verb) chỉ hành động chúng ta làm: \"jump\" (nhảy) là động từ, còn desk, tree, lion là danh từ."
         },
         {
             "id": 4,
             "subject": "English",
             "question": "An ADJECTIVE is a word that _______ a noun.",
             "audio": "An adjective is a word that describes a noun.",
-            "options": ["describes", "eats", "counts", "destroys"],
+            "options": [
+                "describes",
+                "multiplies",
+                "celebrates",
+                "identifies"
+            ],
             "answer": "describes",
             "explanation": "Quy tắc ngữ pháp W1E2: \"An adjective is a word that describes a noun\" (Tính từ dùng để miêu tả đặc điểm danh từ)."
         },
@@ -261,43 +918,53 @@ GRAND_CHALLENGE_BANK = {
             "subject": "English",
             "question": "In the sentence: \"A cat jumps over the house\", which word is the VERB?",
             "audio": "In the sentence: A cat jumps over the house, which word is the verb?",
-            "options": ["jumps", "cat", "house", "over"],
+            "options": [
+                "jumps",
+                "house",
+                "cat",
+                "over"
+            ],
             "answer": "jumps",
             "explanation": "Trong bài tập Thám tử ngữ pháp W1E2: \"cat\" và \"house\" là Danh từ (Nouns), \"jumps\" (nhảy) là Động từ (Verb)."
         },
         {
             "id": 6,
             "subject": "Mathematics",
-            "question": "In the Summer Vacation tally chart: Đà Lạt has 5 tallies (|||| crossed) and Hà Nội has 4 tallies (||||). Which destination is MORE popular?",
-            "audio": "Which destination is more popular: Da Lat or Ha Noi?",
+            "question": "In the Summer Vacation tally chart: Đà Lạt has 5 tallies (|||| crossed) and Hà Nội has 4 tallies (||||). Which statement is correct?",
+            "audio": "Which statement is correct about Da Lat and Ha Noi?",
             "options": [
-                "Đà Lạt (5 > 4)",
-                "Hà Nội (4)",
-                "Both are equal",
-                "Vũng Tàu (1)"
+                "Đà Lạt has more votes (5 > 4)",
+                "Hà Nội has more votes (4 > 5)",
+                "Both have equal votes (5 = 5)",
+                "Đà Lạt has zero votes (5 = 0)"
             ],
-            "answer": "Đà Lạt (5 > 4)",
+            "answer": "Đà Lạt has more votes (5 > 4)",
             "explanation": "Bảng số liệu W1M: Đà Lạt có 5 gạch kiểm đếm, Hà Nội có 4 gạch. Vì 5 > 4 nên Đà Lạt là điểm đến phổ biến hơn (Most popular)."
         },
         {
             "id": 7,
             "subject": "Mathematics",
             "question": "In a pictogram, the key says: 1 🙂 = 2 students. How many students do 3 smileys (🙂 🙂 🙂) represent?",
-            "audio": "In a pictogram, if one smiley equals two students, how many students do three smileys represent?",
-            "options": ["6 students", "3 students", "5 students", "8 students"],
+            "audio": "If one smiley equals two students, how many students do three smileys represent?",
+            "options": [
+                "6 students",
+                "3 students",
+                "5 students",
+                "8 students"
+            ],
             "answer": "6 students",
             "explanation": "Toán biểu đồ tranh W1M: 3 biểu tượng 🙂 x 2 học sinh = 6 học sinh (3 x 2 = 6)."
         },
         {
             "id": 8,
             "subject": "Science",
-            "question": "What is LIGHT?",
-            "audio": "What is light?",
+            "question": "What is LIGHT in Grade 3 Science?",
+            "audio": "What is light in Grade 3 Science?",
             "options": [
                 "An energy we use to see the world around us",
-                "A solid obstacle that creates darkness",
-                "A buzzing sound made by machines",
-                "Something that only exists at midnight"
+                "A solid barrier that stops rays of the sun",
+                "A buzzing sound made by rapid machine fans",
+                "A shadow produced when opaque items block"
             ],
             "answer": "An energy we use to see the world around us",
             "explanation": "Khái niệm cốt lõi W1S: \"Light is an energy we use to see the world around us. We need light to see\" (Ánh sáng là dạng năng lượng giúp ta nhìn thấy thế giới xung quanh)."
@@ -307,22 +974,27 @@ GRAND_CHALLENGE_BANK = {
             "subject": "Science",
             "question": "Which of the following is a REFLECTOR (does NOT make its own light, only bounces light)?",
             "audio": "Which of the following is a reflector?",
-            "options": ["A mirror", "The Sun", "A torch", "A burning candle"],
-            "answer": "A mirror",
+            "options": [
+                "A glass mirror",
+                "The bright Sun",
+                "A battery torch",
+                "A lit wax candle"
+            ],
+            "answer": "A glass mirror",
             "explanation": "Phân loại W1S: Mặt Trời, đèn pin và nến là nguồn sáng (Light sources). Chiếc gương (A mirror) chỉ phản xạ lại ánh sáng (Reflector)."
         },
         {
             "id": 10,
             "subject": "Science",
             "question": "The Sun, stars, and fire are all examples of:",
-            "audio": "The Sun, stars, and fire are all examples of natural light or man-made light?",
+            "audio": "The Sun, stars, and fire are examples of what light?",
             "options": [
-                "Natural light (Ánh sáng tự nhiên)",
-                "Man-made light (Ánh sáng nhân tạo)",
-                "Reflectors (Vật phản xạ)",
-                "Opaque objects (Vật cản sáng)"
+                "Natural light",
+                "Man-made light",
+                "Reflected light",
+                "Artificial light"
             ],
-            "answer": "Natural light (Ánh sáng tự nhiên)",
+            "answer": "Natural light",
             "explanation": "Phân loại W1S: Mặt Trời, ngôi sao và lửa là nguồn sáng tự nhiên (Natural light). Đèn pin, bóng đèn là nhân tạo (Man-made light)."
         }
     ],
@@ -332,7 +1004,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "English",
             "question": "A STATEMENT tells something. It begins with a capital letter and ends with a _______.",
             "audio": "A statement tells something and ends with a what?",
-            "options": ["full stop (.)", "question mark (?)", "comma (,)", "exclamation mark (!)"],
+            "options": [
+                "full stop (.)",
+                "question mark (?)",
+                "exclamation mark (!)",
+                "quotation marks (\")"
+            ],
             "answer": "full stop (.)",
             "explanation": "Quy tắc câu trần thuật W2E1: Câu kể (Statement) kể lại một việc và kết thúc bằng dấu chấm (full stop .)."
         },
@@ -341,7 +1018,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "English",
             "question": "A QUESTION asks something. It begins with a capital letter and ends with a _______.",
             "audio": "A question asks something and ends with a what?",
-            "options": ["question mark (?)", "full stop (.)", "comma (,)", "colon (:)"],
+            "options": [
+                "question mark (?)",
+                "full stop mark (.)",
+                "exclamation mark (!)",
+                "quotation marks (\")"
+            ],
             "answer": "question mark (?)",
             "explanation": "Quy tắc câu hỏi W2E1: Câu hỏi (Question) bắt đầu bằng động từ/từ để hỏi và kết thúc bằng dấu hỏi (question mark ?)."
         },
@@ -350,7 +1032,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "English",
             "question": "Complete the question for ONE singular object: \"_______ a melon on the plate?\"",
             "audio": "Complete the question: blank a melon on the plate?",
-            "options": ["Was there", "Were there", "Did there", "Are there"],
+            "options": [
+                "Was there",
+                "Were there",
+                "Did there",
+                "Are there"
+            ],
             "answer": "Was there",
             "explanation": "Quy tắc ngữ pháp W2E1: Dùng \"Was there a / an...\" cho 1 đồ vật số ít (a melon: singular)."
         },
@@ -359,7 +1046,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "English",
             "question": "Complete the question for PLURAL objects: \"_______ chocolates in the box?\"",
             "audio": "Complete the question: blank chocolates in the box?",
-            "options": ["Were there some", "Was there a", "Is there a", "Did there some"],
+            "options": [
+                "Were there some",
+                "Was there a one",
+                "Did there exist",
+                "Are there a lot"
+            ],
             "answer": "Were there some",
             "explanation": "Quy tắc ngữ pháp W2E1: Dùng \"Were there some...\" cho danh từ số nhiều (chocolates: plural)."
         },
@@ -368,7 +1060,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "English",
             "question": "What is the past simple form of the irregular verb \"eat\"?",
             "audio": "What is the past simple form of the irregular verb eat?",
-            "options": ["ate", "eated", "eating", "eaten"],
+            "options": [
+                "ate",
+                "eated",
+                "eating",
+                "eaten"
+            ],
             "answer": "ate",
             "explanation": "Bảng động từ bất quy tắc W2E2: \"eat\" đổi thành \"ate\" (tuyệt đối không thêm -ed thành eated)."
         },
@@ -380,7 +1077,7 @@ GRAND_CHALLENGE_BANK = {
             "options": [
                 "Did she walk to school?",
                 "Did she walked to school?",
-                "Was she walked to school?",
+                "Was she walk to school?",
                 "Does she walk to school?"
             ],
             "answer": "Did she walk to school?",
@@ -392,24 +1089,24 @@ GRAND_CHALLENGE_BANK = {
             "question": "Compare using the Crocodile Rule: 450 _______ 540",
             "audio": "Compare four hundred and fifty and five hundred and forty.",
             "options": [
-                "< (450 is less than 540)",
-                "> (450 is greater than 540)",
-                "=",
-                "+"
+                "< (less than)",
+                "> (greater than)",
+                "= (equal to)",
+                "+ (plus sum)"
             ],
-            "answer": "< (450 is less than 540)",
+            "answer": "< (less than)",
             "explanation": "Quy tắc cá sấu W2M: Miệng cá sấu luôn há to về phía số lớn hơn (540 > 450, tức 450 < 540)."
         },
         {
             "id": 8,
             "subject": "Mathematics",
             "question": "In the recycling project: Class 3A collected 350 bottles. Class 3B collected 420 bottles. Which statement is TRUE?",
-            "audio": "Class 3A collected 350 bottles. Class 3B collected 420 bottles. Which statement is true?",
+            "audio": "Which statement is true about the collected bottles?",
             "options": [
                 "Class 3B collected more (420 > 350)",
                 "Class 3A collected more (350 > 420)",
-                "Both classes collected equal bottles",
-                "Class 3B collected fewer bottles"
+                "Both collected equal (420 = 350)",
+                "Class 3B collected fewer (420 < 350)"
             ],
             "answer": "Class 3B collected more (420 > 350)",
             "explanation": "Bài toán thực tế tái chế rác W2M: 420 > 350, do đó lớp 3B thu gom được nhiều hơn lớp 3A."
@@ -419,7 +1116,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "Science",
             "question": "Light always travels in a _______ and cannot bend around corners.",
             "audio": "Light always travels in a what line?",
-            "options": ["straight line", "curved wave", "circle", "zigzag line"],
+            "options": [
+                "straight line",
+                "curved stream",
+                "circular path",
+                "zigzag course"
+            ],
             "answer": "straight line",
             "explanation": "Định luật truyền sáng W2S: Ánh sáng luôn truyền theo đường thẳng (straight line) và không thể tự bẻ cong qua vật cản."
         },
@@ -428,7 +1130,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "Science",
             "question": "An object is _______ when it BLOCKS light completely and casts a dark shadow (like a wooden door or textbook).",
             "audio": "An object is what when it blocks light completely?",
-            "options": ["opaque", "transparent", "translucent", "reflective"],
+            "options": [
+                "opaque",
+                "transparent",
+                "translucent",
+                "reflective"
+            ],
             "answer": "opaque",
             "explanation": "Phân loại vật liệu W2S: Vật đục cản sáng (Opaque) ngăn chặn 100% ánh sáng đi qua và tạo ra bóng đen (shadow)."
         }
@@ -455,9 +1162,9 @@ GRAND_CHALLENGE_BANK = {
             "audio": "What did Billy see coming from Professor Inkspot's shed?",
             "options": [
                 "A small cloud of blue smoke",
-                "A flock of birds",
-                "A shower of sparks",
-                "Rain and snow"
+                "A bright burst of orange fire",
+                "A golden shower of spark light",
+                "A heavy stream of white water"
             ],
             "answer": "A small cloud of blue smoke",
             "explanation": "Chi tiết câu chuyện slide W3E1: Billy nhìn ra ngoài và thấy \"a small cloud of blue smoke\" (làn khói nhỏ màu xanh lam) bốc lên từ gian nhà kho."
@@ -467,7 +1174,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "English",
             "question": "What action verb do we use with a DIAL on the machine?",
             "audio": "What action verb do we use with a dial on the machine?",
-            "options": ["turn a dial", "push a dial", "pull a dial", "press a dial"],
+            "options": [
+                "turn a dial",
+                "push a dial",
+                "pull a dial",
+                "type a dial"
+            ],
             "answer": "turn a dial",
             "explanation": "Cụm từ máy móc slide W3E1: \"turn a dial\" (xoay núm vặn tròn chia vạch)."
         },
@@ -476,7 +1188,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "English",
             "question": "What action verb do we use with a HANDLE beside the square screen?",
             "audio": "What action verb do we use with a handle beside the screen?",
-            "options": ["pull a handle", "push a handle", "turn a handle", "type a handle"],
+            "options": [
+                "pull a handle",
+                "push a handle",
+                "turn a handle",
+                "type a handle"
+            ],
             "answer": "pull a handle",
             "explanation": "Cụm từ máy móc slide W3E1: \"pull a handle\" (kéo chiếc cần gạt xuống)."
         },
@@ -485,7 +1202,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "English",
             "question": "\"_______ did you eat the teacher's bánh mì?\" — \"Because I was hungry!\"",
             "audio": "Blank did you eat the teacher's bánh mì? Because I was hungry.",
-            "options": ["Why", "Who", "Where", "When"],
+            "options": [
+                "Why",
+                "Who",
+                "When",
+                "What"
+            ],
             "answer": "Why",
             "explanation": "Quy tắc từ để hỏi W3E2: \"Why\" hỏi về lý do/nguyên nhân, câu trả lời bắt đầu bằng \"Because\" (Bởi vì...)."
         },
@@ -494,7 +1216,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "Mathematics",
             "question": "What number is represented by: 5 Hundreds + 6 Tens + 9 Ones?",
             "audio": "What number is represented by 5 Hundreds, 6 Tens, and 9 Ones?",
-            "options": ["569", "659", "596", "965"],
+            "options": [
+                "569",
+                "659",
+                "596",
+                "965"
+            ],
             "answer": "569",
             "explanation": "Giá trị vị trí hàng số slide W3M: 5 Hàng Trăm + 6 Hàng Chục + 9 Hàng Đơn vị = 569."
         },
@@ -510,43 +1237,48 @@ GRAND_CHALLENGE_BANK = {
                 "800 + 300 + 5"
             ],
             "answer": "800 + 30 + 5",
-            "explanation": "Dạng khai triển số W3M: $835 = 800 + 30 + 5$ (tách rõ giá trị từng hàng: 8 Trăm, 3 Chục, 5 Đơn vị)."
+            "explanation": "Dạng khai triển số W3M: 835 = 800 + 30 + 5 (tách rõ giá trị từng hàng: 8 Trăm, 3 Chục, 5 Đơn vị)."
         },
         {
             "id": 8,
             "subject": "Science",
             "question": "How many MILK TEETH (baby teeth) do young children under six years old have?",
             "audio": "How many milk teeth do young children have?",
-            "options": ["20 teeth", "32 teeth", "28 teeth", "16 teeth"],
+            "options": [
+                "20 teeth",
+                "32 teeth",
+                "28 teeth",
+                "16 teeth"
+            ],
             "answer": "20 teeth",
             "explanation": "Kiến thức nha khoa slide W3S: Trẻ em dưới sáu tuổi có đúng 20 chiếc răng sữa (milk teeth). Người lớn có 32 răng vĩnh viễn (permanent teeth)."
         },
         {
             "id": 9,
             "subject": "Science",
-            "question": "Which type of teeth are flat and sharp like a CHISEL, used for SLICING and CUTTING food (like biting an apple)?",
+            "question": "Which type of teeth are flat and sharp like a CHISEL, used for SLICING and CUTTING food?",
             "audio": "Which teeth are shaped like a chisel and used for slicing?",
             "options": [
-                "Incisors (Răng cửa)",
-                "Canines (Răng nanh)",
-                "Premolars (Răng tiền hàm)",
-                "Molars (Răng hàm)"
+                "Incisors",
+                "Canines",
+                "Premolars",
+                "Molars"
             ],
-            "answer": "Incisors (Răng cửa)",
+            "answer": "Incisors",
             "explanation": "Chức năng răng slide W3S: Răng cửa (Incisors - 8 chiếc) có rìa phẳng sắc như lưỡi đục, chuyên dùng để cắn và cắt lát thức ăn (slice and cut)."
         },
         {
             "id": 10,
             "subject": "Science",
-            "question": "Which teeth are the LARGEST teeth at the back with a flat bumpy surface, used for GRINDING food finely?",
+            "question": "Which teeth are the LARGEST teeth at the back with a flat surface, used for GRINDING food finely?",
             "audio": "Which teeth are the largest teeth used for grinding food?",
             "options": [
-                "Molars (Răng hàm)",
-                "Incisors (Răng cửa)",
-                "Canines (Răng nanh)",
-                "Premolars (Răng tiền hàm)"
+                "Molars",
+                "Incisors",
+                "Canines",
+                "Premolars"
             ],
-            "answer": "Molars (Răng hàm)",
+            "answer": "Molars",
             "explanation": "Chức năng răng slide W3S: Răng hàm (Molars - 12 chiếc) là những chiếc răng lớn nhất ở sâu trong cùng, mặt phẳng gồ ghề dùng để nghiền nát thức ăn (grind food)."
         }
     ],
@@ -563,14 +1295,19 @@ GRAND_CHALLENGE_BANK = {
                 "Nine o'clock (9:00)"
             ],
             "answer": "Half past six (6:30)",
-            "explanation": "Chi tiết cốt truyện trong Language Book p. 14: \"Bang! Billy woke up with a start at half past six in the morning.\" (Billy nhảy ra khỏi giường lúc 6:30 sáng)."
+            "explanation": "Chi tiết cốt truyện trong Language Book p. 14: \"Bang! Billy woke up with a start at half past six in the morning.\""
         },
         {
             "id": 2,
             "subject": "English",
-            "question": "Which verb correctly completes the phrase: \"We _______ a switch to turn on the machine's power\"?",
-            "audio": "Which verb correctly completes: We blank a switch to turn on the machine's power?",
-            "options": ["press a switch", "turn a switch", "pull a switch", "push a switch"],
+            "question": "Which phrase correctly completes: \"We _______ to turn on the machine's electrical power\"?",
+            "audio": "Which phrase correctly completes: We blank to turn on the machine's power?",
+            "options": [
+                "press a switch",
+                "turn a switch",
+                "pull a switch",
+                "push a switch"
+            ],
             "answer": "press a switch",
             "explanation": "Cụm động từ máy móc chuẩn slide: \"press a switch\" (bật/gạt công tắc điện), \"turn a dial\" (xoay núm vặn), \"pull a handle\" (kéo cần gạt), \"push a button\" (bấm nút tròn)."
         },
@@ -580,12 +1317,12 @@ GRAND_CHALLENGE_BANK = {
             "question": "What does the word TRUE mean in Grade 3 English?",
             "audio": "What does the word true mean in English?",
             "options": [
-                "Something that is correct or real (a fact)",
-                "Something that is not correct or not real",
-                "A fictional make-up story",
-                "A question without an answer"
+                "Something that is completely correct or real (a fact)",
+                "Something that is completely incorrect or untrue (a lie)",
+                "Something that is an invented story or myth (fiction)",
+                "Something that is a confusing riddle without an answer"
             ],
-            "answer": "Something that is correct or real (a fact)",
+            "answer": "Something that is completely correct or real (a fact)",
             "explanation": "Định nghĩa chuẩn trong slide: \"True means something that is correct or real. It is a fact.\" (True nghĩa là điều gì đó chính xác hoặc có thật - là một sự thật)."
         },
         {
@@ -593,7 +1330,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "English",
             "question": "What is the past simple tense of the regular verb \"look\"?",
             "audio": "What is the past simple tense of the regular verb look?",
-            "options": ["looked", "looking", "looks", "lookt"],
+            "options": [
+                "looked",
+                "looking",
+                "looks",
+                "lookt"
+            ],
             "answer": "looked",
             "explanation": "Quy tắc quá khứ đơn có quy tắc: Động từ regular thêm đuôi -ed: look &rarr; looked (Billy looked inside the shed)."
         },
@@ -603,12 +1345,12 @@ GRAND_CHALLENGE_BANK = {
             "question": "According to Cambridge rules (Practice Book p. 5), where must the comma (,) go in direct speech?",
             "audio": "According to Cambridge rules, where must the comma go in direct speech?",
             "options": [
-                "INSIDE the speech marks: “I like reading,” Emma said.",
-                "OUTSIDE the speech marks: “I like reading”, Emma said.",
-                "At the start of the sentence before speech marks",
-                "After the reporting verb: “I like reading” Emma, said."
+                "INSIDE speech marks: “I like reading,” Emma said.",
+                "OUTSIDE speech marks: “I like reading”, Emma said.",
+                "AT START of sentence: ,“I like reading” Emma said.",
+                "AFTER reporting verb: “I like reading” Emma, said."
             ],
-            "answer": "INSIDE the speech marks: “I like reading,” Emma said.",
+            "answer": "INSIDE speech marks: “I like reading,” Emma said.",
             "explanation": "Quy tắc dấu lời thoại chuẩn Cambridge (Practice Book p. 5): Dấu phẩy (,) BẮT BUỘC phải nằm BÊN TRONG dấu ngoặc kép: “Look at my book,” Ben said."
         },
         {
@@ -620,7 +1362,7 @@ GRAND_CHALLENGE_BANK = {
                 "70 (7 tens)",
                 "7 (7 ones)",
                 "700 (7 hundreds)",
-                "475"
+                "470 (47 tens)"
             ],
             "answer": "70 (7 tens)",
             "explanation": "Giá trị hàng số slide W4M: Chữ số 7 nằm ở hàng Chục (Tens) nên có giá trị là 70 (Place value = 70)."
@@ -634,7 +1376,7 @@ GRAND_CHALLENGE_BANK = {
                 "500 + 60 + 9",
                 "50 + 60 + 9",
                 "500 + 6 + 9",
-                "500 + 69"
+                "500 + 60 + 90"
             ],
             "answer": "500 + 60 + 9",
             "explanation": "Dạng khai triển số: 569 gồm 5 Hàng Trăm (500), 6 Hàng Chục (60) và 9 Hàng Đơn vị (9) &rarr; 569 = 500 + 60 + 9."
@@ -644,7 +1386,12 @@ GRAND_CHALLENGE_BANK = {
             "subject": "Mathematics",
             "question": "On a number line, what is the exact HALFWAY POINT (midpoint) between 20 and 30?",
             "audio": "On a number line, what is the exact halfway point between 20 and 30?",
-            "options": ["25", "22", "28", "20"],
+            "options": [
+                "25",
+                "22",
+                "28",
+                "20"
+            ],
             "answer": "25",
             "explanation": "Điểm chính giữa (midpoint) slide W4M: Điểm chính giữa giữa 20 và 30 là 25 (20 + 5 = 25). Tương tự: giữa 0 và 100 là 50, giữa 40 và 50 là 45."
         },
@@ -655,12 +1402,12 @@ GRAND_CHALLENGE_BANK = {
             "audio": "Which statement about light is scientifically correct?",
             "options": [
                 "Light always travels in a straight line and cannot bend",
-                "Light always bends around corners easily",
-                "Light travels in a zigzag circle",
-                "Transparent materials block light completely"
+                "Light always curves around sharp corners and obstacles",
+                "Light only travels in circular ripples across the floor",
+                "Light stops completely when passing through clear glass"
             ],
             "answer": "Light always travels in a straight line and cannot bend",
-            "explanation": "Đặc tính truyền sáng slide W4S: \"Light travels in straight lines; cannot bend or move around corners.\" (Ánh sáng luôn truyền theo đường thẳng, không thể tự bẻ cong quanh góc tường)."
+            "explanation": "Đặc tính truyền sáng slide W4S: \"Light travels in straight lines; cannot bend or move around corners.\""
         },
         {
             "id": 10,
@@ -668,13 +1415,439 @@ GRAND_CHALLENGE_BANK = {
             "question": "At 12 p.m. (midday) when the Sun is directly overhead, what happens to tree shadows?",
             "audio": "At 12 p.m. midday when the Sun is directly overhead, what happens to tree shadows?",
             "options": [
-                "The shadow is the SHORTEST, gathered right under the tree",
-                "The shadow is the LONGEST, stretching far to the West",
-                "The shadow disappears and turns into rainbow colours",
-                "The shadow is identical to the shadow at 8 a.m."
+                "Shadows are shortest, gathered right under base",
+                "Shadows are longest, stretching far out to west",
+                "Shadows disappear into rainbow-colored lights",
+                "Shadows are identical to early morning shadows"
             ],
-            "answer": "The shadow is the SHORTEST, gathered right under the tree",
-            "explanation": "Quy luật bóng Mặt Trời slide W4S (p. 23-26): Lúc 12 giờ trưa (midday) khi Mặt Trời lên cao nhất trên đỉnh đầu, bóng cây ngắn nhất (shortest) thu tròn dưới gốc cây. Sáng sớm (8 a.m.) và chiều muộn (5 p.m.) bóng đổ dài nhất (longest)."
+            "answer": "Shadows are shortest, gathered right under base",
+            "explanation": "Quy luật bóng Mặt Trời slide W4S: Lúc 12 giờ trưa (midday) khi Mặt Trời lên cao nhất trên đỉnh đầu, bóng cây ngắn nhất (shortest) thu tròn dưới gốc cây."
+        }
+    ],
+    "week5": [
+        {
+            "id": 1,
+            "subject": "English",
+            "question": "Which part of a story introduces the CHARACTERS (Who) and the SETTING (Where and When)?",
+            "audio": "Which part of a story introduces the characters and setting?",
+            "options": [
+                "Beginning",
+                "Middle",
+                "Ending",
+                "Title"
+            ],
+            "answer": "Beginning",
+            "explanation": "Quy tắc 3 phần của truyện (Slide W5E1): Phần Mở đầu (Beginning) luôn giới thiệu Nhân vật (Characters) và Bối cảnh (Setting: thời gian, địa điểm)."
+        },
+        {
+            "id": 2,
+            "subject": "English",
+            "question": "What is the past simple form of the irregular verb \"wake up\" in: \"Billy _______ at half past six\"?",
+            "audio": "What is the past simple form of the verb wake up?",
+            "options": [
+                "woke up",
+                "waked up",
+                "waking up",
+                "wake up"
+            ],
+            "answer": "woke up",
+            "explanation": "Động từ bất quy tắc W5E1: wake up chuyển sang quá khứ là \"woke up\"."
+        },
+        {
+            "id": 3,
+            "subject": "English",
+            "question": "What is the past simple form of \"hear\" in: \"He _______ a loud BANG outside\"?",
+            "audio": "What is the past simple form of hear?",
+            "options": [
+                "heard",
+                "heared",
+                "hearing",
+                "hears"
+            ],
+            "answer": "heard",
+            "explanation": "Động từ quá khứ W5E1: hear chỉ thêm 'd' thành \"heard\" (phát âm là /hɜːd/)."
+        },
+        {
+            "id": 4,
+            "subject": "English",
+            "question": "Which of these time words is commonly used at the END of a story when a problem is solved?",
+            "audio": "Which time word is used at the end of a story?",
+            "options": [
+                "Finally",
+                "Suddenly",
+                "One morning",
+                "First of all"
+            ],
+            "answer": "Finally",
+            "explanation": "Từ nối chỉ thời gian W5E2: \"Finally\" (Cuối cùng), \"In the end\" (Kết cục) dùng ở phần End. \"Once upon a time\" dùng ở Beginning."
+        },
+        {
+            "id": 5,
+            "subject": "Mathematics",
+            "question": "Using the Partitioning method for 341 + 526, what is the sum of the HUNDREDS: (300 + 500)?",
+            "audio": "What is three hundred plus five hundred in partitioning?",
+            "options": [
+                "800",
+                "700",
+                "900",
+                "850"
+            ],
+            "answer": "800",
+            "explanation": "Phương pháp tách số W5M: Hàng trăm là 300 + 500 = 800. Tổng kết quả: 800 + 60 + 7 = 867."
+        },
+        {
+            "id": 6,
+            "subject": "Mathematics",
+            "question": "Calculate using column addition with regrouping: 652 + 172 = ?",
+            "audio": "Calculate six hundred and fifty-two plus one hundred and seventy-two.",
+            "options": [
+                "824",
+                "724",
+                "814",
+                "834"
+            ],
+            "answer": "824",
+            "explanation": "Đặt tính cộng có nhớ W5M: Đơn vị 2+2=4; Chục: 5+7=12 (viết 2 nhớ 1); Trăm: 6+1+1=8 &rarr; Đáp án là 824."
+        },
+        {
+            "id": 7,
+            "subject": "Mathematics",
+            "question": "The Rice Harvest Problem: Billy harvested 438 kg of rice in the morning and 245 kg in the afternoon. Total?",
+            "audio": "How many kilograms of rice did Billy harvest in total?",
+            "options": [
+                "683 kg",
+                "673 kg",
+                "693 kg",
+                "583 kg"
+            ],
+            "answer": "683 kg",
+            "explanation": "Bài toán thực tế W5M: Phép tính 438 + 245 = 683 kg."
+        },
+        {
+            "id": 8,
+            "subject": "Science",
+            "question": "Which liquid in the mouth softens food and starts breaking it down while teeth are chewing?",
+            "audio": "Which liquid in the mouth softens food?",
+            "options": [
+                "Saliva",
+                "Water",
+                "Blood",
+                "Mucus"
+            ],
+            "answer": "Saliva",
+            "explanation": "Hệ tiêu hóa W5S: Nước bọt (Saliva) làm mềm và hỗ trợ tiêu hóa thức ăn ngay tại khoang miệng."
+        },
+        {
+            "id": 9,
+            "subject": "Science",
+            "question": "What is the function of the OESOPHAGUS (gullet) in the digestive system?",
+            "audio": "What is the function of the oesophagus?",
+            "options": [
+                "It squeezes food down from mouth to stomach",
+                "It absorbs essential nutrients into blood",
+                "It grinds hard nuts into fine particles",
+                "It produces strong acids to break down fat"
+            ],
+            "answer": "It squeezes food down from mouth to stomach",
+            "explanation": "Chức năng thực quản W5S: Các cơ của thực quản (oesophagus) co bóp đẩy thức ăn trôi từ miệng xuống dạ dày."
+        },
+        {
+            "id": 10,
+            "subject": "Science",
+            "question": "Which organ of the digestive system ABSORBS nutrients into the blood to give our body energy?",
+            "audio": "Which organ absorbs nutrients into the blood?",
+            "options": [
+                "Small intestine",
+                "Large intestine",
+                "Muscular stomach",
+                "Oesophagus tube"
+            ],
+            "answer": "Small intestine",
+            "explanation": "Chức năng cơ quan W5S: Ruột non (Small intestine) hấp thụ các chất dinh dưỡng thiết yếu vào máu để nuôi cơ thể."
+        }
+    ],
+    "week6": [
+        {
+            "id": 1,
+            "subject": "English",
+            "question": "In the story \"George's Marvellous Medicine\", what does the word MARVELLOUS mean?",
+            "audio": "What does the word marvellous mean?",
+            "options": [
+                "Really really good and wonderful",
+                "Extremely dangerous and scary",
+                "Very grumpy and bad-tempered",
+                "Completely boring and ordinary"
+            ],
+            "answer": "Really really good and wonderful",
+            "explanation": "Từ vựng W6E1: \"marvellous\" đồng nghĩa với wonderful, fantastic, really really good (kỳ diệu, tuyệt vời)."
+        },
+        {
+            "id": 2,
+            "subject": "English",
+            "question": "Choose the correct past continuous form for singular George: \"George _______ (mix) the medicine in a giant saucepan.\"",
+            "audio": "Choose the correct past continuous form for George.",
+            "options": [
+                "was mixing",
+                "were mixing",
+                "is mixing",
+                "are mixing"
+            ],
+            "answer": "was mixing",
+            "explanation": "Quy tắc thì Quá khứ tiếp diễn W6E2: Chủ ngữ số ít (George = he) đi với \"was\" + V-ing &rarr; \"was mixing\"."
+        },
+        {
+            "id": 3,
+            "subject": "English",
+            "question": "Choose the correct past continuous form for plural subjects: \"Grandma's legs _______ (grow) through the living room ceiling!\"",
+            "audio": "Choose the correct past continuous form for Grandma's legs.",
+            "options": [
+                "were growing",
+                "was growing",
+                "is growing",
+                "are growing"
+            ],
+            "answer": "were growing",
+            "explanation": "Ngữ pháp W6E2: Chủ ngữ \"Grandma's legs\" là danh từ số nhiều (2 chân) &rarr; dùng \"were\" + V-ing &rarr; \"were growing\"."
+        },
+        {
+            "id": 4,
+            "subject": "English",
+            "question": "Which word from Language Book p.16 has the short 'oo' sound: \"He put the pot on the stove to _______ the mixture\"?",
+            "audio": "Which word has the short double-o sound?",
+            "options": [
+                "cook",
+                "moon",
+                "spoon",
+                "boot"
+            ],
+            "answer": "cook",
+            "explanation": "Ngữ âm 'oo' W6E2: \"cook\", \"book\", \"foot\", \"wood\" phát âm âm ngắn. \"moon\", \"spoon\" phát âm âm dài."
+        },
+        {
+            "id": 5,
+            "subject": "Mathematics",
+            "question": "A 2D shape has only two dimensions. What are these two dimensions?",
+            "audio": "What two dimensions do all 2D shapes have?",
+            "options": [
+                "Height and width",
+                "Length and depth",
+                "Depth and volume",
+                "Weight and area"
+            ],
+            "answer": "Height and width",
+            "explanation": "Định nghĩa hình 2D trong slide W6M: Hình 2 chiều chỉ có chiều cao (height) và chiều rộng (width)."
+        },
+        {
+            "id": 6,
+            "subject": "Mathematics",
+            "question": "How many straight sides and angles does a HEXAGON have?",
+            "audio": "How many sides and angles does a hexagon have?",
+            "options": [
+                "6 sides and 6 angles",
+                "5 sides and 5 angles",
+                "8 sides and 8 angles",
+                "4 sides and 4 angles"
+            ],
+            "answer": "6 sides and 6 angles",
+            "explanation": "Thuộc tính hình W6M: Hexagon (lục giác) có đúng 6 cạnh và 6 góc. Pentagon có 5 cạnh, Octagon có 8 cạnh."
+        },
+        {
+            "id": 7,
+            "subject": "Mathematics",
+            "question": "Is a CIRCLE a polygon? Why or why not?",
+            "audio": "Is a circle a polygon?",
+            "options": [
+                "No, because a polygon must have 3 or more straight sides",
+                "Yes, because a circle has four equal sides and right angles",
+                "Yes, because any closed two-dimensional shape is a polygon",
+                "No, because a polygon cannot have any vertices or corners"
+            ],
+            "answer": "No, because a polygon must have 3 or more straight sides",
+            "explanation": "Khái niệm đa giác W6M: Đa giác (Polygon) bắt buộc phải tạo bởi từ 3 cạnh thẳng trở lên. Hình tròn là đường cong nên KHÔNG phải là polygon."
+        },
+        {
+            "id": 8,
+            "subject": "Science",
+            "question": "A tiger eats ONLY meat and has 4 long pointed canine teeth. What diet classification is the tiger?",
+            "audio": "What diet classification is the tiger?",
+            "options": [
+                "Carnivore",
+                "Herbivore",
+                "Omnivore",
+                "Predator"
+            ],
+            "answer": "Carnivore",
+            "explanation": "Phân loại chế độ ăn W6S: Động vật chỉ ăn thịt là Carnivore (hổ, sư tử, cá mập)."
+        },
+        {
+            "id": 9,
+            "subject": "Science",
+            "question": "An animal skull has NO sharp canines, only broad FLAT MOLARS for chewing grass. What type of animal was it?",
+            "audio": "What type of animal was it if the skull has only flat molars?",
+            "options": [
+                "Herbivore",
+                "Carnivore",
+                "Omnivore",
+                "Predator"
+            ],
+            "answer": "Herbivore",
+            "explanation": "Giải phẫu hộp sọ W6S: Hộp sọ chỉ có răng hàm phẳng (flat molars) dùng để nhai và nghiền nát cỏ &rarr; là Herbivore (bò, hươu, cừu)."
+        },
+        {
+            "id": 10,
+            "subject": "Science",
+            "question": "Humans and Bears eat BOTH meat and plant foods. What are they called?",
+            "audio": "What are animals called that eat both meat and plants?",
+            "options": [
+                "Omnivores",
+                "Carnivores",
+                "Herbivores",
+                "Predators"
+            ],
+            "answer": "Omnivores",
+            "explanation": "Chế độ ăn W6S: Loài ăn cả thịt và thực vật được gọi là Omnivores (con người, gấu, cáo, chó)."
+        }
+    ],
+    "week7": [
+        {
+            "id": 1,
+            "subject": "Mathematics",
+            "question": "When we see a PLUS (+) symbol, what calculation do we need to do?",
+            "audio": "When we see a plus symbol, what calculation do we need to do?",
+            "options": [
+                "Add",
+                "Subtract",
+                "Multiply",
+                "Divide"
+            ],
+            "answer": "Add",
+            "explanation": "Quy tắc cơ bản W7M: Dấu + (plus) yêu cầu ta thực hiện phép tính cộng (add). Dấu - (minus) yêu cầu ta thực hiện phép tính trừ (subtract)."
+        },
+        {
+            "id": 2,
+            "subject": "Mathematics",
+            "question": "Pattern in Addition: When we add 2 to any number ending in 2 (2+2, 12+2, 42+2, 62+2), what digit is ALWAYS in the ones place?",
+            "audio": "What digit is always in the ones place when we add two to a number ending in two?",
+            "options": [
+                "4",
+                "2",
+                "6",
+                "8"
+            ],
+            "answer": "4",
+            "explanation": "Quy luật số W7M (Slide p.6-7): Khi cộng 2 vào số có tận cùng là 2, hàng đơn vị luôn là 4 (2+2=4, 12+2=14, 42+2=44, 62+2=64)."
+        },
+        {
+            "id": 3,
+            "subject": "Mathematics",
+            "question": "Pattern in Addition: When we add 3 to any number ending in 3 (3+3, 13+3, 23+3, 73+3), what digit is ALWAYS in the ones place?",
+            "audio": "What digit is always in the ones place when we add three to a number ending in three?",
+            "options": [
+                "6",
+                "3",
+                "9",
+                "5"
+            ],
+            "answer": "6",
+            "explanation": "Quy luật số W7M (Slide p.8-9): Khi cộng 3 vào số có đuôi 3, chữ số hàng đơn vị luôn luôn là 6 (3+3=6, 13+3=16, 73+3=76)."
+        },
+        {
+            "id": 4,
+            "subject": "Mathematics",
+            "question": "Pattern in Subtraction: When we subtract 5 from any number ending in 2 (12-5, 22-5, 32-5, 82-5), what digit is ALWAYS in the ones place?",
+            "audio": "What digit is always in the ones place when we subtract five from a number ending in two?",
+            "options": [
+                "7",
+                "5",
+                "3",
+                "2"
+            ],
+            "answer": "7",
+            "explanation": "Quy luật số W7M (Slide p.12-13): Khi trừ 5 từ số có tận cùng là 2, hàng đơn vị luôn luôn là 7 (12-5=7, 22-5=17, 32-5=27, 82-5=77)."
+        },
+        {
+            "id": 5,
+            "subject": "Mathematics",
+            "question": "The Celery Seed Problem: Lily had 73 seeds. Her teacher gave her 3 more seeds (+3). Then a bird ate 2 seeds (-2). How many seeds are left?",
+            "audio": "How many seeds does Lily have left?",
+            "options": [
+                "74 seeds",
+                "76 seeds",
+                "72 seeds",
+                "78 seeds"
+            ],
+            "answer": "74 seeds",
+            "explanation": "Toán thực tế W7M: Sau khi nhận thêm 3 hạt: 73 + 3 = 76 (đuôi 3+3=6). Sau khi chim ăn 2 hạt: 76 - 2 = 74 hạt (đuôi 6-2=4)."
+        },
+        {
+            "id": 6,
+            "subject": "Science",
+            "question": "Which plant part ABSORBS water and nutrients from the soil and anchors the plant firmly?",
+            "audio": "Which plant part absorbs water from the soil?",
+            "options": [
+                "Roots",
+                "Stem",
+                "Leaves",
+                "Flower"
+            ],
+            "answer": "Roots",
+            "explanation": "Chức năng bộ phận cây W7S (Slide p.21): Rễ cây (Roots) hút nước và khoáng chất từ đất, đồng thời giữ chặt cây không bị ngã đổ."
+        },
+        {
+            "id": 7,
+            "subject": "Science",
+            "question": "Which plant part SUPPORTS the plant upright and TRANSPORTS (moves) water up to the leaves and flowers?",
+            "audio": "Which plant part supports the plant and transports water?",
+            "options": [
+                "Stem",
+                "Roots",
+                "Leaves",
+                "Flower"
+            ],
+            "answer": "Stem",
+            "explanation": "Chức năng thân cây W7S (Slide p.18): Thân cây (Stem) nâng đỡ cây và vận chuyển nước từ rễ lên các tán lá."
+        },
+        {
+            "id": 8,
+            "subject": "Science",
+            "question": "What is the primary scientific function of the LEAVES on a plant?",
+            "audio": "What is the function of the leaves?",
+            "options": [
+                "They use sunlight to make food and energy",
+                "They absorb water and minerals from soil",
+                "They produce colorful seeds for flowers",
+                "They anchor the plant firmly in ground"
+            ],
+            "answer": "They use sunlight to make food and energy",
+            "explanation": "Chức năng của lá W7S (Slide p.15): Lá cây dùng ánh sáng mặt trời để tạo năng lượng / thức ăn nuôi sống cây."
+        },
+        {
+            "id": 9,
+            "subject": "Science",
+            "question": "What is the definition of a FAIR TEST in scientific experiments?",
+            "audio": "What is a fair test in scientific experiments?",
+            "options": [
+                "An experiment where we change only one single thing",
+                "An experiment where we change all variables at once",
+                "An experiment where no equipment or tools are used",
+                "An experiment where everyone makes the same guesses"
+            ],
+            "answer": "An experiment where we change only one single thing",
+            "explanation": "Quy tắc thí nghiệm công bằng W7S (Slide p.30): \"A fair test means we change only ONE thing in the experiment\"."
+        },
+        {
+            "id": 10,
+            "subject": "Science",
+            "question": "In the Virtual Celery Experiment, why did the celery leaves turn red when placed in red water?",
+            "audio": "Why did the celery leaves turn red in the experiment?",
+            "options": [
+                "Because tubes in the stem carried red water up to the leaves",
+                "Because the leaves produced red pigment when in bright sunlight",
+                "Because red food dye soaked directly through leaf skin outside",
+                "Because the roots converted water into red chemicals inside"
+            ],
+            "answer": "Because tubes in the stem carried red water up to the leaves",
+            "explanation": "Thí nghiệm cọng cần tây W7S: Nước màu đỏ được các ống dẫn trong thân cây cần tây hút và vận chuyển thẳng lên các tán lá khiến lá đổi màu."
         }
     ]
 }
