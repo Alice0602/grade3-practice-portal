@@ -660,6 +660,270 @@ VOCABULARY_BANK = {
 ],
     "week7": [
         {
+                "word": "dragon",
+                "meaning": "a mythical giant reptile with wings, sharp claws and fire breath",
+                "vietnamese": "Loài rồng: sinh vật thần thoại to lớn có cánh, móng vuốt và thở ra lửa",
+                "mnemonic": "Rồng bay lượn trên trời 🐉 có cánh lớn và móng vuốt sắc nhọn.",
+                "colloc": "The yellow dragon has got wings and it can fly",
+                "colloc_vi": "Con rồng màu vàng có đôi cánh và nó có thể bay lượn",
+                "audio": "dragon. A mythical giant reptile with wings and fire breath.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🐉"
+        },
+        {
+                "word": "horns",
+                "meaning": "hard pointed parts growing on top of an animal's head",
+                "vietnamese": "Cặp sừng: phần nhọn và cứng mọc trên đầu rồng hoặc dê",
+                "mnemonic": "Sừng rồng nhọn hoắt 🦌 vươn cao trên đỉnh đầu.",
+                "colloc": "The dragon had horns like a goat",
+                "colloc_vi": "Con rồng có cặp sừng nhọn giống như sừng dê",
+                "audio": "horns. Hard pointed parts on an animal's head.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🦌"
+        },
+        {
+                "word": "claws",
+                "meaning": "sharp curved nails on the feet or paws of an animal",
+                "vietnamese": "Móng vuốt: những chiếc móng cong và sắc nhọn ở bàn chân rồng",
+                "mnemonic": "Móng vuốt sắc bén 🦅 để vồ mồi và bám chặt vào vách đá.",
+                "colloc": "The dragon had paws and it had sharp claws",
+                "colloc_vi": "Con rồng có bàn chân và có những chiếc móng vuốt sắc nhọn",
+                "audio": "claws. Sharp curved nails on the paws of an animal.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🦅"
+        },
+        {
+                "word": "scales",
+                "meaning": "small hard flat plates protecting the skin of reptiles",
+                "vietnamese": "Lớp vảy cứng: những phiến sừng nhỏ xếp lớp bảo vệ da rồng",
+                "mnemonic": "Vảy rồng lấp lánh 🐟 cứng như áo giáp bảo vệ cơ thể.",
+                "colloc": "The dragon's body is covered in shiny scales",
+                "colloc_vi": "Cơ thể con rồng được bao phủ bởi lớp vảy sáng lấp lánh",
+                "audio": "scales. Small hard plates protecting the skin of reptiles.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🛡️"
+        },
+        {
+                "word": "wings",
+                "meaning": "large limbs used by a dragon or bird for flying in the air",
+                "vietnamese": "Đôi cánh: bộ phận lớn dang rộng giúp rồng bay lượn trên không",
+                "mnemonic": "Đôi cánh dang rộng 🪽 đón gió đưa rồng bay vút lên bầu trời.",
+                "colloc": "The dragon uses its long wings to fly high",
+                "colloc_vi": "Con rồng dùng đôi cánh dài để bay lượn trên trời cao",
+                "audio": "wings. Large limbs used for flying in the air.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🪽"
+        },
+        {
+                "word": "paw",
+                "meaning": "the foot of an animal that has claws and soft pads",
+                "vietnamese": "Bàn chân thú: bàn chân có đệm thịt êm và móng vuốt",
+                "mnemonic": "Bàn chân rồng 🐾 có đệm thịt dày giúp bước đi êm ái.",
+                "colloc": "The dragon rested on its huge front paw",
+                "colloc_vi": "Con rồng tựa người lên bàn chân trước to lớn của nó",
+                "audio": "paw. The foot of an animal with claws and pads.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🐾"
+        },
+        {
+                "word": "eyebrows",
+                "meaning": "lines of hair growing above the eyes on the face",
+                "vietnamese": "Lông mày: hàng lông mọc phía trên đôi mắt (ví dụ: bushy eyebrows)",
+                "mnemonic": "Lông mày rậm rạp 🤨 phía trên đôi mắt của rồng.",
+                "colloc": "The dragon had bushy eyebrows above its eyes",
+                "colloc_vi": "Con rồng có đôi lông mày rậm rạp phía trên mắt",
+                "audio": "eyebrows. Lines of hair above the eyes.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🤨"
+        },
+        {
+                "word": "eyelashes",
+                "meaning": "short hairs that grow along the edge of the eyelids",
+                "vietnamese": "Lông mi: những sợi lông nhỏ mọc viền quanh mí mắt",
+                "mnemonic": "Hàng lông mi dài 👁️ chớp chớp che bụi cho đôi mắt.",
+                "colloc": "The dragon blinked its long eyelashes gently",
+                "colloc_vi": "Con rồng nhẹ nhàng chớp hàng lông mi dài cong",
+                "audio": "eyelashes. Hairs growing along the edge of eyelids.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "👁️"
+        },
+        {
+                "word": "tail",
+                "meaning": "the flexible part extending from the back of an animal",
+                "vietnamese": "Chiếc đuôi: phần thon dài kéo dài từ phía sau thân rồng",
+                "mnemonic": "Chiếc đuôi dài 🐊 quẫy mạnh giữ thăng bằng khi bay.",
+                "colloc": "The dragon had a thin tail behind its body",
+                "colloc_vi": "Con rồng có chiếc đuôi thon dài phía sau cơ thể",
+                "audio": "tail. The flexible part extending from the back.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🐊"
+        },
+        {
+                "word": "fierce",
+                "meaning": "showing aggressive anger, wild and ready to attack",
+                "vietnamese": "Hung dữ, dữ tợn: biểu hiện sự giận dữ, hung bạo và sẵn sàng tấn công",
+                "mnemonic": "Rồng hung dữ 🦁 gầm vang và phun những ngọn lửa đỏ rực.",
+                "colloc": "The green dragon was fierce and it breathed fire",
+                "colloc_vi": "Con rồng xanh lá rất hung dữ và nó đã thở ra lửa",
+                "audio": "fierce. Showing aggressive anger, wild and ready to attack.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🔥"
+        },
+        {
+                "word": "scary",
+                "meaning": "frightening, causing fear or terror in someone",
+                "vietnamese": "Đáng sợ: gây cảm giác khiếp sợ, hoảng hốt cho người nhìn",
+                "mnemonic": "Tiếng rồng gầm gừ 😱 trong đêm tối thật đáng sợ.",
+                "colloc": "The monster looked scary with its sharp teeth",
+                "colloc_vi": "Con quái vật trông thật đáng sợ với hàm răng sắc nhọn",
+                "audio": "scary. Frightening, causing fear or terror.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "😱"
+        },
+        {
+                "word": "friendly",
+                "meaning": "behaving in a kind, pleasant and peaceful way",
+                "vietnamese": "Thân thiện: đối xử tốt bụng, hiền lành, dễ gần và hòa nhã",
+                "mnemonic": "Con rồng thân thiện 😊 mỉm cười và chơi đùa cùng các bạn nhỏ.",
+                "colloc": "The brown dragon was friendly and played with kids",
+                "colloc_vi": "Con rồng nâu rất thân thiện và chơi đùa cùng các bạn nhỏ",
+                "audio": "friendly. Behaving in a kind, pleasant and peaceful way.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🤝"
+        },
+        {
+                "word": "huge",
+                "meaning": "extremely enormous, vast in size, like a mountain",
+                "vietnamese": "Khổng lồ: to lớn đồ sộ phi thường, như ngọn núi cao",
+                "mnemonic": "Thân hình rồng khổng lồ 🏔️ to lớn che khuất cả một góc trời.",
+                "colloc": "The dragon was huge and tall like a mountain",
+                "colloc_vi": "Con rồng to lớn khổng lồ như một ngọn núi cao",
+                "audio": "huge. Extremely enormous, vast in size.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🏔️"
+        },
+        {
+                "word": "wise",
+                "meaning": "having deep knowledge, good judgment and experience",
+                "vietnamese": "Khôn ngoan, thông thái: có hiểu biết sâu rộng và đưa ra lời khuyên đúng",
+                "mnemonic": "Cụ rồng thông thái 🦉 sống ngàn năm biết mọi bí mật thế gian.",
+                "colloc": "The wise dragon gave good advice to the king",
+                "colloc_vi": "Con rồng thông thái đã đưa ra lời khuyên bổ ích cho nhà vua",
+                "audio": "wise. Having deep knowledge, good judgment and experience.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🦉"
+        },
+        {
+                "word": "conjunction",
+                "meaning": "a connecting word that joins words, phrases or sentences",
+                "vietnamese": "Liên từ: từ dùng để kết nối các từ hoặc các mệnh đề câu (con-junc-tion)",
+                "mnemonic": "Liên từ như chiếc cầu nối 🌉 gắn kết hai ý câu lại với nhau.",
+                "colloc": "A conjunction joins a group of words or sentences",
+                "colloc_vi": "Một liên từ kết nối một nhóm từ hoặc các câu lại với nhau",
+                "audio": "conjunction. A word that joins words or sentences together.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🔗"
+        },
+        {
+                "word": "and",
+                "meaning": "joins similar or additional ideas together in a sentence",
+                "vietnamese": "Liên từ 'và': nối hai ý tương đồng, bổ sung cho nhau (like + like)",
+                "mnemonic": "Từ 'and' nối những điều tương đồng ➕ ăn xúc xích và khoai tây chiên.",
+                "colloc": "Joseph ate a hot dog and french fries",
+                "colloc_vi": "Joseph đã ăn một chiếc bánh mì kẹp xúc xích và khoai tây chiên",
+                "audio": "and. Joins similar or additional ideas together.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "➕"
+        },
+        {
+                "word": "but",
+                "meaning": "joins different or contrasting ideas together in a sentence",
+                "vietnamese": "Liên từ 'nhưng': nối hai ý đối lập, trái ngược nhau (like + don't like)",
+                "mnemonic": "Từ 'but' lật ngược tình thế ⚡ muốn chơi game nhưng phải làm bài tập.",
+                "colloc": "I want to play games but I need to do homework",
+                "colloc_vi": "Tôi muốn chơi điện tử nhưng tôi cần phải làm bài tập về nhà",
+                "audio": "but. Joins different or contrasting ideas together.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "⚡"
+        },
+        {
+                "word": "past tense",
+                "meaning": "verb form for actions that already happened and finished",
+                "vietnamese": "Thì quá khứ đơn: diễn tả hành động đã xảy ra và kết thúc trong quá khứ",
+                "mnemonic": "Chuyện đã xong trong quá khứ ⏪ dùng thì quá khứ đơn (past tense).",
+                "colloc": "We use the past tense when something already happened",
+                "colloc_vi": "Chúng ta dùng thì quá khứ khi điều gì đó đã xảy ra",
+                "audio": "past tense. Verb form for actions that already happened and finished.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "⏪"
+        },
+        {
+                "word": "ate",
+                "meaning": "past tense of eat: chewed and swallowed food",
+                "vietnamese": "Đã ăn: quá khứ của động từ eat (ăn uống trong quá khứ)",
+                "mnemonic": "Hôm qua tớ đã ăn 🍕 chiếc bánh pizza ngon tuyệt (eat -> ate).",
+                "colloc": "Joseph ate a hot dog and french fries yesterday",
+                "colloc_vi": "Joseph đã ăn một cái bánh mì kẹp xúc xích và khoai tây chiên hôm qua",
+                "audio": "ate. Past tense of eat, chewed and swallowed food.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🍕"
+        },
+        {
+                "word": "went",
+                "meaning": "past tense of go: moved from one place to another",
+                "vietnamese": "Đã đi: quá khứ của động từ go (di chuyển đến đâu trong quá khứ)",
+                "mnemonic": "Hôm qua Nam đã đi ✈️ ra sân bay cùng gia đình (go -> went).",
+                "colloc": "I went to the airport yesterday with my family",
+                "colloc_vi": "Tôi đã đi đến sân bay ngày hôm qua cùng gia đình tôi",
+                "audio": "went. Past tense of go, moved from one place to another.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "✈️"
+        },
+        {
+                "word": "threw",
+                "meaning": "past tense of throw: sent an object through the air",
+                "vietnamese": "Đã ném: quá khứ của động từ throw (ném bóng trong quá khứ)",
+                "mnemonic": "Các bạn đã ném 🏀 quả bóng vào rổ lúc nãy (throw -> threw).",
+                "colloc": "They threw the ball across the park earlier",
+                "colloc_vi": "Họ đã ném quả bóng ngang qua công viên lúc nãy",
+                "audio": "threw. Past tense of throw, sent an object through the air.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🏀"
+        },
+        {
+                "word": "ran",
+                "meaning": "past tense of run: moved swiftly on foot in the past",
+                "vietnamese": "Đã chạy: quá khứ của động từ run (chạy nhanh trong quá khứ)",
+                "mnemonic": "Sáng qua cậu bé đã chạy 🏃 rất nhanh trong công viên (run -> ran).",
+                "colloc": "He ran in the park very fast yesterday morning",
+                "colloc_vi": "Cậu ấy đã chạy trong công viên rất nhanh vào sáng hôm qua",
+                "audio": "ran. Past tense of run, moved swiftly on foot.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🏃"
+        },
+        {
                 "word": "plus",
                 "meaning": "the addition symbol (+), means to add or put together",
                 "vietnamese": "Dấu cộng (+): biểu thị phép tính cộng gộp các số lại với nhau",
@@ -733,123 +997,39 @@ VOCABULARY_BANK = {
         },
         {
                 "word": "leaves",
-                "meaning": "plural of leaf; green parts that use sunlight to make food/energy",
-                "vietnamese": "Lá cây (số nhiều của leaf): dùng ánh sáng mặt trời để tạo thức ăn (quang hợp)",
-                "mnemonic": "1 chiếc lá là leaf, nhiều chiếc lá là leaves 🍃 hứng ánh nắng mặt trời.",
-                "colloc": "Leaves use sunlight to make energy",
-                "colloc_vi": "Lá cây dùng ánh sáng mặt trời để tạo năng lượng",
-                "audio": "leaves. Plural of leaf; use sunlight to make food.",
+                "meaning": "green plant parts that use sunlight to produce food and energy",
+                "vietnamese": "Lá cây: bộ phận màu xanh quang hợp đón ánh sáng mặt trời tạo dinh dưỡng",
+                "mnemonic": "Lá cây xanh 🍃 là nhà máy quang hợp tí hon đón ánh nắng mặt trời.",
+                "colloc": "Leaves use sunlight to make food",
+                "colloc_vi": "Lá cây sử dụng ánh sáng mặt trời để tạo thức ăn",
+                "audio": "leaves. Uses sunlight to make food and energy.",
                 "type": "science",
                 "svg_type": "default",
                 "emoji": "🍃"
         },
         {
                 "word": "flower",
-                "meaning": "the colorful plant part that creates seeds for reproduction",
-                "vietnamese": "Hoa: bộ phận rực rỡ sắc màu tạo hạt giống để sinh sản cây mới",
-                "mnemonic": "Bông hoa xinh đẹp 🌸 thu hút ong bướm và tạo hạt giống duy trì nòi giống.",
+                "meaning": "the colorful part of a plant that makes seeds to reproduce",
+                "vietnamese": "Hoa: bộ phận rực rỡ sắc màu tạo hạt giống để sinh sản ra cây con",
+                "mnemonic": "Bông hoa xinh tươi 🌸 kết trái tạo hạt để mọc thành cây mới.",
                 "colloc": "The flower creates seeds for new plants",
-                "colloc_vi": "Hoa tạo ra các hạt giống để mọc cây mới",
+                "colloc_vi": "Bông hoa tạo ra hạt giống cho những cây mới",
                 "audio": "flower. Creates seeds for reproduction.",
                 "type": "science",
                 "svg_type": "default",
                 "emoji": "🌸"
         },
         {
-                "word": "absorb",
-                "meaning": "to soak up or take in water from the surrounding soil",
-                "vietnamese": "Hút / Hấp thụ: hút nước và dưỡng chất từ đất",
-                "mnemonic": "Rễ cây ngấm và hút nước 🧽 như miếng bọt biển hút nước.",
-                "colloc": "Roots absorb water and nutrients",
-                "colloc_vi": "Rễ cây hút nước và các chất dinh dưỡng",
-                "audio": "absorb. To soak up or take in water.",
-                "type": "science",
-                "svg_type": "default",
-                "emoji": "🧽"
-        },
-        {
-                "word": "transport",
-                "meaning": "to carry or move something from one place to another",
-                "vietnamese": "Vận chuyển: dẫn truyền nước và chất dinh dưỡng đi khắp cây",
-                "mnemonic": "Các ống dẫn vận chuyển dòng nước 🚚 từ dưới gốc lên đến ngọn.",
-                "colloc": "The stem transports water to the leaves",
-                "colloc_vi": "Thân cây vận chuyển nước lên các lá cây",
-                "audio": "transport. To carry or move from one place to another.",
-                "type": "science",
-                "svg_type": "default",
-                "emoji": "🚚"
-        },
-        {
-                "word": "aim",
-                "meaning": "a sentence about what we want to find out in an experiment",
-                "vietnamese": "Mục tiêu thí nghiệm: câu văn nêu rõ ta muốn tìm hiểu điều gì",
-                "mnemonic": "Bước đầu tiên trong khoa học: Xác định mục tiêu muốn khám phá 🎯.",
-                "colloc": "The aim tells what we want to find out",
-                "colloc_vi": "Mục tiêu nêu rõ điều chúng ta muốn tìm hiểu",
-                "audio": "aim. What we want to find out in an experiment.",
-                "type": "science",
-                "svg_type": "default",
-                "emoji": "🎯"
-        },
-        {
-                "word": "materials",
-                "meaning": "the equipment and things we use to do an experiment",
-                "vietnamese": "Dụng cụ & vật liệu: những đồ vật dùng để làm thí nghiệm",
-                "mnemonic": "Cốc thủy tinh, nước màu, cọng cần tây 🧪 là các materials.",
-                "colloc": "List down the materials for the experiment",
-                "colloc_vi": "Liệt kê các dụng cụ và vật liệu cho thí nghiệm",
-                "audio": "materials. The things we use to do an experiment.",
-                "type": "science",
-                "svg_type": "default",
-                "emoji": "🧪"
-        },
-        {
-                "word": "method",
-                "meaning": "a list of instructions that tells us what to do step by step",
-                "vietnamese": "Phương pháp / Các bước tiến hành: hướng dẫn từng bước cần làm",
-                "mnemonic": "Bản hướng dẫn chi tiết từng bước 📋 để thực hiện thí nghiệm chính xác.",
-                "colloc": "Follow the method step by step",
-                "colloc_vi": "Làm theo các bước tiến hành từng bước một",
-                "audio": "method. Instructions that tell us what to do.",
-                "type": "science",
-                "svg_type": "default",
-                "emoji": "📋"
-        },
-        {
-                "word": "prediction",
-                "meaning": "what you think will happen in the experiment before doing it",
-                "vietnamese": "Dự đoán: suy nghĩ của con về kết quả trước khi bắt tay vào làm",
-                "mnemonic": "Đoán trước điều gì sẽ xảy ra 🔮 (không có đúng hay sai khi dự đoán).",
-                "colloc": "Make a prediction before testing",
-                "colloc_vi": "Đưa ra dự đoán trước khi tiến hành thử nghiệm",
-                "audio": "prediction. What you think will happen.",
-                "type": "science",
-                "svg_type": "default",
-                "emoji": "🔮"
-        },
-        {
                 "word": "fair test",
-                "meaning": "an experiment where we change ONLY ONE thing",
-                "vietnamese": "Thí nghiệm công bằng: thí nghiệm mà ta chỉ thay đổi duy nhất 1 yếu tố",
-                "mnemonic": "Chỉ thay đổi 1 thứ duy nhất ⚖️, giữ nguyên tất cả những yếu tố còn lại.",
-                "colloc": "Change only one thing to make it a fair test",
-                "colloc_vi": "Chỉ thay đổi một yếu tố để thí nghiệm được công bằng",
-                "audio": "fair test. Change only one thing in an experiment.",
+                "meaning": "a scientific experiment where you change only one thing at a time",
+                "vietnamese": "Thí nghiệm công bằng: cuộc thử nghiệm khoa học chỉ thay đổi duy nhất một yếu tố",
+                "mnemonic": "Thí nghiệm công bằng ⚖️ chỉ đổi duy nhất 1 điều (change ONLY one thing).",
+                "colloc": "A fair test changes only one single thing",
+                "colloc_vi": "Một thí nghiệm công bằng chỉ thay đổi duy nhất một yếu tố",
+                "audio": "fair test. Change only one single thing at a time.",
                 "type": "science",
                 "svg_type": "default",
                 "emoji": "⚖️"
-        },
-        {
-                "word": "conclusion",
-                "meaning": "what we learned at the end of the experiment",
-                "vietnamese": "Kết luận: bài học khoa học rút ra ở cuối thí nghiệm",
-                "mnemonic": "Viết lại điều em học được 📜 sau khi quan sát kết quả thí nghiệm.",
-                "colloc": "Write a conclusion about water transport",
-                "colloc_vi": "Viết kết luận về sự vận chuyển nước của cây",
-                "audio": "conclusion. What we learned at the end.",
-                "type": "science",
-                "svg_type": "default",
-                "emoji": "📜"
         }
 ]
 }
@@ -1710,144 +1890,144 @@ GRAND_CHALLENGE_BANK = {
     ],
     "week7": [
         {
-            "id": 1,
-            "subject": "Mathematics",
-            "question": "When we see a PLUS (+) symbol, what calculation do we need to do?",
-            "audio": "When we see a plus symbol, what calculation do we need to do?",
-            "options": [
-                "Add",
-                "Subtract",
-                "Multiply",
-                "Divide"
-            ],
-            "answer": "Add",
-            "explanation": "Quy tắc cơ bản W7M: Dấu + (plus) yêu cầu ta thực hiện phép tính cộng (add). Dấu - (minus) yêu cầu ta thực hiện phép tính trừ (subtract)."
+                "id": 1,
+                "subject": "English",
+                "question": "Yesterday morning, Nam _____ around the park with his brown puppy.",
+                "audio": "Yesterday morning, Nam ran around the park with his brown puppy.",
+                "options": [
+                        "ran",
+                        "ate",
+                        "saw",
+                        "met"
+                ],
+                "answer": "ran",
+                "explanation": "Slide W7E1 p.6: Thì quá khứ đơn của 'run' là 'ran' ('He ran in the park yesterday')."
         },
         {
-            "id": 2,
-            "subject": "Mathematics",
-            "question": "Pattern in Addition: When we add 2 to any number ending in 2 (2+2, 12+2, 42+2, 62+2), what digit is ALWAYS in the ones place?",
-            "audio": "What digit is always in the ones place when we add two to a number ending in two?",
-            "options": [
-                "4",
-                "2",
-                "6",
-                "8"
-            ],
-            "answer": "4",
-            "explanation": "Quy luật số W7M (Slide p.6-7): Khi cộng 2 vào số có tận cùng là 2, hàng đơn vị luôn là 4 (2+2=4, 12+2=14, 42+2=44, 62+2=64)."
+                "id": 2,
+                "subject": "English",
+                "question": "Which body parts does the yellow dragon use to fly high in the sky?",
+                "audio": "Which body parts does the dragon use to fly high in the sky?",
+                "options": [
+                        "Wings",
+                        "Claws",
+                        "Horns",
+                        "Tails"
+                ],
+                "answer": "Wings",
+                "explanation": "Slide W7E1 p.16 & W7E2 p.21: 'The yellow dragon has got wings and it can fly'."
         },
         {
-            "id": 3,
-            "subject": "Mathematics",
-            "question": "Pattern in Addition: When we add 3 to any number ending in 3 (3+3, 13+3, 23+3, 73+3), what digit is ALWAYS in the ones place?",
-            "audio": "What digit is always in the ones place when we add three to a number ending in three?",
-            "options": [
-                "6",
-                "3",
-                "9",
-                "5"
-            ],
-            "answer": "6",
-            "explanation": "Quy luật số W7M (Slide p.8-9): Khi cộng 3 vào số có đuôi 3, chữ số hàng đơn vị luôn luôn là 6 (3+3=6, 13+3=16, 73+3=76)."
+                "id": 3,
+                "subject": "English",
+                "question": "Which adjective describes a dragon that is very angry and attacks others?",
+                "audio": "Which adjective describes an angry dragon ready to attack?",
+                "options": [
+                        "Fierce",
+                        "Scared",
+                        "Gentle",
+                        "Strong"
+                ],
+                "answer": "Fierce",
+                "explanation": "Slide W7E2 p.4 & p.20: 'The green dragon was fierce and it breathed fire'."
         },
         {
-            "id": 4,
-            "subject": "Mathematics",
-            "question": "Pattern in Subtraction: When we subtract 5 from any number ending in 2 (12-5, 22-5, 32-5, 82-5), what digit is ALWAYS in the ones place?",
-            "audio": "What digit is always in the ones place when we subtract five from a number ending in two?",
-            "options": [
-                "7",
-                "5",
-                "3",
-                "2"
-            ],
-            "answer": "7",
-            "explanation": "Quy luật số W7M (Slide p.12-13): Khi trừ 5 từ số có tận cùng là 2, hàng đơn vị luôn luôn là 7 (12-5=7, 22-5=17, 32-5=27, 82-5=77)."
+                "id": 4,
+                "subject": "English",
+                "question": "Some dragons are green, _____ other dragons are bright blue in colour.",
+                "audio": "Some dragons are green, but other dragons are bright blue in colour.",
+                "options": [
+                        "but",
+                        "and",
+                        "for",
+                        "yet"
+                ],
+                "answer": "but",
+                "explanation": "Slide W7E2 p.14 & p.18: Liên từ 'but' dùng để nối 2 ý đối lập, khác biệt về màu sắc ('Some dragons are green but some are blue')."
         },
         {
-            "id": 5,
-            "subject": "Mathematics",
-            "question": "The Celery Seed Problem: Lily had 73 seeds. Her teacher gave her 3 more seeds (+3). Then a bird ate 2 seeds (-2). How many seeds are left?",
-            "audio": "How many seeds does Lily have left?",
-            "options": [
-                "74 seeds",
-                "76 seeds",
-                "72 seeds",
-                "78 seeds"
-            ],
-            "answer": "74 seeds",
-            "explanation": "Toán thực tế W7M: Sau khi nhận thêm 3 hạt: 73 + 3 = 76 (đuôi 3+3=6). Sau khi chim ăn 2 hạt: 76 - 2 = 74 hạt (đuôi 6-2=4)."
+                "id": 5,
+                "subject": "Mathematics",
+                "question": "Pattern in Addition: When we add 2 to any number ending in 2 (12+2, 42+2, 62+2), what digit is ALWAYS in the ones place?",
+                "audio": "What digit is always in the ones place when we add two to a number ending in two?",
+                "options": [
+                        "4",
+                        "2",
+                        "6",
+                        "8"
+                ],
+                "answer": "4",
+                "explanation": "Slide W7M p.6-7: Khi cộng 2 vào số có tận cùng là 2, hàng đơn vị luôn là 4 (2+2=4, 12+2=14, 42+2=44, 62+2=64)."
         },
         {
-            "id": 6,
-            "subject": "Science",
-            "question": "Which plant part ABSORBS water and nutrients from the soil and anchors the plant firmly?",
-            "audio": "Which plant part absorbs water from the soil?",
-            "options": [
-                "Roots",
-                "Stem",
-                "Leaves",
-                "Flower"
-            ],
-            "answer": "Roots",
-            "explanation": "Chức năng bộ phận cây W7S (Slide p.21): Rễ cây (Roots) hút nước và khoáng chất từ đất, đồng thời giữ chặt cây không bị ngã đổ."
+                "id": 6,
+                "subject": "Mathematics",
+                "question": "Pattern in Subtraction: When we subtract 5 from any number ending in 2 (12-5, 32-5, 82-5), what digit is ALWAYS in the ones place?",
+                "audio": "What digit is always in the ones place when we subtract five from a number ending in two?",
+                "options": [
+                        "7",
+                        "5",
+                        "3",
+                        "2"
+                ],
+                "answer": "7",
+                "explanation": "Slide W7M p.12-13: Khi trừ 5 từ số có tận cùng là 2, hàng đơn vị luôn luôn là 7 (12-5=7, 32-5=27, 82-5=77)."
         },
         {
-            "id": 7,
-            "subject": "Science",
-            "question": "Which plant part SUPPORTS the plant upright and TRANSPORTS (moves) water up to the leaves and flowers?",
-            "audio": "Which plant part supports the plant and transports water?",
-            "options": [
-                "Stem",
-                "Roots",
-                "Leaves",
-                "Flower"
-            ],
-            "answer": "Stem",
-            "explanation": "Chức năng thân cây W7S (Slide p.18): Thân cây (Stem) nâng đỡ cây và vận chuyển nước từ rễ lên các tán lá."
+                "id": 7,
+                "subject": "Mathematics",
+                "question": "The Celery Seed Problem: Lily had 73 seeds. Her teacher gave her 3 more seeds (+3). Then a bird ate 2 seeds (-2). How many seeds are left?",
+                "audio": "How many seeds does Lily have left?",
+                "options": [
+                        "74 seeds",
+                        "76 seeds",
+                        "72 seeds",
+                        "78 seeds"
+                ],
+                "answer": "74 seeds",
+                "explanation": "Toán W7M: 73 + 3 = 76 hạt (quy luật đuôi 3+3=6); sau đó 76 - 2 = 74 hạt (quy luật đuôi 6-2=4)."
         },
         {
-            "id": 8,
-            "subject": "Science",
-            "question": "What is the primary scientific function of the LEAVES on a plant?",
-            "audio": "What is the function of the leaves?",
-            "options": [
-                "They use sunlight to make food and energy",
-                "They absorb water and minerals from soil",
-                "They produce colorful seeds for flowers",
-                "They anchor the plant firmly in ground"
-            ],
-            "answer": "They use sunlight to make food and energy",
-            "explanation": "Chức năng của lá W7S (Slide p.15): Lá cây dùng ánh sáng mặt trời để tạo năng lượng / thức ăn nuôi sống cây."
+                "id": 8,
+                "subject": "Science",
+                "question": "Which plant part ABSORBS water and nutrients from the soil and anchors the plant firmly?",
+                "audio": "Which plant part absorbs water from the soil?",
+                "options": [
+                        "Roots",
+                        "Stems",
+                        "Seeds",
+                        "Cones"
+                ],
+                "answer": "Roots",
+                "explanation": "Slide W7S p.21: Rễ cây (Roots) hút nước và chất dinh dưỡng từ đất, đồng thời giữ chặt cây trong đất."
         },
         {
-            "id": 9,
-            "subject": "Science",
-            "question": "What is the definition of a FAIR TEST in scientific experiments?",
-            "audio": "What is a fair test in scientific experiments?",
-            "options": [
-                "An experiment where we change only one single thing",
-                "An experiment where we change all variables at once",
-                "An experiment where no equipment or tools are used",
-                "An experiment where everyone makes the same guesses"
-            ],
-            "answer": "An experiment where we change only one single thing",
-            "explanation": "Quy tắc thí nghiệm công bằng W7S (Slide p.30): \"A fair test means we change only ONE thing in the experiment\"."
+                "id": 9,
+                "subject": "Science",
+                "question": "Which plant part SUPPORTS the plant upright and TRANSPORTS water up to the leaves and flowers?",
+                "audio": "Which plant part supports the plant and transports water?",
+                "options": [
+                        "Stem",
+                        "Root",
+                        "Leaf",
+                        "Bark"
+                ],
+                "answer": "Stem",
+                "explanation": "Slide W7S p.18: Thân cây (Stem) nâng đỡ cây đứng vững và vận chuyển nước từ rễ lên các tán lá."
         },
         {
-            "id": 10,
-            "subject": "Science",
-            "question": "In the Virtual Celery Experiment, why did the celery leaves turn red when placed in red water?",
-            "audio": "Why did the celery leaves turn red in the experiment?",
-            "options": [
-                "Because tubes in the stem carried red water up to the leaves",
-                "Because the leaves produced red pigment when in bright sunlight",
-                "Because red food dye soaked directly through leaf skin outside",
-                "Because the roots converted water into red chemicals inside"
-            ],
-            "answer": "Because tubes in the stem carried red water up to the leaves",
-            "explanation": "Thí nghiệm cọng cần tây W7S: Nước màu đỏ được các ống dẫn trong thân cây cần tây hút và vận chuyển thẳng lên các tán lá khiến lá đổi màu."
+                "id": 10,
+                "subject": "Science",
+                "question": "What is the scientific definition of a FAIR TEST in school experiments?",
+                "audio": "What is the definition of a fair test in experiments?",
+                "options": [
+                        "An experiment where we change only one single factor",
+                        "An experiment where we change every single factor",
+                        "An experiment where we change no active conditions",
+                        "An experiment where we change three different parts"
+                ],
+                "answer": "An experiment where we change only one single factor",
+                "explanation": "Slide W7S p.30: 'A fair test means we change only ONE thing in the experiment'."
         }
     ]
 }
