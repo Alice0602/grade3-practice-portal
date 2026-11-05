@@ -3,6 +3,8 @@ import sqlite3
 import json
 import csv
 import io
+import random
+import copy
 from datetime import datetime
 from flask import Flask, render_template, request, jsonify, Response, send_file
 
@@ -1032,6 +1034,249 @@ VOCABULARY_BANK = {
                 "emoji": "⚖️"
         }
 ]
+,
+    "week8": [
+        {
+                "word": "thought",
+                "meaning": "past tense of think; had an idea or opinion in the past",
+                "vietnamese": "Đã suy nghĩ / đã nghĩ rằng: thì quá khứ đơn bất quy tắc của từ 'think'",
+                "mnemonic": "Nghĩ ngợi trong đầu 🧠: think biến đổi thành thought.",
+                "colloc": "Yesterday, the king thought Chinese dragons brought good luck",
+                "colloc_vi": "Hôm qua, nhà vua đã nghĩ rằng rồng Trung Hoa mang lại may mắn",
+                "audio": "thought. Past tense of think. We must learn irregular verbs.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "💭"
+        },
+        {
+                "word": "brought",
+                "meaning": "past tense of bring; carried someone or something to a place",
+                "vietnamese": "Đã mang lại / đã đem đến: thì quá khứ đơn bất quy tắc của từ 'bring'",
+                "mnemonic": "Rồng mang mưa về 🌧️: bring biến đổi thành brought.",
+                "colloc": "Chinese people loved dragons because they brought water to rivers",
+                "colloc_vi": "Người dân Trung Quốc yêu quý rồng vì chúng đã mang nước đến cho các dòng sông",
+                "audio": "brought. Past tense of bring. Dragons brought water to rivers.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🎁"
+        },
+        {
+                "word": "stood",
+                "meaning": "past tense of stand; was on one's feet in an upright position",
+                "vietnamese": "Đã đứng: thì quá khứ đơn bất quy tắc của từ 'stand'",
+                "mnemonic": "Đứng thẳng người 🧍: stand biến đổi thành stood.",
+                "colloc": "The fierce green dragon stood proudly on top of the mountain",
+                "colloc_vi": "Con rồng xanh hung dữ đã đứng kiêu hãnh trên đỉnh núi cao",
+                "audio": "stood. Past tense of stand. The dragon stood on top of the rock.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🧍"
+        },
+        {
+                "word": "flew",
+                "meaning": "past tense of fly; moved through the air using wings",
+                "vietnamese": "Đã bay: thì quá khứ đơn bất quy tắc của từ 'fly'",
+                "mnemonic": "Vỗ cánh bay lên trời 🦅: fly biến đổi thành flew.",
+                "colloc": "The dragon flapped its huge wings and flew across the blue sky",
+                "colloc_vi": "Con rồng đập đôi cánh khổng lồ và đã bay ngang qua bầu trời xanh",
+                "audio": "flew. Past tense of fly. The dragon flew across the blue sky.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🦅"
+        },
+        {
+                "word": "told",
+                "meaning": "past tense of tell; communicated spoken words or a story to someone",
+                "vietnamese": "Đã kể / đã nói: thì quá khứ đơn bất quy tắc của từ 'tell'",
+                "mnemonic": "Kể chuyện xưa 🗣️: tell biến đổi thành told.",
+                "colloc": "Our teacher told us a fascinating story about dragons",
+                "colloc_vi": "Giáo viên đã kể cho chúng tôi nghe câu chuyện thú vị về loài rồng",
+                "audio": "told. Past tense of tell. Our teacher told us a story about dragons.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🗣️"
+        },
+        {
+                "word": "began",
+                "meaning": "past tense of begin; started doing something or taking place",
+                "vietnamese": "Đã bắt đầu: thì quá khứ đơn bất quy tắc của từ 'begin'",
+                "mnemonic": "Khởi động xuất phát 🏁: begin biến đổi thành began.",
+                "colloc": "The festival began early in the morning when the sun rose",
+                "colloc_vi": "Lễ hội đã bắt đầu từ sáng sớm khi mặt trời vừa mọc",
+                "audio": "began. Past tense of begin. The story began in an ancient village.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🏁"
+        },
+        {
+                "word": "fierce",
+                "meaning": "looking aggressive, powerful and frightening",
+                "vietnamese": "Hung dữ, dữ tợn: vẻ ngoài uy dũng đáng sợ của rồng",
+                "mnemonic": "Ánh mắt dữ tợn 🔥: fierce dragon nhưng luôn giúp đỡ người tốt.",
+                "colloc": "The dragon looked very fierce but it did not hurt kind people",
+                "colloc_vi": "Con rồng trông rất hung dữ nhưng nó không làm hại người tốt",
+                "audio": "fierce. Aggressive and frightening. The dragon can look very fierce.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🔥"
+        },
+        {
+                "word": "bushy",
+                "meaning": "growing thickly like a bush (e.g. thick eyebrows or tails)",
+                "vietnamese": "Rậm rạp: lông mày hoặc đuôi dày xum xuê như bụi cây",
+                "mnemonic": "Bụi cây rậm rạp 🌳: bushy eyebrows là đôi lông mày rậm.",
+                "colloc": "In Chinese pictures, dragons have long beards and bushy eyebrows",
+                "colloc_vi": "Trong tranh Trung Hoa, rồng có chòm râu dài và đôi lông mày rậm rạp",
+                "audio": "bushy. Growing thickly. Long beards and bushy eyebrows.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🧔"
+        },
+        {
+                "word": "multiplication",
+                "meaning": "multiplying a number by another number to make a bigger number",
+                "vietnamese": "Phép nhân: phép tính làm số lớn lên qua việc cộng lặp lại nhiều lần",
+                "mnemonic": "Dấu nhân phóng đại ✖️: multiplication makes numbers bigger.",
+                "colloc": "Multiplication is when we multiply numbers to make a bigger number",
+                "colloc_vi": "Phép nhân là khi chúng ta nhân các số để tạo ra một số lớn hơn",
+                "audio": "multiplication. Multiplying numbers to make a bigger number.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "✖️"
+        },
+        {
+                "word": "division",
+                "meaning": "dividing a number by another number to make a smaller number",
+                "vietnamese": "Phép chia: phép tính làm số nhỏ lại qua việc chia đều thành các phần",
+                "mnemonic": "Dấu chia sẻ đều ➗: division makes numbers smaller, like sharing.",
+                "colloc": "Division is when we divide a number to make a smaller number",
+                "colloc_vi": "Phép chia là khi chúng ta chia một số để tạo ra một số nhỏ hơn",
+                "audio": "division. Dividing numbers to make a smaller number.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "➗"
+        },
+        {
+                "word": "sharing",
+                "meaning": "dividing things equally among a group of people or containers",
+                "vietnamese": "Sự chia đều: bản chất của phép chia là san sẻ công bằng",
+                "mnemonic": "Chia kẹo công bằng 🤝: division is like sharing equally.",
+                "colloc": "Division is like sharing twelve stickers equally among three friends",
+                "colloc_vi": "Phép chia giống như chia đều mười hai nhãn dán cho ba người bạn",
+                "audio": "sharing. Division is like sharing things equally.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "🤝"
+        },
+        {
+                "word": "factor",
+                "meaning": "a number that multiplies with another number to produce a product",
+                "vietnamese": "Thừa số: các số nhân với nhau trong phép tính nhân",
+                "mnemonic": "Thừa số kết hợp 🔢: in 3 times 4 equals 12, 3 and 4 are factors.",
+                "colloc": "In the multiplication four times seven equals twenty-eight, four is a factor",
+                "colloc_vi": "Trong phép nhân 4 nhân 7 bằng 28, 4 là một thừa số",
+                "audio": "factor. A number that multiplies with another to produce a product.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "🔢"
+        },
+        {
+                "word": "healthy",
+                "meaning": "growing well with green leaves, strong stems and vital energy",
+                "vietnamese": "Khỏe mạnh: cây cối xanh tốt, thân cứng cáp do đủ nước và ánh sáng",
+                "mnemonic": "Mầm cây xanh tươi 🌿: healthy plants have green leaves and strong stems.",
+                "colloc": "A healthy green plant has had water, air, soil and bright sunlight",
+                "colloc_vi": "Một cây khỏe mạnh đã được nhận đủ nước, không khí, đất và ánh sáng",
+                "audio": "healthy. Plants need four things to be healthy: water, sunlight, air, soil.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🌿"
+        },
+        {
+                "word": "unhealthy",
+                "meaning": "weak, brown and dying due to lack of water or sunlight",
+                "vietnamese": "Không khỏe mạnh, héo úa: cây còi cọc do thiếu nước hoặc thiếu ánh sáng",
+                "mnemonic": "Cây héo rũ 🥀: unhealthy plants look brown, weak and sad.",
+                "colloc": "The plant became unhealthy and brown because it had no sunlight",
+                "colloc_vi": "Cây trở nên héo úa và nâu lá vì không nhận được ánh sáng mặt trời",
+                "audio": "unhealthy. An unhealthy plant is brown, weak and sad.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🥀"
+        },
+        {
+                "word": "sunlight",
+                "meaning": "light from the sun needed by green plants to make food and grow",
+                "vietnamese": "Ánh sáng mặt trời: năng lượng tự nhiên tối quan trọng cho cây quang hợp",
+                "mnemonic": "Mặt trời chiếu rọi ☀️: plants cannot survive without sunlight.",
+                "colloc": "Plants need warm sunlight to live, grow and stay green and healthy",
+                "colloc_vi": "Cây cối cần ánh sáng mặt trời ấm áp để sống, phát triển và xanh tốt",
+                "audio": "sunlight. Green plants need sunlight to make food and grow.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "☀️"
+        },
+        {
+                "word": "aim",
+                "meaning": "a clear sentence stating what we want to find out in an experiment",
+                "vietnamese": "Mục đích thí nghiệm: câu văn nêu rõ điều ta muốn tìm hiểu/chứng minh",
+                "mnemonic": "Mũi tên trúng đích 🎯: the aim is what we want to find out.",
+                "colloc": "The aim is a sentence about what we want to find out in an experiment",
+                "colloc_vi": "Mục đích là câu văn nêu rõ điều chúng ta muốn tìm ra trong thí nghiệm",
+                "audio": "aim. A sentence about what we want to find out in an experiment.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🎯"
+        },
+        {
+                "word": "materials",
+                "meaning": "the tools, equipment and objects used to carry out an experiment",
+                "vietnamese": "Dụng cụ / vật liệu: những đồ dùng cần thiết để tiến hành thí nghiệm",
+                "mnemonic": "Hộp dụng cụ 🧪: materials are the things we use in an experiment.",
+                "colloc": "Seeds, pots, soil and water are the materials for our investigation",
+                "colloc_vi": "Hạt giống, chậu, đất và nước là các vật liệu cho cuộc thử nghiệm",
+                "audio": "materials. The things we use to do an experiment are called materials.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🧪"
+        },
+        {
+                "word": "method",
+                "meaning": "a step-by-step list of instructions telling us what to do",
+                "vietnamese": "Phương pháp / quy trình: danh sách các bước hướng dẫn cụ thể cách làm",
+                "mnemonic": "Bản hướng dẫn từng bước 📋: a method tells us exactly what to do.",
+                "colloc": "A method is a list of instructions that tells us what to do",
+                "colloc_vi": "Phương pháp là bản danh sách các bước chỉ dẫn cho ta biết phải làm gì",
+                "audio": "method. A method is a list of instructions that tells us what to do.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "📋"
+        },
+        {
+                "word": "prediction",
+                "meaning": "ideas about what you think will happen in an experiment before doing it",
+                "vietnamese": "Dự đoán khoa học: phán đoán của em về điều sẽ xảy ra trong thí nghiệm",
+                "mnemonic": "Quả cầu dự đoán 🔮: predictions are what you think will happen.",
+                "colloc": "Predictions are your ideas about what you think will happen",
+                "colloc_vi": "Dự đoán là ý kiến của em về những gì em nghĩ sẽ xảy ra",
+                "audio": "prediction. Predictions are what you think will happen in the experiment.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🔮"
+        },
+        {
+                "word": "conclusion",
+                "meaning": "a summary sentence written at the end explaining what we learned",
+                "vietnamese": "Kết luận khoa học: nhận định đúc kết ở cuối thí nghiệm về những điều học được",
+                "mnemonic": "Trang tổng kết tri thức 📝: conclusion tells what we learned at the end.",
+                "colloc": "At the end of an investigation, we write what we learned in a conclusion",
+                "colloc_vi": "Ở phần kết thúc cuộc điều tra, chúng ta viết điều đã học vào kết luận",
+                "audio": "conclusion. At the end, we write about what we learned in the conclusion.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "📝"
+        }
+]
 }
 
 # ==================== SLIDE-ALIGNED 10-QUESTION GRAND CHALLENGE EXAMS ====================
@@ -2030,6 +2275,149 @@ GRAND_CHALLENGE_BANK = {
                 "explanation": "Slide W7S p.30: 'A fair test means we change only ONE thing in the experiment'."
         }
     ]
+,
+    "week8": [
+        {
+                "id": 1,
+                "subject": "English",
+                "question": "Choose the correct irregular past tense verb: 'Yesterday, the emperor _______ Chinese dragons brought water.'",
+                "audio": "Choose the correct irregular past tense verb. Yesterday, the emperor thought Chinese dragons brought water.",
+                "options": [
+                        "thought",
+                        "brought",
+                        "decided",
+                        "pointed"
+                ],
+                "answer": "thought",
+                "explanation": "Slide W8E1 p.18: 'think -> thought'. Remember, there are no rules for irregular verbs; we must learn the words."
+        },
+        {
+                "id": 2,
+                "subject": "English",
+                "question": "According to the grammar rule in slide W8E2, which sentence correctly uses 'It is' + adjective?",
+                "audio": "Which sentence correctly uses It is followed by an adjective?",
+                "options": [
+                        "It is fierce.",
+                        "It is claws. ",
+                        "It is dragon.",
+                        "It is scales."
+                ],
+                "answer": "It is fierce.",
+                "explanation": "Slide W8E2 p.20: 'After it is, we use an adjective' (e.g. It is fierce / pretty / huge). Nouns follow 'It has'."
+        },
+        {
+                "id": 3,
+                "subject": "English",
+                "question": "Complete the descriptive sentence: 'The green dragon has got a long tail, _______ it has short legs.'",
+                "audio": "The green dragon has got a long tail, but it has short legs.",
+                "options": [
+                        "but",
+                        "and",
+                        "for",
+                        "nor"
+                ],
+                "answer": "but",
+                "explanation": "Slide W8E2 p.23: 'It has a long tail but short legs.' 'but' connects two contrasting features."
+        },
+        {
+                "id": 4,
+                "subject": "English",
+                "question": "In the story 'Chinese Dragons Part 2', what do dragons do when they see people?",
+                "audio": "In the story, what do dragons do when they see people?",
+                "options": [
+                        "They usually help them",
+                        "They always attack them",
+                        "They quickly scare them",
+                        "They rarely follow them"
+                ],
+                "answer": "They usually help them",
+                "explanation": "Slide W8E1 p.14: 'Dragons can breathe fire but they do not hurt people. Usually they help them and Chinese people think they are friendly.'"
+        },
+        {
+                "id": 5,
+                "subject": "Mathematics",
+                "question": "In Grade 3 Maths, what is the core meaning of DIVISION when we divide numbers?",
+                "audio": "In Maths, what is the core meaning of division when we divide numbers?",
+                "options": [
+                        "It makes a smaller number",
+                        "It makes a greater number",
+                        "It keeps identical number",
+                        "It doubles original number"
+                ],
+                "answer": "It makes a smaller number",
+                "explanation": "Slide W8M p.9: 'Division is when we divide a number by another number to make a smaller number. It is like sharing!'"
+        },
+        {
+                "id": 6,
+                "subject": "Mathematics",
+                "question": "A teacher puts 4 pencils into each box. How many pencils are in 7 full boxes?",
+                "audio": "A teacher puts 4 pencils into each box. How many pencils are in 7 boxes?",
+                "options": [
+                        "28 pencils",
+                        "24 pencils",
+                        "32 pencils",
+                        "21 pencils"
+                ],
+                "answer": "28 pencils",
+                "explanation": "Slide W8M p.16: Multiplication by 4: 7 x 4 = 28 pencils."
+        },
+        {
+                "id": 7,
+                "subject": "Mathematics",
+                "question": "Calculate the division fact from times table 3: 27 ÷ 3 = ?",
+                "audio": "Calculate twenty-seven divided by three.",
+                "options": [
+                        "9",
+                        "7",
+                        "8",
+                        "6"
+                ],
+                "answer": "9",
+                "explanation": "Slide W8M p.18: Division by 3: 27 ÷ 3 = 9 (since 9 x 3 = 27)."
+        },
+        {
+                "id": 8,
+                "subject": "Science",
+                "question": "What four essential things does a plant need to survive, grow and be healthy?",
+                "audio": "What four things does a plant need to live, grow and be healthy?",
+                "options": [
+                        "Water, sunlight, air and soil",
+                        "Water, darkness, tea and soil",
+                        "Juice, sunlight, mud and rocks",
+                        "Sugar, sunlight, air and sand"
+                ],
+                "answer": "Water, sunlight, air and soil",
+                "explanation": "Slide W8S p.9: 'What do plants need to live, grow and survive? Water, sunlight, air, soil.'"
+        },
+        {
+                "id": 9,
+                "subject": "Science",
+                "question": "In scientific investigation words, what is the definition of an AIM?",
+                "audio": "What is the definition of an aim in an experiment?",
+                "options": [
+                        "A sentence about what we want to find out",
+                        "A list of materials we need for equipment",
+                        "A guess about what will happen next week ",
+                        "A record of numbers we measured in class "
+                ],
+                "answer": "A sentence about what we want to find out",
+                "explanation": "Slide W8S p.16: 'The aim is a sentence about what we want to find out in an experiment.'"
+        },
+        {
+                "id": 10,
+                "subject": "Science",
+                "question": "In the plant investigation 'Do plants grow better with sunlight?', what is the ONLY factor changed?",
+                "audio": "In the sunlight investigation, what is the only factor changed?",
+                "options": [
+                        "The amount of sunlight",
+                        "The amount of watered ",
+                        "The type of soil tested",
+                        "The size of seed planted"
+                ],
+                "answer": "The amount of sunlight",
+                "explanation": "Slide W8S p.20 & p.24: 'A fair test means we change only one thing: We will change the amount of sunlight. Plants must have the same water, seeds, and soil.'"
+        }
+]
 }
 
 # ==================== ROUTES ====================
@@ -2039,7 +2427,7 @@ def index():
 
 @app.route('/practice')
 def practice():
-    week = request.args.get('week', 'week3')
+    week = request.args.get('week', 'week8')
     mode = request.args.get('mode', 'vocab')
     student = request.args.get('student', 'Student')
     return render_template('practice.html', week=week, mode=mode, student=student)
@@ -2072,8 +2460,13 @@ def get_vocab_bank():
 
 @app.route('/api/grand_challenge')
 def get_grand_challenge():
-    week = request.args.get('week', 'week3')
-    questions = GRAND_CHALLENGE_BANK.get(week, GRAND_CHALLENGE_BANK.get('week3', []))
+    week = request.args.get('week', 'week8')
+    raw_questions = GRAND_CHALLENGE_BANK.get(week, GRAND_CHALLENGE_BANK.get('week8', []))
+    import copy
+    questions = copy.deepcopy(raw_questions)
+    for q in questions:
+        if 'options' in q and isinstance(q['options'], list):
+            random.shuffle(q['options'])
     return jsonify(questions)
 
 @app.after_request

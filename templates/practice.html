@@ -1180,6 +1180,12 @@
       try {
         const resp = await fetch(`/api/grand_challenge?week=${currentWeek}`);
         grandQuestions = await resp.json();
+        // Client-side shuffle for options of each question to prevent any predictable pattern
+        grandQuestions.forEach(q => {
+          if (q.options && Array.isArray(q.options)) {
+            q.options = [...q.options].sort(() => Math.random() - 0.5);
+          }
+        });
         initialCount = grandQuestions.length;
         renderGrandQuestion();
       } catch (e) {
@@ -1194,6 +1200,10 @@
       }
 
       const qObj = grandQuestions[grandCurrentIdx];
+      if (!qObj._shuffled && qObj.options && Array.isArray(qObj.options)) {
+        qObj.options = [...qObj.options].sort(() => Math.random() - 0.5);
+        qObj._shuffled = true;
+      }
       document.getElementById('currentQuestionNum').textContent = grandCurrentIdx + 1;
       const pct = Math.round((grandCurrentIdx / grandQuestions.length) * 100);
       document.getElementById('progressBar').style.width = pct + '%';
@@ -1620,8 +1630,15 @@
           { word: 'observe' }, { word: 'investigate' }, { word: 'measure' }, { word: 'compare' }
         ]);
       }
-      const shuffledOthers = [...otherWords].sort(() => Math.random() - 0.5);
-      const pickedDistractors = shuffledOthers.slice(0, 3).map(w => ({
+      // Sort distractors by length proximity to target word so choices have balanced lengths and cannot be guessed by length
+      otherWords.sort((a, b) => {
+        const diffA = Math.abs(a.word.length - target.word.length);
+        const diffB = Math.abs(b.word.length - target.word.length);
+        if (diffA === diffB) return Math.random() - 0.5;
+        return diffA - diffB;
+      });
+      const topCandidates = otherWords.slice(0, Math.min(8, otherWords.length));
+      const pickedDistractors = [...topCandidates].sort(() => Math.random() - 0.5).slice(0, 3).map(w => ({
         text: w.word,
         isCorrect: false
       }));
