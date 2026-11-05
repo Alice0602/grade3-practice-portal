@@ -1037,6 +1037,55 @@ VOCABULARY_BANK = {
 ,
     "week8": [
         {
+        "word": "scale",
+        "meaning": "small, hard, flat plates covering the skin of fish, reptiles and dragons",
+        "vietnamese": "Vảy (cá / bò sát / rồng): các phiến cứng bảo vệ da rồng khỏi tổn thương",
+        "mnemonic": "Lớp vảy ngọc bích 🐟: fish scales cover the dragon's back.",
+        "colloc": "The dragon's body was covered with green fish scales",
+        "colloc_vi": "Cơ thể rồng được bao phủ bởi những chiếc vảy cá màu xanh lục",
+        "audio": "scale. Hard plates covering the dragon's body.",
+        "type": "english",
+        "svg_type": "default",
+        "emoji": "🐟"
+},
+        {
+        "word": "claws",
+        "meaning": "sharp, curved, pointed horny nails on the toes of animals or eagles",
+        "vietnamese": "Móng vuốt: móng nhọn cong vút của đại bàng trên chân rồng",
+        "mnemonic": "Móng vuốt quắp mồi 🦅: eagle claws are very sharp and strong.",
+        "colloc": "The king of dragons had the sharp claws of an eagle",
+        "colloc_vi": "Vua loài rồng có những chiếc móng vuốt sắc nhọn của loài đại bàng",
+        "audio": "claws. Sharp curved nails on an eagle's feet.",
+        "type": "english",
+        "svg_type": "default",
+        "emoji": "🦅"
+},
+        {
+        "word": "beard",
+        "meaning": "the hair growing on the chin and lower cheeks of a face",
+        "vietnamese": "Chòm râu dài: đặc điểm nổi bật trên cằm của rồng Trung Hoa",
+        "mnemonic": "Chòm râu tiên ông 🧔: the old dragon had a long white beard.",
+        "colloc": "Chinese dragons have long beards and bushy eyebrows",
+        "colloc_vi": "Rồng Trung Hoa có những chòm râu dài và đôi lông mày rậm rạp",
+        "audio": "beard. Hair growing on the lower part of a face.",
+        "type": "english",
+        "svg_type": "default",
+        "emoji": "🧔"
+},
+        {
+        "word": "wise",
+        "meaning": "having deep experience, knowledge, good judgment and understanding",
+        "vietnamese": "Thông thái, sáng suốt: tính từ miêu tả trí tuệ cao của rồng Trung Hoa",
+        "mnemonic": "Cú vọ thông thái 🦉: wise dragons help people with good advice.",
+        "colloc": "Chinese people think that their dragons are beautiful, friendly and wise",
+        "colloc_vi": "Người dân Trung Quốc nghĩ rằng rồng của họ rất đẹp, thân thiện và thông thái",
+        "audio": "wise. Having knowledge and good judgment. Dragons are friendly and wise.",
+        "type": "english",
+        "svg_type": "default",
+        "emoji": "🦉"
+},
+
+        {
                 "word": "thought",
                 "meaning": "past tense of think; had an idea or opinion in the past",
                 "vietnamese": "Đã suy nghĩ / đã nghĩ rằng: thì quá khứ đơn bất quy tắc của từ 'think'",
