@@ -1325,6 +1325,296 @@ VOCABULARY_BANK = {
                 "svg_type": "default",
                 "emoji": "📝"
         }
+],
+    "week9": [
+        {
+                "word": "emperor",
+                "meaning": "a male ruler of an empire with great power, like a king",
+                "vietnamese": "Hoàng đế: người đứng đầu một đế chế, có quyền lực tối cao như vua",
+                "mnemonic": "Vua rồng hoàng gia 👑: an emperor wears golden robes with dragons.",
+                "colloc": "The emperor met the wise dragon at the top of the tower",
+                "colloc_vi": "Hoàng đế gặp con rồng thông thái trên đỉnh tòa tháp",
+                "audio": "emperor. This person is like a king.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "👑"
+        },
+        {
+                "word": "empress",
+                "meaning": "a female ruler of an empire or the wife of an emperor, like a queen",
+                "vietnamese": "Hoàng hậu: vợ của hoàng đế hoặc nữ hoàng trị vì một đế chế",
+                "mnemonic": "Hoàng hậu quyền quý 👸: the empress wore a dress with dragon embroidery.",
+                "colloc": "The beautiful yellow dress belonged to a Chinese empress",
+                "colloc_vi": "Chiếc váy vàng tuyệt đẹp từng thuộc về một vị hoàng hậu Trung Hoa",
+                "audio": "empress. This person is the wife of an emperor. She is like a queen.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "👸"
+        },
+        {
+                "word": "tower",
+                "meaning": "a tall, narrow building or part of a castle that rises high above the ground",
+                "vietnamese": "Tòa tháp: công trình kiến trúc cao vút, mảnh khảnh vươn lên bầu trời",
+                "mnemonic": "Đỉnh tháp vàng 🗼: a tall, thin building reaching high into the sky.",
+                "colloc": "They met every night at the top of a golden tower",
+                "colloc_vi": "Họ gặp nhau mỗi đêm trên đỉnh của một tòa tháp bằng vàng",
+                "audio": "tower. A tall, thin building.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🗼"
+        },
+        {
+                "word": "throne",
+                "meaning": "a special, ornate ceremonial chair used by a monarch or emperor",
+                "vietnamese": "Ngai vàng: chiếc ghế uy nghiêm, lộng lẫy dành riêng cho vua và hoàng hậu",
+                "mnemonic": "Ngai vàng rồng lượn 🪑: a beautiful chair for the emperor.",
+                "colloc": "The emperor sat proudly upon his golden dragon throne",
+                "colloc_vi": "Hoàng đế ngồi trang nghiêm trên chiếc ngai vàng chạm khắc rồng",
+                "audio": "throne. A beautiful chair for the emperor and the empress.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🪑"
+        },
+        {
+                "word": "spines",
+                "meaning": "sharp, pointed needle-like structures growing along an animal's or dragon's back",
+                "vietnamese": "Gai nhọn: hàng gai sắc bén chạy dọc trên sống lưng của rồng",
+                "mnemonic": "Hàng gai lưng nhọn 🦴: sharp body parts along the dragon's back.",
+                "colloc": "The imperial dragon had sharp spines along its thin body",
+                "colloc_vi": "Con rồng hoàng gia có những chiếc gai nhọn dọc theo thân hình thon dài",
+                "audio": "spines. A special type of sharp body part.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🦴"
+        },
+        {
+                "word": "thorn",
+                "meaning": "a small, sharp, stiff point growing on the stem of a plant or bush",
+                "vietnamese": "Gai cây: mũi gai nhọn hoắt mọc từ thân cành cây",
+                "mnemonic": "Mũi gai đâm buốt 🌵: a sharp thorn stuck in the dragon's foot.",
+                "colloc": "The poor dragon had a sharp thorn stuck in its foot",
+                "colloc_vi": "Con rồng tội nghiệp bị một mũi gai nhọn đâm vào bàn chân",
+                "audio": "thorn. A small sharp point on a plant stem.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🌵"
+        },
+        {
+                "word": "cave",
+                "meaning": "a large hollow space underground or in the side of a rocky hill or cliff",
+                "vietnamese": "Hang động: hốc đá tự nhiên rộng lớn trong lòng núi",
+                "mnemonic": "Hang đá bí ẩn 🕳️: the dragon lived alone in a mountain cave.",
+                "colloc": "The gentle green dragon lived inside a deep mountain cave",
+                "colloc_vi": "Con rồng xanh hiền lành sống bên trong một hang đá sâu trên núi",
+                "audio": "cave. A large hollow space in the side of a hill.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🕳️"
+        },
+        {
+                "word": "poor",
+                "meaning": "having very little money, food, or comfortable living possessions",
+                "vietnamese": "Nghèo khó: thiếu thốn tiền bạc, thức ăn và điều kiện sống",
+                "mnemonic": "Gia đình nghèo khó 🏚️: poor family opposite of rich.",
+                "colloc": "The kind man lived with his poor family in a humble cottage",
+                "colloc_vi": "Người đàn ông tốt bụng sống cùng gia đình nghèo trong túp lều khiêm tốn",
+                "audio": "poor. Having very little money or food.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🏚️"
+        },
+        {
+                "word": "frightened",
+                "meaning": "feeling afraid, scared, or nervous because of danger",
+                "vietnamese": "Hoảng sợ: cảm giác sợ hãi khi đối diện với điều nguy hiểm",
+                "mnemonic": "Sợ run rẩy 😨: frightened means feeling very scared.",
+                "colloc": "He was frightened of the beast but bravely stepped forward",
+                "colloc_vi": "Anh ấy hoảng sợ trước con quái thú nhưng vẫn dũng cảm bước tới",
+                "audio": "frightened. Feeling scared or afraid.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "😨"
+        },
+        {
+                "word": "brave",
+                "meaning": "ready to face danger, pain, or difficulty with courage",
+                "vietnamese": "Dũng cảm: gan dạ, sẵn sàng đương đầu với hiểm nguy mà không lùi bước",
+                "mnemonic": "Trái tim quả cảm 🦁: brave means ready to face fear.",
+                "colloc": "The brave villager carefully pulled the thorn from its foot",
+                "colloc_vi": "Người dân làng dũng cảm cẩn thận nhổ chiếc gai khỏi chân rồng",
+                "audio": "brave. Ready to face danger or pain without fear.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🦁"
+        },
+        {
+                "word": "kind",
+                "meaning": "helpful, friendly, generous, and caring about others",
+                "vietnamese": "Tốt bụng: nhân hậu, biết chia sẻ và luôn giúp đỡ người khác",
+                "mnemonic": "Tấm lòng nhân hậu 💖: kind means helpful and caring.",
+                "colloc": "The dragon was kind and brought a box of treasure to them",
+                "colloc_vi": "Con rồng rất tốt bụng và mang tặng họ một chiếc hộp châu báu",
+                "audio": "kind. Friendly, helpful, and caring.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "💖"
+        },
+        {
+                "word": "conjunction",
+                "meaning": "a linking word like 'and' or 'but' used to join clauses and words together",
+                "vietnamese": "Liên từ: từ nối như 'and' hoặc 'but' dùng để liên kết các vế câu",
+                "mnemonic": "Cầu nối câu chữ 🔗: conjunctions like 'and' and 'but' join ideas.",
+                "colloc": "We use conjunctions like and and but to link sentences",
+                "colloc_vi": "Chúng ta dùng liên từ như 'and' và 'but' để kết nối các câu",
+                "audio": "conjunction. A word used to connect clauses or sentences.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🔗"
+        },
+        {
+                "word": "angle",
+                "meaning": "the space or amount of turn between two lines that intersect at a point",
+                "vietnamese": "Góc: khoảng không gian giữa hai đường thẳng cắt nhau tại một điểm",
+                "mnemonic": "Góc quay hình học 📐: the space between two lines that intersect.",
+                "colloc": "An angle is formed when two straight lines intersect",
+                "colloc_vi": "Một góc được tạo thành khi hai đường thẳng cắt nhau",
+                "audio": "angle. The space between two lines that intersect.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "📐"
+        },
+        {
+                "word": "degrees",
+                "meaning": "the standard units used to measure angles, written with the symbol °",
+                "vietnamese": "Độ: đơn vị tiêu chuẩn dùng để đo độ lớn của góc, ký hiệu là °",
+                "mnemonic": "Độ đo góc tròn ⭕: angles are measured in degrees with symbol °.",
+                "colloc": "Angles are measured in degrees using the symbol degree",
+                "colloc_vi": "Các góc được đo bằng đơn vị độ với ký hiệu là °",
+                "audio": "degrees. Units used to measure angles, written with a degree symbol.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "⭕"
+        },
+        {
+                "word": "right angle",
+                "meaning": "a special angle that measures exactly 90 degrees and is shaped like a capital L",
+                "vietnamese": "Góc vuông: góc đặc biệt luôn bằng đúng 90 độ, có hình chữ L in hoa",
+                "mnemonic": "Góc vuông chữ L 📏: a right angle is always exactly 90 degrees.",
+                "colloc": "A right angle is exactly 90 degrees and looks like letter L",
+                "colloc_vi": "Góc vuông bằng đúng 90 độ và trông giống như chữ cái L",
+                "audio": "right angle. An angle that is always exactly 90 degrees.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "📏"
+        },
+        {
+                "word": "intersect",
+                "meaning": "when two or more lines cross over, meet, or touch each other at a point",
+                "vietnamese": "Cắt nhau: khi hai hoặc nhiều đường thẳng giao nhau tại một điểm",
+                "mnemonic": "Giao điểm cắt nhau ❌: intersect means the lines cross over.",
+                "colloc": "The angle is the space between two lines that intersect",
+                "colloc_vi": "Góc là khoảng không gian giữa hai đường thẳng cắt nhau",
+                "audio": "intersect. When two lines cross over each other.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "❌"
+        },
+        {
+                "word": "less than 90°",
+                "meaning": "an angle that is smaller or narrower than a right angle (less than 90 degrees)",
+                "vietnamese": "Góc nhỏ hơn 90 độ: góc nhọn, miệng góc hẹp hơn chữ L vuông",
+                "mnemonic": "Góc nhọn hẹp ✂️: less than 90 degrees is narrower than a right angle.",
+                "colloc": "This sharp corner has an angle less than 90 degrees",
+                "colloc_vi": "Góc nhọn này có số đo nhỏ hơn 90 độ",
+                "audio": "less than 90 degrees. An angle smaller than a right angle.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "✂️"
+        },
+        {
+                "word": "more than 90°",
+                "meaning": "an angle that is wider or larger than a right angle (more than 90 degrees)",
+                "vietnamese": "Góc lớn hơn 90 độ: góc tù, miệng góc mở rộng hơn chữ L vuông",
+                "mnemonic": "Góc tù mở rộng 📖: more than 90 degrees opens wider than letter L.",
+                "colloc": "A wide open door makes an angle more than 90 degrees",
+                "colloc_vi": "Cánh cửa mở rộng tạo thành một góc lớn hơn 90 độ",
+                "audio": "more than 90 degrees. An angle wider than a right angle.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "📖"
+        },
+        {
+                "word": "carnivore",
+                "meaning": "an animal that survives by eating only other animals and meat",
+                "vietnamese": "Động vật ăn thịt: loài động vật chỉ ăn thịt của các động vật khác",
+                "mnemonic": "Thợ săn ăn thịt 🥩: carnivores eat only other animals.",
+                "colloc": "Lions, tigers and kingfishers are carnivores that eat meat",
+                "colloc_vi": "Sư tử, hổ và chim bói cá là những động vật ăn thịt",
+                "audio": "carnivore. An animal that eats only other animals.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🥩"
+        },
+        {
+                "word": "herbivore",
+                "meaning": "an animal that survives by eating only plants, leaves, grass, and fruits",
+                "vietnamese": "Động vật ăn thực vật: loài động vật chỉ ăn cỏ, lá, hạt và quả cây",
+                "mnemonic": "Gặm cỏ hiền hòa 🌿: herbivores eat only plants and grass.",
+                "colloc": "Cows, elephants and rabbits are gentle herbivores",
+                "colloc_vi": "Bò, voi và thỏ là những loài động vật ăn cỏ hiền hòa",
+                "audio": "herbivore. An animal that eats only plants.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🌿"
+        },
+        {
+                "word": "omnivore",
+                "meaning": "an animal that survives by eating both plants and other animals",
+                "vietnamese": "Động vật ăn tạp: loài động vật ăn cả thực vật lẫn thịt động vật",
+                "mnemonic": "Ăn tạp phong phú 🥗: omnivores eat both plants and meat.",
+                "colloc": "Bears, pigs, ants and humans are examples of omnivores",
+                "colloc_vi": "Gấu, lợn, kiến và con người là ví dụ về động vật ăn tạp",
+                "audio": "omnivore. An animal that eats both plants and animals.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🥗"
+        },
+        {
+                "word": "kingfisher",
+                "meaning": "a small bird with bright plumage that dives to hunt fish and tadpoles",
+                "vietnamese": "Chim bói cá: loài chim nhỏ lặn săn cá nhỏ và nòng nọc (động vật ăn thịt)",
+                "mnemonic": "Bói cá lặn sâu 🐦: kingfishers are small carnivores that hunt fish.",
+                "colloc": "The kingfisher is a small carnivore that eats little fish",
+                "colloc_vi": "Chim bói cá là một loài chim ăn thịt nhỏ chuyên săn cá nhỏ",
+                "audio": "kingfisher. A small bird that eats only small fish and tadpoles.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🐦"
+        },
+        {
+                "word": "sharp teeth",
+                "meaning": "pointed, razor-edged teeth adapted for gripping, piercing and tearing meat",
+                "vietnamese": "Răng sắc nhọn: răng nanh bén nhọn dùng để cắn giữ và xé thịt con mồi",
+                "mnemonic": "Răng nanh xé mồi 🦷: sharp teeth are used by carnivores to tear meat.",
+                "colloc": "Carnivores have sharp teeth at the front to tear meat",
+                "colloc_vi": "Động vật ăn thịt có răng sắc nhọn ở phía trước để xé thịt",
+                "audio": "sharp teeth. Pointed teeth used to tear meat.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🦷"
+        },
+        {
+                "word": "flat teeth",
+                "meaning": "broad, blunt teeth adapted for chewing, crushing and grinding tough plant fibers",
+                "vietnamese": "Răng phẳng: răng hàm cùn bản rộng dùng để nhai và nghiền nát cỏ cây",
+                "mnemonic": "Răng hàm nghiền cỏ 🪨: flat blunt teeth are used to grind plants.",
+                "colloc": "Herbivores have flat blunt teeth at the back to grind grass",
+                "colloc_vi": "Động vật ăn thực vật có răng phẳng cùn phía sau để nghiền nát cỏ",
+                "audio": "flat teeth. Broad, blunt teeth used to grind plants.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🪨"
+        }
 ]
 }
 
@@ -2466,6 +2756,148 @@ GRAND_CHALLENGE_BANK = {
                 "answer": "The amount of sunlight",
                 "explanation": "Slide W8S p.20 & p.24: 'A fair test means we change only one thing: We will change the amount of sunlight. Plants must have the same water, seeds, and soil.'"
         }
+],
+    "week9": [
+        {
+                "id": 1,
+                "subject": "English",
+                "question": "What is the special name for a magnificent, ornate chair used by an emperor?",
+                "audio": "What is the special name for a magnificent, ornate chair used by an emperor?",
+                "options": [
+                        "throne",
+                        "temple",
+                        "tower",
+                        "palace"
+                ],
+                "answer": "throne",
+                "explanation": "Slide W9E1 p.7: A throne is a beautiful chair for the emperor and the empress."
+        },
+        {
+                "id": 2,
+                "subject": "English",
+                "question": "Which conjunction best completes: 'The knight had a very long sword _______ very short arms.'?",
+                "audio": "Which conjunction best completes: The knight had a very long sword blank very short arms?",
+                "options": [
+                        "but",
+                        "and",
+                        "so",
+                        "or"
+                ],
+                "answer": "but",
+                "explanation": "Slide W9E2 p.28: We use 'but' to link two contrasting ideas (long sword but short arms)."
+        },
+        {
+                "id": 3,
+                "subject": "English",
+                "question": "In the Chinese legend, why did the king meet the nine-headed dragon at the golden tower?",
+                "audio": "In the Chinese legend, why did the king meet the nine-headed dragon at the golden tower?",
+                "options": [
+                        "To get wise advice to solve country problems",
+                        "To hunt dangerous wild beasts in the hills",
+                        "To celebrate royal festivals with gold cups",
+                        "To build tall castles along the broad river"
+                ],
+                "answer": "To get wise advice to solve country problems",
+                "explanation": "Slide W9E1 p.12: The king told the dragon problems in his country and the dragon helped him think wisely."
+        },
+        {
+                "id": 4,
+                "subject": "English",
+                "question": "Which word best describes someone who is scared of danger but still steps up to help?",
+                "audio": "Which word best describes someone who is scared of danger but still steps up to help?",
+                "options": [
+                        "brave",
+                        "fierce",
+                        "clever",
+                        "polite"
+                ],
+                "answer": "brave",
+                "explanation": "Slide W9E2 p.21: The man was frightened, but he was brave and kind enough to help the dragon."
+        },
+        {
+                "id": 5,
+                "subject": "Maths",
+                "question": "What unit and symbol do we use to measure the size of an angle?",
+                "audio": "What unit and symbol do we use to measure the size of an angle?",
+                "options": [
+                        "degrees (°)",
+                        "minutes (')",
+                        "meters (m)",
+                        "grams (g)"
+                ],
+                "answer": "degrees (°)",
+                "explanation": "Slide W9M p.4-5: Angles are measured in degrees using the special symbol °."
+        },
+        {
+                "id": 6,
+                "subject": "Maths",
+                "question": "What is the exact measurement of every right angle shaped like a capital letter L?",
+                "audio": "What is the exact measurement of every right angle shaped like a capital letter L?",
+                "options": [
+                        "exactly 90 degrees",
+                        "exactly 45 degrees",
+                        "exactly 60 degrees",
+                        "exactly 80 degrees"
+                ],
+                "answer": "exactly 90 degrees",
+                "explanation": "Slide W9M p.6 & p.10: A right angle is a special angle that is always exactly 90 degrees."
+        },
+        {
+                "id": 7,
+                "subject": "Maths",
+                "question": "How should an angle measuring 135 degrees be classified compared to a right angle?",
+                "audio": "How should an angle measuring 135 degrees be classified compared to a right angle?",
+                "options": [
+                        "More than 90 degrees",
+                        "Less than 90 degrees",
+                        "Equal to 90 degrees",
+                        "Zero degrees in size"
+                ],
+                "answer": "More than 90 degrees",
+                "explanation": "Slide W9M p.12 & p.20: 135° is wider than a right angle, so it is more than 90 degrees."
+        },
+        {
+                "id": 8,
+                "subject": "Science",
+                "question": "What do we call animals like cows and rabbits that survive by eating only plants?",
+                "audio": "What do we call animals like cows and rabbits that survive by eating only plants?",
+                "options": [
+                        "Herbivores",
+                        "Carnivores",
+                        "Omnivores",
+                        "Predators"
+                ],
+                "answer": "Herbivores",
+                "explanation": "Slide W9S p.8: Animals that eat only plants (grass, nuts, seeds, fruits) are called herbivores."
+        },
+        {
+                "id": 9,
+                "subject": "Science",
+                "question": "Why is a small bird like a kingfisher classified scientifically as a carnivore?",
+                "audio": "Why is a small bird like a kingfisher classified scientifically as a carnivore?",
+                "options": [
+                        "Because it only eats fish and tadpoles",
+                        "Because it builds nests high in trees",
+                        "Because it eats grass seeds and berries",
+                        "Because it drinks nectar inside flowers"
+                ],
+                "answer": "Because it only eats fish and tadpoles",
+                "explanation": "Slide W9S p.7: Kingfishers only eat other animals like small fish and tadpoles, so they are carnivores."
+        },
+        {
+                "id": 10,
+                "subject": "Science",
+                "question": "What combination of teeth helps an omnivore like a bear eat both plants and meat?",
+                "audio": "What combination of teeth helps an omnivore like a bear eat both plants and meat?",
+                "options": [
+                        "Sharp teeth at front and blunt teeth at back",
+                        "Sharp teeth at front and sharp teeth at back",
+                        "Blunt teeth at front and blunt teeth at back",
+                        "Blunt teeth at front and hollow fangs at back"
+                ],
+                "answer": "Sharp teeth at front and blunt teeth at back",
+                "explanation": "Slide W9S p.12-15: Omnivores have sharp front teeth to tear meat and blunt back teeth to grind plants."
+        }
 ]
 }
 
@@ -2476,7 +2908,7 @@ def index():
 
 @app.route('/practice')
 def practice():
-    week = request.args.get('week', 'week8')
+    week = request.args.get('week', 'week9')
     mode = request.args.get('mode', 'vocab')
     student = request.args.get('student', 'Student')
     return render_template('practice.html', week=week, mode=mode, student=student)
@@ -2509,8 +2941,8 @@ def get_vocab_bank():
 
 @app.route('/api/grand_challenge')
 def get_grand_challenge():
-    week = request.args.get('week', 'week8')
-    raw_questions = GRAND_CHALLENGE_BANK.get(week, GRAND_CHALLENGE_BANK.get('week8', []))
+    week = request.args.get('week', 'week9')
+    raw_questions = GRAND_CHALLENGE_BANK.get(week, GRAND_CHALLENGE_BANK.get('week9', []))
     import copy
     questions = copy.deepcopy(raw_questions)
     for q in questions:
