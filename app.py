@@ -1615,6 +1615,296 @@ VOCABULARY_BANK = {
                 "svg_type": "default",
                 "emoji": "🪨"
         }
+],
+    "week10": [
+        {
+                "word": "paw",
+                "meaning": "the soft foot of an animal that has claws or pads, like a cat or dragon",
+                "vietnamese": "Bàn chân vuốt: bàn chân có đệm thịt và móng vuốt của động vật hoặc rồng",
+                "mnemonic": "Bàn chân hổ 🐾: tiger paw with sharp claws.",
+                "colloc": "The dragon stood firmly on the mountain with its powerful paw",
+                "colloc_vi": "Con rồng đứng vững trên sườn núi bằng bàn chân vuốt mạnh mẽ",
+                "audio": "paw. The foot of an animal that has claws.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🐾"
+        },
+        {
+                "word": "horns",
+                "meaning": "hard, pointed permanent growths on the heads of cattle, goats, or dragons",
+                "vietnamese": "Cặp sừng: phần xương nhọn cứng mọc trên đầu động vật hoặc rồng",
+                "mnemonic": "Cặp sừng dê nhọn 🐐: long sharp horns on the dragon's head.",
+                "colloc": "The red dragon had two long sharp horns on its head",
+                "colloc_vi": "Con rồng đỏ có hai chiếc sừng dài sắc nhọn trên đỉnh đầu",
+                "audio": "horns. Hard pointed parts on an animal's head.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🐐"
+        },
+        {
+                "word": "claws",
+                "meaning": "sharp, curved nails on the toes of animals or birds used to grip and climb",
+                "vietnamese": "Móng vuốt: móng nhọn cong vút của đại bàng hoặc rồng để bám quắp",
+                "mnemonic": "Móng vuốt quắp mồi 🦅: sharp claws of an eagle.",
+                "colloc": "It gripped tightly onto the cliff with its sharp claws",
+                "colloc_vi": "Nó bám chặt vào vách đá bằng những chiếc móng vuốt sắc nhọn",
+                "audio": "claws. Sharp curved nails on animal feet.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🦅"
+        },
+        {
+                "word": "scales",
+                "meaning": "small, hard, thin plates protecting the skin of fish, reptiles, and dragons",
+                "vietnamese": "Vảy bảo vệ: các phiến mỏng cứng bao bọc bảo vệ da rồng khỏi tổn thương",
+                "mnemonic": "Vảy cá lấp lánh 🐟: green fish scales cover its body.",
+                "colloc": "Tough shiny scales covered the long body of the dragon",
+                "colloc_vi": "Những chiếc vảy sáng bóng bền chắc bao phủ thân dài của rồng",
+                "audio": "scales. Small hard plates covering fish and dragons.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🐟"
+        },
+        {
+                "word": "tail",
+                "meaning": "the long, flexible rear part of an animal's body extending beyond the trunk",
+                "vietnamese": "Đuôi: phần cơ thể thon dài phía sau của động vật hoặc rồng",
+                "mnemonic": "Chiếc đuôi dài 🦎: a long serpentine tail swinging.",
+                "colloc": "The friendly dragon wagged its long scaly tail happily",
+                "colloc_vi": "Con rồng thân thiện vui mừng vẫy chiếc đuôi dài đầy vảy",
+                "audio": "tail. The rear part extending from an animal's body.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🦎"
+        },
+        {
+                "word": "wings",
+                "meaning": "large feathered or leathery limbs used by birds, bats, and dragons to fly",
+                "vietnamese": "Đôi cánh: chi rộng lớn giúp loài chim và rồng bay lượn trên trời",
+                "mnemonic": "Đôi cánh vút bay 🕊️: huge wings to fly high in the sky.",
+                "colloc": "The dragon spread its huge wings and flew over the mountains",
+                "colloc_vi": "Con rồng giang rộng đôi cánh khổng lồ và bay qua những ngọn núi",
+                "audio": "wings. Limbs used by birds and dragons to fly.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🕊️"
+        },
+        {
+                "word": "huge",
+                "meaning": "extremely large, enormous in size, height, or width",
+                "vietnamese": "Khổng lồ: to lớn đồ sộ vượt trội so với kích thước bình thường",
+                "mnemonic": "To như voi 🐘: huge means extremely large.",
+                "colloc": "A huge green dragon was sleeping peacefully in the cave",
+                "colloc_vi": "Một con rồng xanh khổng lồ đang ngủ say sưa trong hang đá",
+                "audio": "huge. Extremely large in size.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🐘"
+        },
+        {
+                "word": "sharp",
+                "meaning": "having a thin, razor edge or fine point capable of cutting or piercing",
+                "vietnamese": "Sắc nhọn: có cạnh bén hoặc mũi nhọn có thể đâm cắt dễ dàng",
+                "mnemonic": "Lưỡi dao bén 🗡️: sharp claws and teeth.",
+                "colloc": "Carnivores have very sharp teeth to tear tough meat",
+                "colloc_vi": "Động vật ăn thịt có răng rất sắc nhọn để xé thịt dai",
+                "audio": "sharp. Having a thin cutting edge or fine point.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🗡️"
+        },
+        {
+                "word": "fierce",
+                "meaning": "showing a powerful, aggressive, and wild nature, dangerous to enemies",
+                "vietnamese": "Hung dữ: biểu hiện vẻ dữ tợn, mạnh mẽ và sẵn sàng tấn công",
+                "mnemonic": "Mắt hổ gầm thét 🐅: fierce expression but kind heart.",
+                "colloc": "It looked fierce but it was actually gentle and friendly",
+                "colloc_vi": "Trông nó có vẻ hung dữ nhưng thực ra lại rất hiền hòa và thân thiện",
+                "audio": "fierce. Showing a wild, powerful, and aggressive nature.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🐅"
+        },
+        {
+                "word": "friendly",
+                "meaning": "acting in a kind, welcoming, and affectionate manner toward others",
+                "vietnamese": "Thân thiện: tính cách cởi mở, hiền hậu, hòa nhã với mọi người",
+                "mnemonic": "Nụ cười chào đón 😊: friendly dragon loves children.",
+                "colloc": "The villagers were happy because the dragon was very friendly",
+                "colloc_vi": "Dân làng rất hạnh phúc vì con rồng rất đỗi thân thiện",
+                "audio": "friendly. Acting in a kind and welcoming way.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "😊"
+        },
+        {
+                "word": "speech marks",
+                "meaning": "punctuation marks (“ ”) used in writing to enclose direct spoken words",
+                "vietnamese": "Dấu ngoặc kép: dấu câu (“ ”) dùng để đóng mở lời nói trực tiếp của nhân vật",
+                "mnemonic": "Lời nói mở ngoặc 💬: speech marks show when someone is speaking.",
+                "colloc": "Put speech marks around the spoken words in the sentence",
+                "colloc_vi": "Đặt dấu ngoặc kép quanh những từ được nói ra trong câu",
+                "audio": "speech marks. Punctuation marks used to show direct speech.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "💬"
+        },
+        {
+                "word": "bush",
+                "meaning": "a dense, woody plant smaller than a tree with many branches near the ground",
+                "vietnamese": "Bụi cây: loài cây bụi thân gỗ nhiều cành mọc sát mặt đất",
+                "mnemonic": "Bụi dâu đỏ 🫐: a green bush covered with red berries.",
+                "colloc": "Dave saw a huge green bush covered in bright red berries",
+                "colloc_vi": "Dave nhìn thấy một bụi cây xanh lớn trĩu quả mọng đỏ rực",
+                "audio": "bush. A woody plant smaller than a tree.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🫐"
+        },
+        {
+                "word": "double",
+                "meaning": "to increase a quantity by two times; multiplying a number by two (x 2)",
+                "vietnamese": "Gấp đôi: phép tính nhân một số với 2 (x 2) để tăng gấp hai lần",
+                "mnemonic": "Nhân đôi nhân hai ✖️2️⃣: to double means to multiply by two.",
+                "colloc": "Double forty is eighty because forty times two is eighty",
+                "colloc_vi": "Gấp đôi của 40 là 80 vì 40 nhân với 2 bằng 80",
+                "audio": "double. To multiply a number by two.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "✖️"
+        },
+        {
+                "word": "halve",
+                "meaning": "to divide a quantity into two equal parts; dividing a number by two (÷ 2)",
+                "vietnamese": "Chia đôi / Tìm một nửa: phép tính chia một số cho 2 (÷ 2)",
+                "mnemonic": "Chia đôi bằng nhau ➗2️⃣: to halve means to divide by two.",
+                "colloc": "Half of sixty is thirty because sixty divided by two is thirty",
+                "colloc_vi": "Một nửa của 60 là 30 vì 60 chia cho 2 bằng 30",
+                "audio": "halve. To divide a number into two equal parts.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "➗"
+        },
+        {
+                "word": "partitioning",
+                "meaning": "breaking a two-digit or large number into tens and units to calculate easily",
+                "vietnamese": "Phương pháp tách số: chia số thành hàng chục và đơn vị để tính nhẩm nhanh",
+                "mnemonic": "Tách chục đơn vị 🧮: break 42 into 40 and 2 to double it.",
+                "colloc": "We use the partitioning method to double and halve big numbers",
+                "colloc_vi": "Chúng ta dùng phương pháp tách số để nhân đôi và chia nửa số lớn",
+                "audio": "partitioning. Breaking numbers into tens and units.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "🧮"
+        },
+        {
+                "word": "tens and units",
+                "meaning": "place value components that make up a two-digit number (e.g., 42 = 40 + 2)",
+                "vietnamese": "Chục và đơn vị: hai thành phần giá trị hàng tạo nên số có hai chữ số",
+                "mnemonic": "Hàng chục hàng đơn vị 🔟: forty tens and two units make forty-two.",
+                "colloc": "Break the number into its tens and units before multiplying",
+                "colloc_vi": "Tách số thành hàng chục và đơn vị trước khi thực hiện phép nhân",
+                "audio": "tens and units. Place value parts of a number.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "🔟"
+        },
+        {
+                "word": "multiply by 100",
+                "meaning": "calculating 100 times a number by appending two zeros to its right (5 x 100 = 500)",
+                "vietnamese": "Nhân với 100: viết thêm hai chữ số 0 vào sau số đó (VD: 5 x 100 = 500)",
+                "mnemonic": "Thêm hai số không 💯: any number times 100 gets two zeros.",
+                "colloc": "Multiplying five by one hundred gives five hundred",
+                "colloc_vi": "Nhân 5 với 100 cho kết quả là 500",
+                "audio": "multiply by 100. Adding two zeros to the end of a number.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "💯"
+        },
+        {
+                "word": "equal groups",
+                "meaning": "collections of items that have the exact same count or amount in each group",
+                "vietnamese": "Các nhóm bằng nhau: các tập hợp chứa số lượng phần tử hoàn toàn bằng nhau",
+                "mnemonic": "Chia đều các nhóm ⚖️: equal groups have the same number of items.",
+                "colloc": "Divide twenty-four into three equal groups of eight",
+                "colloc_vi": "Chia 24 thành ba nhóm bằng nhau, mỗi nhóm có 8 phần tử",
+                "audio": "equal groups. Groups that have the exact same amount.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "⚖️"
+        },
+        {
+                "word": "habitat",
+                "meaning": "the natural home, environment, or physical place where an animal or plant lives",
+                "vietnamese": "Môi trường sống: nơi ở tự nhiên cung cấp thức ăn, nước và chỗ ẩn náu cho sinh vật",
+                "mnemonic": "Ngôi nhà thiên nhiên 🏡: a habitat is where plants and animals live.",
+                "colloc": "Different animals are adapted to live in different habitats",
+                "colloc_vi": "Các loài động vật khác nhau thích nghi để sống ở các môi trường khác nhau",
+                "audio": "habitat. The natural home of an animal or plant.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🏡"
+        },
+        {
+                "word": "rainforest",
+                "meaning": "a dense, warm, and humid forest that receives high rainfall all year round",
+                "vietnamese": "Rừng mưa nhiệt đới: khu rừng rậm rạp, ấm nóng và ẩm ướt với lượng mưa lớn quanh năm",
+                "mnemonic": "Rừng rậm nhiệt đới 🌴: hot, humid with lots of rain and lush trees.",
+                "colloc": "The tropical rainforest is home to thousands of animal species",
+                "colloc_vi": "Rừng mưa nhiệt đới là ngôi nhà của hàng ngàn loài động vật",
+                "audio": "rainforest. A hot, humid forest with lots of rain.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🌴"
+        },
+        {
+                "word": "savannah",
+                "meaning": "a warm, flat, grassy tropical plain with scattered trees and long dry seasons",
+                "vietnamese": "Đồng cỏ xavan: vùng đồng bằng nhiệt đới cỏ phẳng, ấm áp, ít cây cối",
+                "mnemonic": "Thảo nguyên xavan 🌾: warm, dry, grassy flat land with zebras.",
+                "colloc": "Lions, giraffes and zebras roam freely across the savannah",
+                "colloc_vi": "Sư tử, hươu cao cổ và ngựa vằn tự do rong ruổi khắp đồng cỏ xavan",
+                "audio": "savannah. A warm, dry, flat grassy habitat.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🌾"
+        },
+        {
+                "word": "desert",
+                "meaning": "an extremely hot and arid land area with very little rainfall and scarce plant life",
+                "vietnamese": "Sa mạc: vùng đất cát khô hạn gay gắt, cực nóng ban ngày và rất hiếm mưa",
+                "mnemonic": "Bão cát sa mạc 🏜️: very hot, dry with sandy soil and camels.",
+                "colloc": "Camels and scorpions are specially adapted to the dry desert",
+                "colloc_vi": "Lạc đà và bọ cạp thích nghi đặc biệt với vùng sa mạc khô hạn",
+                "audio": "desert. A very hot and dry habitat with little rain.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🏜️"
+        },
+        {
+                "word": "polar habitat",
+                "meaning": "freezing cold, icy, and snowy regions surrounding the North and South Poles",
+                "vietnamese": "Vùng cực: khu vực băng giá quanh năm, cực kỳ lạnh lẽo, nhiều tuyết và gió buốt",
+                "mnemonic": "Băng tuyết bắc cực ❄️: freezing cold, icy, snowy home of polar bears.",
+                "colloc": "Polar bears and penguins thrive in freezing polar habitats",
+                "colloc_vi": "Gấu bắc cực và chim cánh cụt sinh sống mạnh mẽ ở vùng cực băng giá",
+                "audio": "polar habitat. A freezing, icy and snowy habitat.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "❄️"
+        },
+        {
+                "word": "ocean habitat",
+                "meaning": "vast bodies of deep salt water covering over seventy percent of the Earth",
+                "vietnamese": "Đại dương: vùng biển nước mặn mênh mông, sâu thẳm bao phủ phần lớn Trái Đất",
+                "mnemonic": "Biển cả bao la 🌊: vast deep salt water with whales and sharks.",
+                "colloc": "Whales, dolphins and sea turtles swim across the vast ocean",
+                "colloc_vi": "Cá voi, cá heo và rùa biển bơi lội khắp đại dương bao la",
+                "audio": "ocean habitat. A vast body of deep salt water.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🌊"
+        }
 ]
 }
 
@@ -2898,6 +3188,148 @@ GRAND_CHALLENGE_BANK = {
                 "answer": "Sharp teeth at front and blunt teeth at back",
                 "explanation": "Slide W9S p.12-15: Omnivores have sharp front teeth to tear meat and blunt back teeth to grind plants."
         }
+],
+    "week10": [
+        {
+                "id": 1,
+                "subject": "English",
+                "question": "When writing stories about events that already happened, what is the past tense of 'It is strong'?",
+                "audio": "When writing stories about events that already happened, what is the past tense of It is strong?",
+                "options": [
+                        "It was strong",
+                        "It had strong",
+                        "It got strong",
+                        "It did strong"
+                ],
+                "answer": "It was strong",
+                "explanation": "Slide W10E1 p.19: The past tense of 'It is + adjective' is 'It was + adjective'."
+        },
+        {
+                "id": 2,
+                "subject": "English",
+                "question": "Which past tense modal verb describes a dragon's ability to fly high in the ancient sky?",
+                "audio": "Which past tense modal verb describes a dragon's ability to fly high in the ancient sky?",
+                "options": [
+                        "could",
+                        "would",
+                        "might",
+                        "shall"
+                ],
+                "answer": "could",
+                "explanation": "Slide W10E1 p.21: The past tense of 'It can + verb' is 'It could + verb' (It could fly)."
+        },
+        {
+                "id": 3,
+                "subject": "English",
+                "question": "Which group of words all share the same short /ʊ/ vowel sound found in the letter 'u'?",
+                "audio": "Which group of words all share the same short vowel sound found in the letter u?",
+                "options": [
+                        "pull, push, full, bull",
+                        "duck, jump, plum, drum",
+                        "tube, rule, blue, flute",
+                        "cure, pure, sure, lure"
+                ],
+                "answer": "pull, push, full, bull",
+                "explanation": "Slide W10E2 p.4-9: Words with the /ʊ/ sound from the slide include full, pull, push, bush, put, bull."
+        },
+        {
+                "id": 4,
+                "subject": "English",
+                "question": "What is the primary function of speech marks (“ ”) in written English stories?",
+                "audio": "What is the primary function of speech marks in written English stories?",
+                "options": [
+                        "To enclose the exact words spoken by people",
+                        "To mark the end of every complete sentence",
+                        "To show strong emotions of panic and anger",
+                        "To connect two similar ideas in one clause"
+                ],
+                "answer": "To enclose the exact words spoken by people",
+                "explanation": "Slide W10E2 p.37: Speech marks show the exact words spoken by someone (e.g. “Oh no!” cried Nobita)."
+        },
+        {
+                "id": 5,
+                "subject": "Maths",
+                "question": "In mathematics, what mathematical operations do doubling and halving represent?",
+                "audio": "In mathematics, what mathematical operations do doubling and halving represent?",
+                "options": [
+                        "Double means multiply by 2; half means divide by 2",
+                        "Double means divide by 2; half means multiply by 2",
+                        "Double means add by 100; half means subtract by 10",
+                        "Double means subtract by 2; half means add by 200"
+                ],
+                "answer": "Double means multiply by 2; half means divide by 2",
+                "explanation": "Slide W10M p.4 & p.7: Doubling means multiplying by 2; halving means dividing by 2."
+        },
+        {
+                "id": 6,
+                "subject": "Maths",
+                "question": "Using the partitioning method, what is the correct calculation to double the number 42?",
+                "audio": "Using the partitioning method, what is the correct calculation to double the number 42?",
+                "options": [
+                        "(40 x 2 = 80) and (2 x 2 = 4); 80 + 4 = 84",
+                        "(40 x 2 = 80) and (2 x 2 = 8); 80 + 8 = 88",
+                        "(40 + 2 = 42) and (42 x 2 = 84); total 84",
+                        "(40 ÷ 2 = 20) and (2 ÷ 2 = 1); 20 + 1 = 21"
+                ],
+                "answer": "(40 x 2 = 80) and (2 x 2 = 4); 80 + 4 = 84",
+                "explanation": "Slide W10M p.11-13: Break 42 into 40 and 2. 40x2=80, 2x2=4, then 80+4=84."
+        },
+        {
+                "id": 7,
+                "subject": "Maths",
+                "question": "What is the product when calculating 12 multiplied by 100?",
+                "audio": "What is the product when calculating 12 multiplied by 100?",
+                "options": [
+                        "1200",
+                        "1205",
+                        "1020",
+                        "1220"
+                ],
+                "answer": "1200",
+                "explanation": "Slide W10M p.19-20: Any number times 100 equals itself with two zeros added at the end (12 x 100 = 1200)."
+        },
+        {
+                "id": 8,
+                "subject": "Science",
+                "question": "Based on our class plant investigation, what was the scientific conclusion?",
+                "audio": "Based on our class plant investigation, what was the scientific conclusion?",
+                "options": [
+                        "Green plants grow healthier and better with sunlight",
+                        "Green plants grow healthier and better in total dark",
+                        "Green plants do not need any sunlight or fresh soil",
+                        "Green plants only need cold winter air to stay alive"
+                ],
+                "answer": "Green plants grow healthier and better with sunlight",
+                "explanation": "Slide W10S p.7: Conclusion: Plants grow better with sunlight."
+        },
+        {
+                "id": 9,
+                "subject": "Science",
+                "question": "Which climate description accurately identifies a tropical rainforest habitat?",
+                "audio": "Which climate description accurately identifies a tropical rainforest habitat?",
+                "options": [
+                        "Hot and humid with lots of rain and lush trees",
+                        "Very cold and snowy with freezing icy glaciers",
+                        "Extremely hot and dry with very little rainfall",
+                        "Deep salty water covering vast oceanic seabeds"
+                ],
+                "answer": "Hot and humid with lots of rain and lush trees",
+                "explanation": "Slide W10S p.8: A rainforest is hot and humid (the air feels wet) with lots of rain and plants."
+        },
+        {
+                "id": 10,
+                "subject": "Science",
+                "question": "Which group of animals are specially adapted to survive in a hot, dry desert habitat?",
+                "audio": "Which group of animals are specially adapted to survive in a hot, dry desert habitat?",
+                "options": [
+                        "Camel, scorpion, desert fox and snake",
+                        "Polar bear, penguin, walrus and puffin",
+                        "Dolphin, blue whale, turtle and shark",
+                        "Tree frog, parrot, monkey and jaguar"
+                ],
+                "answer": "Camel, scorpion, desert fox and snake",
+                "explanation": "Slide W10S p.13: Animals living in the desert include camel, desert fox, scorpion, desert rat, snake, lizard."
+        }
 ]
 }
 
@@ -2908,7 +3340,7 @@ def index():
 
 @app.route('/practice')
 def practice():
-    week = request.args.get('week', 'week9')
+    week = request.args.get('week', 'week10')
     mode = request.args.get('mode', 'vocab')
     student = request.args.get('student', 'Student')
     return render_template('practice.html', week=week, mode=mode, student=student)
@@ -2941,8 +3373,8 @@ def get_vocab_bank():
 
 @app.route('/api/grand_challenge')
 def get_grand_challenge():
-    week = request.args.get('week', 'week9')
-    raw_questions = GRAND_CHALLENGE_BANK.get(week, GRAND_CHALLENGE_BANK.get('week9', []))
+    week = request.args.get('week', 'week10')
+    raw_questions = GRAND_CHALLENGE_BANK.get(week, GRAND_CHALLENGE_BANK.get('week10', []))
     import copy
     questions = copy.deepcopy(raw_questions)
     for q in questions:
