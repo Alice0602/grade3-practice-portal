@@ -1905,6 +1905,296 @@ VOCABULARY_BANK = {
                 "svg_type": "default",
                 "emoji": "🌊"
         }
+],
+    "week11": [
+        {
+                "word": "rocket",
+                "meaning": "a powerful vehicle that blasts off from Earth to carry astronauts into space",
+                "vietnamese": "Tên lửa: phương tiện cực mạnh phóng từ Trái Đất đưa phi hành gia vào vũ trụ",
+                "mnemonic": "Phóng lên bầu trời 🚀: To get to space, you use a rocket.",
+                "colloc": "The huge rocket was 111 metres high when it launched",
+                "colloc_vi": "Chiếc tên lửa khổng lồ cao 111 mét khi phóng lên",
+                "audio": "rocket. To get to space, you use a rocket.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🚀"
+        },
+        {
+                "word": "parachute",
+                "meaning": "a large cloth canopy used to jump down slowly and safely from high places",
+                "vietnamese": "Chiếc dù: thiết bị giúp nhảy xuống đất an toàn từ trên cao",
+                "mnemonic": "Nhảy dù an toàn 🪂: Yuri Gagarin landed safely with a parachute.",
+                "colloc": "Yuri Gagarin jumped out and landed safely with a parachute",
+                "colloc_vi": "Yuri Gagarin đã nhảy ra ngoài và hạ cánh an toàn bằng dù",
+                "audio": "parachute. You use a parachute to jump from high places.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🪂"
+        },
+        {
+                "word": "astronaut",
+                "meaning": "a specially trained person who travels and works in outer space",
+                "vietnamese": "Phi hành gia: người được huấn luyện để bay ra ngoài không gian vũ trụ",
+                "mnemonic": "Nhà du hành vũ trụ 🧑‍🚀: A person who goes into space is an astronaut.",
+                "colloc": "Neil Armstrong was the first astronaut to walk on the moon",
+                "colloc_vi": "Neil Armstrong là phi hành gia đầu tiên bước đi trên Mặt Trăng",
+                "audio": "astronaut. A person who goes into space is an astronaut.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🧑‍🚀"
+        },
+        {
+                "word": "space station",
+                "meaning": "a big metal building that stays in space where astronauts can live and work",
+                "vietnamese": "Trạm vũ trụ: công trình kim loại lớn ở ngoài không gian để phi hành gia sinh sống",
+                "mnemonic": "Ngôi nhà ngoài vũ trụ 🛰️: A big metal building in space for astronauts.",
+                "colloc": "Astronauts can live and do experiments inside a space station",
+                "colloc_vi": "Các phi hành gia có thể sinh sống và làm thí nghiệm trong trạm vũ trụ",
+                "audio": "space station. A big metal building that stays in space where astronauts can live.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🛰️"
+        },
+        {
+                "word": "spaceship",
+                "meaning": "a spacecraft designed for travelling through outer space",
+                "vietnamese": "Tàu vũ trụ: con tàu chuyên dùng để du hành trong không gian vũ trụ",
+                "mnemonic": "Tàu bay vũ trụ 🛸: You can travel in space in a spaceship.",
+                "colloc": "Laika travelled around the earth in a four-metre spaceship",
+                "colloc_vi": "Chú chó Laika bay quanh Trái Đất trong con tàu vũ trụ cao 4 mét",
+                "audio": "spaceship. You can travel in space in a spaceship.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🛸"
+        },
+        {
+                "word": "take off",
+                "meaning": "when a plane or rocket leaves the ground and goes up into the sky",
+                "vietnamese": "Cất cánh: khi máy bay hoặc tên lửa rời khỏi mặt đất bay lên cao",
+                "mnemonic": "Rời mặt đất bay lên 🛫: When a rocket goes up from the ground, it will take off.",
+                "colloc": "Everyone counted down before the giant rocket would take off",
+                "colloc_vi": "Mọi người đếm ngược trước khi chiếc tên lửa khổng lồ cất cánh",
+                "audio": "take off. When a plane or rocket goes up from the ground, it will take off.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🛫"
+        },
+        {
+                "word": "land",
+                "meaning": "when a plane or rocket comes back down safely onto the ground",
+                "vietnamese": "Hạ cánh: khi máy bay hoặc tàu vũ trụ đáp xuống mặt đất",
+                "mnemonic": "Đáp xuống mặt đất 🛬: When a rocket comes down to the ground, it will land.",
+                "colloc": "The flight controllers tried to land the spaceship safely",
+                "colloc_vi": "Các nhân viên điều khiển bay đã cố gắng cho tàu vũ trụ hạ cánh an toàn",
+                "audio": "land. When a plane or rocket comes down to the ground, it will land.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🛬"
+        },
+        {
+                "word": "moon buggy",
+                "meaning": "a special wheeled vehicle that astronauts use to travel on the Moon",
+                "vietnamese": "Xe tự hành Mặt Trăng: loại xe đặc biệt phi hành gia lái để di chuyển trên Mặt Trăng",
+                "mnemonic": "Xe chạy trên Mặt Trăng 🌕🚙: A car that astronauts use to travel on the Moon.",
+                "colloc": "Astronauts drove a moon buggy across the dusty lunar surface",
+                "colloc_vi": "Các phi hành gia lái xe tự hành chạy qua bề mặt đầy bụi của Mặt Trăng",
+                "audio": "moon buggy. A car that astronauts can use to travel on the Moon.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🚙"
+        },
+        {
+                "word": "space",
+                "meaning": "the vast dark region outside Earth's atmosphere with stars, planets, and moons",
+                "vietnamese": "Vũ trụ / Không gian: khoảng không gian bao la ngoài Trái Đất có các hành tinh và ngôi sao",
+                "mnemonic": "Vũ trụ bao la 🌌: Stars, planets and rockets are out in space.",
+                "colloc": "Fruit flies were the very first travellers to go into space",
+                "colloc_vi": "Ruồi giấm là những du khách đầu tiên bay vào vũ trụ",
+                "audio": "space. The vast region outside the earth where stars and planets are.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "🌌"
+        },
+        {
+                "word": "didn't",
+                "meaning": "the short contraction of 'did not', used for negative past-tense answers",
+                "vietnamese": "Đã không (viết tắt của did not): dùng để trả lời phủ định ở thì quá khứ",
+                "mnemonic": "Phủ định quá khứ ❌: No, he didn't means No, he did not.",
+                "colloc": "Did Laika walk on the moon? No, she didn't",
+                "colloc_vi": "Chó Laika có đi bộ trên Mặt Trăng không? Không, nó đã không",
+                "audio": "didn't. The short form of did not, used in past tense answers.",
+                "type": "english",
+                "svg_type": "default",
+                "emoji": "❌"
+        },
+        {
+                "word": "millimetre",
+                "meaning": "a very small metric unit of length (mm); ten millimetres make one centimetre",
+                "vietnamese": "Mi-li-mét (mm): đơn vị đo độ dài rất nhỏ trên thước kẻ (1 cm = 10 mm)",
+                "mnemonic": "Vạch nhỏ nhất trên thước 📏: 10 millimetres equals 1 centimetre.",
+                "colloc": "There are ten millimetres in one centimetre on a ruler",
+                "colloc_vi": "Có 10 mi-li-mét trong 1 xăng-ti-mét trên cây thước kẻ",
+                "audio": "millimetre. A very small unit of length. Ten millimetres equal one centimetre.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "📏"
+        },
+        {
+                "word": "centimetre",
+                "meaning": "a common metric unit of length (cm) on a ruler; 100 cm equals 1 metre",
+                "vietnamese": "Xăng-ti-mét (cm): đơn vị đo độ dài thông dụng trên thước (1 m = 100 cm)",
+                "mnemonic": "Đơn vị thước học sinh 📐: 1 cm = 10 mm and 100 cm = 1 m.",
+                "colloc": "Two metres and fourteen centimetres equals two hundred fourteen centimetres",
+                "colloc_vi": "2 mét và 14 xăng-ti-mét bằng tổng cộng 214 xăng-ti-mét",
+                "audio": "centimetre. A unit of length on a ruler. One hundred centimetres make one metre.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "📐"
+        },
+        {
+                "word": "metre",
+                "meaning": "a standard metric unit of length (m) equal to 100 centimetres or 1000 millimetres",
+                "vietnamese": "Mét (m): đơn vị đo độ dài tiêu chuẩn (1 m = 100 cm = 1000 mm)",
+                "mnemonic": "Thước mét đo chiều cao 🏢: 1 metre equals 100 centimetres.",
+                "colloc": "The giant moon rocket stood one hundred eleven metres high",
+                "colloc_vi": "Chiếc tên lửa Mặt Trăng khổng lồ cao tới 111 mét",
+                "audio": "metre. A standard unit of length equal to one hundred centimetres.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "🏢"
+        },
+        {
+                "word": "measure",
+                "meaning": "to find out how long, short, or wide something is using a tool like a ruler",
+                "vietnamese": "Đo lường: xác định xem một vật dài, ngắn hay rộng bao nhiêu bằng thước",
+                "mnemonic": "Cầm thước đo độ dài 📐: To measure means to find how long or short something is.",
+                "colloc": "We use millimetres, centimetres and metres to measure shapes",
+                "colloc_vi": "Chúng ta dùng mi-li-mét, xăng-ti-mét và mét để đo các hình khối",
+                "audio": "measure. To find how long or short something is.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "📏"
+        },
+        {
+                "word": "width",
+                "meaning": "the measurement of how wide something is from one side to the other",
+                "vietnamese": "Chiều rộng: số đo độ rộng từ cạnh bên này sang cạnh bên kia của vật",
+                "mnemonic": "Bề ngang rộng ↔️: Width is how wide something is.",
+                "colloc": "Use your ruler to measure the width of your maths book",
+                "colloc_vi": "Hãy dùng thước kẻ để đo chiều rộng cuốn sách Toán của em",
+                "audio": "width. The width is how wide something is.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "↔️"
+        },
+        {
+                "word": "length",
+                "meaning": "the measurement of how long something is from one end to the other",
+                "vietnamese": "Chiều dài: số đo độ dài từ đầu này đến đầu kia của vật",
+                "mnemonic": "Độ dài toàn thân ↕️: Length is how long something is.",
+                "colloc": "The length of the classroom desk is one hundred twenty centimetres",
+                "colloc_vi": "Chiều dài của chiếc bàn học trong lớp là 120 xăng-ti-mét",
+                "audio": "length. The length is how long something is.",
+                "type": "maths",
+                "svg_type": "default",
+                "emoji": "↕️"
+        },
+        {
+                "word": "features",
+                "meaning": "special body parts that animals have got to help them live in their habitat",
+                "vietnamese": "Đặc điểm cơ thể: các bộ phận đặc biệt giúp động vật thích nghi và sống sót",
+                "mnemonic": "Bộ phận đặc biệt 🐾: Features are special body parts like fur, wings, shells and fins.",
+                "colloc": "Different types of animals have different features to survive",
+                "colloc_vi": "Các loài động vật khác nhau có các đặc điểm cơ thể khác nhau để sinh tồn",
+                "audio": "features. Special body parts that animals have got.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🐾"
+        },
+        {
+                "word": "adaptation",
+                "meaning": "how an animal's features change over a long time to help it survive in its habitat",
+                "vietnamese": "Sự thích nghi: quá trình thay đổi đặc điểm qua thời gian dài giúp động vật tồn tại",
+                "mnemonic": "Biến đổi để sinh tồn 🐪❄️: Adaptation helps camels and polar bears survive.",
+                "colloc": "Thick white fur is an important adaptation of the polar bear",
+                "colloc_vi": "Bộ lông trắng dày là một sự thích nghi quan trọng của gấu Bắc Cực",
+                "audio": "adaptation. How an animal's features change over time to help it survive.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🧬"
+        },
+        {
+                "word": "survive",
+                "meaning": "to stay alive and keep living successfully inside a natural habitat",
+                "vietnamese": "Sinh tồn / Sống sót: duy trì sự sống trong môi trường tự nhiên khắc nghiệt",
+                "mnemonic": "Giữ vững sự sống ❤️: To survive means to stay alive.",
+                "colloc": "Animals have special features to help them survive in their habitats",
+                "colloc_vi": "Động vật có những đặc điểm đặc biệt giúp chúng sinh tồn trong môi trường sống",
+                "audio": "survive. To survive means to stay alive.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "❤️"
+        },
+        {
+                "word": "fur",
+                "meaning": "thick, soft hair covering mammals like polar bears to keep them warm",
+                "vietnamese": "Lông thú: lớp lông mềm dày phủ trên da động vật có vú giúp giữ ấm cơ thể",
+                "mnemonic": "Áo khoác lông ấm 🐻‍❄️: Thick white fur keeps polar bears warm in snow.",
+                "colloc": "Polar bears have thick white fur to keep warm and hide in snow",
+                "colloc_vi": "Gấu Bắc Cực có bộ lông trắng dày để giữ ấm và ngụy trang trong tuyết",
+                "audio": "fur. Soft hair that helps animals stay warm.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🐻‍❄️"
+        },
+        {
+                "word": "shells",
+                "meaning": "hard outer coverings that protect animals like turtles and give them a home",
+                "vietnamese": "Mai / Vỏ cứng: lớp vỏ cứng bảo vệ thân thể và làm ngôi nhà cho rùa, ốc sên",
+                "mnemonic": "Ngôi nhà di động 🐢: Shells protect animals and give them a home.",
+                "colloc": "Hard shells help to protect turtles and snails from danger",
+                "colloc_vi": "Những chiếc mai cứng giúp bảo vệ rùa và ốc sên khỏi nguy hiểm",
+                "audio": "shells. Hard coverings that protect animals and give them a home.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🐢"
+        },
+        {
+                "word": "fins",
+                "meaning": "flat body parts on fish and marine animals that help them swim faster",
+                "vietnamese": "Vây cá: bộ phận dẹt trên thân cá và động vật biển giúp bơi lội nhanh hơn",
+                "mnemonic": "Mái chèo dưới nước 🦈: Fins help fish and sharks swim faster.",
+                "colloc": "Fish use their strong fins to steer and swim faster in water",
+                "colloc_vi": "Cá dùng những chiếc vây khỏe để định hướng và bơi nhanh hơn dưới nước",
+                "audio": "fins. Body parts that help fish swim faster.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🦈"
+        },
+        {
+                "word": "humps",
+                "meaning": "large rounded mounds on a camel's back that store fat for energy",
+                "vietnamese": "Bướu lạc đà: phần nhô lên trên lưng lạc đà dùng để dự trữ mỡ tạo năng lượng",
+                "mnemonic": "Kho dự trữ năng lượng 🐪: Camels have humps to store fat for energy.",
+                "colloc": "Camels have one or two humps to store fat in the dry desert",
+                "colloc_vi": "Lạc đà có một hoặc hai chiếc bướu để trữ mỡ trên sa mạc khô cằn",
+                "audio": "humps. Mounds on a camel's back to store fat for energy.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🐪"
+        },
+        {
+                "word": "long snout",
+                "meaning": "a long narrow nose and mouth used by a giant anteater to poke into ant hills",
+                "vietnamese": "Mõm dài: phần mũi và miệng thuôn dài của thú ăn kiến để thọc sâu vào tổ kiến",
+                "mnemonic": "Mõm dài tìm kiến 🐜: Giant anteaters use a long snout to poke into ant hills.",
+                "colloc": "The giant anteater uses its long snout to poke into ant hills",
+                "colloc_vi": "Thú ăn kiến khổng lồ dùng chiếc mõm dài để thọc vào trong tổ kiến",
+                "audio": "long snout. A long mouth and nose to poke into ant hills.",
+                "type": "science",
+                "svg_type": "default",
+                "emoji": "🐜"
+        }
 ]
 }
 
@@ -3330,6 +3620,148 @@ GRAND_CHALLENGE_BANK = {
                 "answer": "Camel, scorpion, desert fox and snake",
                 "explanation": "Slide W10S p.13: Animals living in the desert include camel, desert fox, scorpion, desert rat, snake, lizard."
         }
+],
+    "week11": [
+        {
+                "id": 1,
+                "subject": "English",
+                "question": "What do we call a big metal building that stays in space where astronauts can live?",
+                "audio": "What do we call a big metal building that stays in space where astronauts can live?",
+                "options": [
+                        "a space station",
+                        "a rocket engine",
+                        "a flying saucer",
+                        "a large shuttle"
+                ],
+                "answer": "a space station",
+                "explanation": "Slide W11E1 p.7: A space station is a big metal building that stays in space. Astronauts can live in it."
+        },
+        {
+                "id": 2,
+                "subject": "English",
+                "question": "According to the 'Space travel' text, how did the first man in space, Yuri Gagarin, land safely?",
+                "audio": "According to the Space travel text, how did the first man in space, Yuri Gagarin, land safely?",
+                "options": [
+                        "He jumped out and used a parachute",
+                        "He drove away inside a moon buggy",
+                        "He steered down onto a wet runway",
+                        "He docked inside a metal station"
+                ],
+                "answer": "He jumped out and used a parachute",
+                "explanation": "Slide W11E1 p.21: The astronaut, Yuri Gagarin, jumped out before it crashed. He landed with a parachute."
+        },
+        {
+                "id": 3,
+                "subject": "English",
+                "question": "Who was the first to walk on the moon in 1969, spending two and a half hours there?",
+                "audio": "Who was the first to walk on the moon in 1969, spending two and a half hours there?",
+                "options": [
+                        "Astronaut Neil Armstrong",
+                        "Astronaut Yuri Gagarin",
+                        "Space monkey Albert II",
+                        "Little space dog Laika"
+                ],
+                "answer": "Astronaut Neil Armstrong",
+                "explanation": "Slide W11E2 p.15: The first man to walk on the moon was an astronaut called Neil Armstrong in 1969."
+        },
+        {
+                "id": 4,
+                "subject": "English",
+                "question": "Choose the grammatically correct past-tense question and short answer:",
+                "audio": "Choose the grammatically correct past tense question and short answer.",
+                "options": [
+                        "Did he walk on the moon? Yes, he did.",
+                        "Did he walked on moon? Yes, he walk.",
+                        "Did he walking on moon? Yes, he did.",
+                        "Was he walk on the moon? Yes, he was."
+                ],
+                "answer": "Did he walk on the moon? Yes, he did.",
+                "explanation": "Slide W11E2 p.19-20: Past questions use 'Did + subject + base verb?' and short answers 'Yes, he did.' / 'No, he didn't.'"
+        },
+        {
+                "id": 5,
+                "subject": "Maths",
+                "question": "How many millimetres (mm) are equal to 6 1/2 centimetres?",
+                "audio": "How many millimetres are equal to six and a half centimetres?",
+                "options": [
+                        "65 mm",
+                        "60 mm",
+                        "56 mm",
+                        "16 mm"
+                ],
+                "answer": "65 mm",
+                "explanation": "Slide W11M p.10 & p.18: 1 cm = 10 mm, so 6 cm = 60 mm and 1/2 cm = 5 mm -> 65 mm."
+        },
+        {
+                "id": 6,
+                "subject": "Maths",
+                "question": "What is the total number of centimetres in 8 m 1 cm?",
+                "audio": "What is the total number of centimetres in eight metres and one centimetre?",
+                "options": [
+                        "801 cm",
+                        "810 cm",
+                        "180 cm",
+                        "811 cm"
+                ],
+                "answer": "801 cm",
+                "explanation": "Slide W11M p.12 & p.19: 1 m = 100 cm, so 8 m = 800 cm; 800 cm + 1 cm = 801 cm."
+        },
+        {
+                "id": 7,
+                "subject": "Maths",
+                "question": "How many metres (m) are there in 4000 millimetres (mm)?",
+                "audio": "How many metres are there in four thousand millimetres?",
+                "options": [
+                        "4 metres",
+                        "8 metres",
+                        "40 metres",
+                        "14 metres"
+                ],
+                "answer": "4 metres",
+                "explanation": "Slide W11M p.20: 1000 mm = 100 cm = 1 m, so 4000 mm = 4 metres."
+        },
+        {
+                "id": 8,
+                "subject": "Science",
+                "question": "Which special animal features help to protect an animal and also give it a safe home?",
+                "audio": "Which special animal features help to protect an animal and also give it a safe home?",
+                "options": [
+                        "Shells",
+                        "Scales",
+                        "Wings",
+                        "Humps"
+                ],
+                "answer": "Shells",
+                "explanation": "Slide W11S p.16: Shells help to protect animals and give them a home."
+        },
+        {
+                "id": 9,
+                "subject": "Science",
+                "question": "Why do desert camels have wide, flat feet?",
+                "audio": "Why do desert camels have wide, flat feet?",
+                "options": [
+                        "To stop them from sinking into the sand",
+                        "To keep blowing sand out of their eyes",
+                        "To store fat inside for desert energy",
+                        "To help them smell prey from far away"
+                ],
+                "answer": "To stop them from sinking into the sand",
+                "explanation": "Slide W11S p.29: Camels have flat feet to stop them from sinking into the sand."
+        },
+        {
+                "id": 10,
+                "subject": "Science",
+                "question": "According to Science Book page 3, how do a giant anteater's large claws help it survive?",
+                "audio": "According to Science Book page 3, how do a giant anteater's large claws help it survive?",
+                "options": [
+                        "To break open hard ant hills",
+                        "To swim faster in deep water",
+                        "To hide safely in white snow",
+                        "To fly high above tall trees"
+                ],
+                "answer": "To break open hard ant hills",
+                "explanation": "Slide W11S p.40: Giant anteaters use large claws to break open ant hills, a long snout to poke inside, and a long tongue to catch ants."
+        }
 ]
 }
 
@@ -3340,7 +3772,7 @@ def index():
 
 @app.route('/practice')
 def practice():
-    week = request.args.get('week', 'week10')
+    week = request.args.get('week', 'week11')
     mode = request.args.get('mode', 'vocab')
     student = request.args.get('student', 'Student')
     return render_template('practice.html', week=week, mode=mode, student=student)
@@ -3373,8 +3805,8 @@ def get_vocab_bank():
 
 @app.route('/api/grand_challenge')
 def get_grand_challenge():
-    week = request.args.get('week', 'week10')
-    raw_questions = GRAND_CHALLENGE_BANK.get(week, GRAND_CHALLENGE_BANK.get('week10', []))
+    week = request.args.get('week', 'week11')
+    raw_questions = GRAND_CHALLENGE_BANK.get(week, GRAND_CHALLENGE_BANK.get('week11', []))
     import copy
     questions = copy.deepcopy(raw_questions)
     for q in questions:
